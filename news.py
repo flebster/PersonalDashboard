@@ -15,8 +15,8 @@ with FEEDS_FILE.open("r", encoding="utf-8") as file:
                 continue
                 parts=line.split("|")
                 feed={
-                    "name": parts[0]
-                    "url": parts[1]
+                    "name": parts[0],
+                    "url": parts[1],
                     "category": parts[2]
                 }
                 feeds.append(feed)
