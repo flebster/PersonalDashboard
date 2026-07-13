@@ -13,10 +13,21 @@ with FEEDS_FILE.open("r", encoding="utf-8") as file:
             
             if line == "":
                 continue
+                parts=line.split("|")
+                feed={
+                    "name": parts[0]
+                    "url": parts[1]
+                    "category": parts[2]
+                }
+                feeds.append(feed)
                 
-                feeds.append(line)
-                
-print("Feeds found:")
+print("Feeds loaded:")
 
 for feed in feeds:
-    print(" '", feed)
+    print(
+        feed["name"],
+        "-",
+        feed["category"],
+        '-",
+        feed["url"]
+    )
