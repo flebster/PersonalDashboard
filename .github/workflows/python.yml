@@ -1,22 +1,22 @@
-name:Personal Dashboard
+name: Personal Dashboard
 
 on: 
-workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
-build:
-run-on:ubuntu-latest
+  build:
+    run-on: ubuntu-latest
 
 steps:
-- name: Checkout repository
-uses: actions/setup-python@v5
-with:
-python-version: "3.12"
+  - name: Checkout repository
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.12"
 
--name: Install dependeencies
-run:
+  -name: Install dependeencies
+   run:|
 python -m pip install -- upgrade pip
 
 -name: Run news.py
-run:
+run:|
 python news.py
