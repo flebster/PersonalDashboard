@@ -28,6 +28,6 @@ for feed in feeds:
         feed["name"],
         "-",
         feed["category"],
-        '-",
+        "-",
         feed["url"]
     )
