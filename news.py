@@ -5,7 +5,7 @@
 
 from pathlib import Path
 PROJECT_FOLDER=Path(__file__).parent
-FEEDS_FILE=PROJECT_FOLDER / "feeds.txt"
+FEEDS_FILE=PROJECT_FOLDER/"feeds.txt"
 feeds = []
 with FEEDS_FILE.open("r", encoding="utf-8") as file:
     for line in file:
