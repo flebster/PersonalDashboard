@@ -1,7 +1,8 @@
 from dashboard.config import load_config
 from dashboard.feeds import load_feeds
 from dashboard.downloader import get_articles
-
+from dashboard.article import download_article
+from dashboard.storage import save_article
 
 def main():
 
@@ -22,9 +23,29 @@ def main():
 
         total_articles += len(articles)
 
-        for article in articles[:5]:
+for article in articles[:3]:
 
-            print(f"   • {article['title']}")
+    print()
+
+    print(article["title"])
+
+    downloaded = download_article(
+
+        article["link"]
+
+    )
+
+    if downloaded:
+
+        filename = save_article(
+
+            downloaded,
+
+            article["link"]
+
+        )
+
+        print("Saved:", filename)
 
         print()
 
