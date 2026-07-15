@@ -20,16 +20,10 @@ def main():
 
     for feed in feeds:
 
-        print(
-
-            feed["name"],
-
-            "-",
-
-            feed["category"]
-
-        )
-
+    print(f"Name:      {feed['name']}")
+    print(f"Category:  {feed['category']}")
+    print(f"RSS Feed:  {feed['url']}")
+    print("-" * 60)
 
 if __name__ == "__main__":
 
