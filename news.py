@@ -1,37 +1,36 @@
-#--------
-#PersonalDashboard
-#Module 1 - RSS Reader
-#--------
+from dashboard.config import load_config
+from dashboard.feeds import load_feeds
 
-from pathlib import Path
-PROJECT_FOLDER=Path(__file__).parent
-FEEDS_FILE=PROJECT_FOLDER/"feeds.txt"
-print("Project folder:", PROJECT_FOLDER)
-print("Feeds File:", FEEDS_FILE)
-print("Exists?:", FEEDS_FILE.exists())
-feeds = []
-with FEEDS_FILE.open("r", encoding="utf-8") as file:
-    for line in file:
-            line = line.strip()
-            print("Line Read:",repr(linea))
-            if line == "":
-                continue
-                parts=line.split("|")
-                feed={
-                    "name": parts[0],
-                    "url": parts[1],
-                    "category": parts[2]
-                }
-               print("Adding:",feed)
-                feeds.append(feed)
-                
-print("Feeds loaded:")
 
-for feed in feeds:
-    print(
-        feed["name"],
-        "-",
-        feed["category"],
-        "-",
-        feed["url"]
-    )
+def main():
+
+    config = load_config()
+
+    feeds = load_feeds()
+
+    print()
+
+    print(config["application"]["name"])
+
+    print()
+
+    print("Feeds loaded:")
+
+    print()
+
+    for feed in feeds:
+
+        print(
+
+            feed["name"],
+
+            "-",
+
+            feed["category"]
+
+        )
+
+
+if __name__ == "__main__":
+
+    main()
