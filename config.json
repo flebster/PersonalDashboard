@@ -1,1 +1,36 @@
-{}
+{
+  "application": {
+    "name": "Personal Dashboard",
+    "version": "1.0.0"
+  },
+
+  "rss": {
+  "articles_per_feed": 10,
+  "download_full_article": true,
+  "download_images": false,
+  "user_agent": "PersonalDashboard/1.0",
+  "default_category": "General"
+
+  },
+
+  "storage": {
+    "articles_folder": "articles",
+    "metadata_file": "news.json"
+  },
+
+  "retention": {
+    "keep_unread_days": 30,
+    "keep_read_days": 7,
+    "keep_saved_forever": true
+  },
+
+  "website": {
+    "title": "Blair's Dashboard",
+    "theme": "light",
+    "articles_per_page": 100
+  },
+
+  "logging": {
+    "verbose": true
+  }
+}
