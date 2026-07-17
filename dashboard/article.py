@@ -1,5 +1,5 @@
 """
-Downloads a webpage and extracts the readable article.
+Article downloader and extractor
 """
 
 import requests
@@ -11,45 +11,67 @@ from bs4 import BeautifulSoup
 
 def download_article(url):
 
+    print("Downloading:", url)
+
     try:
 
         response = requests.get(
             url,
-            timeout=20
+            timeout=20,
+            headers={
+                "User-Agent":
+                "Mozilla/5.0"
+            }
         )
 
         response.raise_for_status()
 
+
     except Exception as error:
 
-        print("Failed:", url)
-
+        print("Download failed:")
         print(error)
 
         return None
 
-    document = Document(response.text)
 
-    title = document.short_title()
+    try:
 
-    html = document.summary()
+        document = Document(
+            response.text
+        )
 
-    soup = BeautifulSoup(
-        html,
-        "html.parser"
-    )
+        html = document.summary()
 
-    text = soup.get_text(
-        separator="\n",
-        strip=True
-    )
+        title = document.short_title()
 
-    return {
 
-        "title": title,
+        soup = BeautifulSoup(
+            html,
+            "html.parser"
+        )
 
-        "html": html,
 
-        "text": text
+        text = soup.get_text(
+            separator="\n",
+            strip=True
+        )
 
-    }
+
+        return {
+
+            "title": title,
+
+            "html": html,
+
+            "text": text
+
+        }
+
+
+    except Exception as error:
+
+        print("Extraction failed:")
+        print(error)
+
+        return None
