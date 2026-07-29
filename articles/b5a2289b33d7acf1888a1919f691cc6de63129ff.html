@@ -1,0 +1,42 @@
+<html><body><div><article class="editor-content" data-autopogo>
+        <hr class="custom-gradient-background my-6 h-[6px] max-w-[75px] border-0">
+        <p>I open Instagram to check out my friends' Stories, updates from my local community, and the latest dog video my wife sent me last night. But after doing all of that, I find myself doomscrolling for hours. It got so bad, I ended up deleting the app and using the website exclusively. It's a similar story on YouTube, where I end up scrolling through endless Shorts. When YouTube’s Shorts limit came out, <a href="https://lifehacker.com/tech/how-to-block-youtube-shorts-on-iphone-and-android" target="_blank">I rushed to enable it</a>.</p><p>But I’ve found a better solution for both apps, at least for my Pixel. There’s a setting hidden deep inside the <a href="https://play.google.com/store/apps/details?id=at.saltyy.switchly" target="_blank" title="open in a new window" rel="noopener">Switchly app</a> that blocks certain addicting elements of popular apps. Switchly is completely free, open-source, and doesn’t show ads: Its main job is to serve as a free and open-source alternative to <a href="https://lifehacker.com/tech/how-brick-finally-helped-reduce-my-screen-time" target="_blank">devices like Brick</a>. It blocks apps and websites to help you focus, and the only way to unblock is by using an NFC tag and a QR code—the Android equivalent of <a href="https://lifehacker.com/tech/foqos-can-keep-you-from-using-your-iphone" target="_blank">the Foqos iPhone app</a>. Here's how it works. </p><p>Switchly can block reels, the Explore page, comments, and Stories on Instagram. On YouTube, it can block Shorts, the Subscriptions page, the "You" tab (YouTube's recommendation feed), and picture-in-picture mode. On X, it can block the home page, search, Grok AI, or notifications. On Snapchat, you can disable the Map, Stories, Spotlight, or the Following page. You can really disable the features that distract you the most. For me, that’s reels, search, and comments on Instagram, and Shorts and the You page on YouTube.</p>
+<p>Switchly is an app blocker, so it needs accessibility and screen access permissions before it can work. Because it’s a free and open-source app, with <a href="https://gitlab.com/Saltyy/switchly-public" target="_blank" title="open in a new window" rel="noopener">code hosted on GitLab</a>, third-party testers can verify Switchly's security, so I find it safe to use.</p><div class="pogoClear relative my-10 border-b-[1.5px] border-t-[1.5px] border-dashed border-black py-5 sm:my-14 sm:border-0 sm:py-0" data-ga-click data-ga-template="How-To" data-ga-module="openweb_widget" data-ga-element="openweb_scroll" data-ga-item="openweb_scroll_midpage" x-data="{
+         commentsCount: null,
+         hasComments: false,
+         async fetchCommentsCount() {
+             try {
+                 if (window.openweb &amp;&amp; typeof window.openweb.getMessagesCount === 'function') {
+                     this.commentsCount = await window.openweb.getMessagesCount('01KXT0TRNE5XXF5PW1XE2MBMZ7');
+                     this.hasComments = this.commentsCount !== null &amp;&amp; this.commentsCount &gt; 0;
+                 }
+             } catch (e) {
+                 console.warn('Failed to fetch comment count:', e);
+             }
+         }
+     }" x-init="fetchCommentsCount()" x-cloak>
+    <p class="absolute top-1/2 hidden w-full -translate-y-1/2 border-t-[1.5px] border-dashed border-black sm:block"></p>
+
+    <div class="relative flex justify-center">
+        <div class="flex max-w-fit items-center gap-x-3 bg-white px-5">
+            <p class="relative">
+                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-akshar text-sm font-medium text-black" aria-live="polite" x-show="hasComments" x-text="commentsCount"></span>
+
+                <svg class="h-8 w-8 text-black" role="img" aria-hidden="true">
+                    <use href="/images/icons/spritemap.svg#sprite-chat-bubble"></use>
+                </svg>
+            </p>
+
+            <span class="text-sm font-medium text-black">
+                What do you think so far?
+                <button class="ml-1 font-semibold text-brand-green underline hover:text-brand-green-700" type="button" aria-label="Comment section trigger" x-text="hasComments ? 'Post a comment.' : 'Be the first to post a comment.'"></button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<p>Once you grant the app the needed permissions, go to the <strong>Blocking </strong>tab, then go to the <strong>In-app blocking</strong> section. Here, enable the features you want to block in each app (this will only work if Switchly’s global blocking is currently disabled). After that, go to the Home page, and from the top, tap <strong>Enable</strong>. The blocking will now be enabled until you disable it manually.</p>
+<p>If, like me, you want to ban these features forever, you can leave it at that. But if you only want to disable them during work hours or on weekdays, you can set up a schedule. If you would like to block certain apps and websites, you can add them from the <strong>Manage Apps</strong> and <strong>Blocked Websites</strong> sections. To set up a schedule, go to <strong>Manage</strong> &gt; <strong>Schedules</strong>, tap the <strong>Plus</strong> button, create a new schedule, and customize it to your needs. As we discussed earlier, the app offers many more ruthless options for controlling the block. You can go to <strong>Blocking</strong> &gt; <strong>Blocking Controls </strong>to switch to a different blocking method.</p>
+            </article>
+
+    </div></body></html>

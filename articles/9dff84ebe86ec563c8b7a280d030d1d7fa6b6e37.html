@@ -1,0 +1,40 @@
+<html><body><div><article class="editor-content" data-autopogo>
+        <hr class="custom-gradient-background my-6 h-[6px] max-w-[75px] border-0">
+        <p>You trust your password manager to keep your credentials, documents, and identity data secure—and you probably also trust notices that come from your password manager with steps to maintain that security. Scammers are counting on this: A new phishing campaign is targeting LastPass and Bitwarden users with fake security alerts designed to compromise their data and devices. </p><p>Earlier this week, <a href="https://blog.lastpass.com/posts/july-2026-phishing-campaign-compliance" target="_blank" title="open in a new window" rel="noopener">LastPass alerted users</a> to an impersonation scam in which threat actors are sending phishing emails that look like official security notices. The messages come from hello[at]lastpassnewsletter[.]com with the subject line "Action Required: Review Updated LastPass Security Policies." </p><p>In the email body, attackers outlined supposed changes to LastPass security monitoring and reporting protocols and noted that users "have 14 business days to review and accept the updated terms" via DocuSign. The link redirected to https[:]//lastpasscompliance[.]com/, which looked like a legitimate DocuSign page complete with a chatbot window, and prompted users to "download" DocuSign in order to review and sign the document. It's unclear whether the goal was to spread malware or harvest user credentials, as the malicious website has since been taken down. However, Bitwarden users have been targeted with a nearly identical campaign, <a href="https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/" target="_blank" title="open in a new window" rel="noopener">according to BleepingComputer</a>. </p>
+<h2 id="how-to-spot-the-password-manager-scam">How to spot the password manager scam</h2><p>On the surface, the phishing emails targeting LastPass and Bitwarden users are pretty convincing. They have some technical jargon, so users may skim over the specifics and trust that the information is legitimate. There's a call to action, but the email states that users have 14 days to accept the terms or their account "may be temporarily restricted"—so the urgency is slightly lower than with some other scams. The email even reassures users that their vaults and accounts are "completely secure" and states that the required steps are "strictly" administrative in nature.  </p><div class="pogoClear relative my-10 border-b-[1.5px] border-t-[1.5px] border-dashed border-black py-5 sm:my-14 sm:border-0 sm:py-0" data-ga-click data-ga-template="Explainers" data-ga-module="openweb_widget" data-ga-element="openweb_scroll" data-ga-item="openweb_scroll_midpage" x-data="{
+         commentsCount: null,
+         hasComments: false,
+         async fetchCommentsCount() {
+             try {
+                 if (window.openweb &amp;&amp; typeof window.openweb.getMessagesCount === 'function') {
+                     this.commentsCount = await window.openweb.getMessagesCount('01KXNZFHF3FY5HCQVHWG4Z9SPS');
+                     this.hasComments = this.commentsCount !== null &amp;&amp; this.commentsCount &gt; 0;
+                 }
+             } catch (e) {
+                 console.warn('Failed to fetch comment count:', e);
+             }
+         }
+     }" x-init="fetchCommentsCount()" x-cloak>
+    <p class="absolute top-1/2 hidden w-full -translate-y-1/2 border-t-[1.5px] border-dashed border-black sm:block"></p>
+
+    <div class="relative flex justify-center">
+        <div class="flex max-w-fit items-center gap-x-3 bg-white px-5">
+            <p class="relative">
+                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-akshar text-sm font-medium text-black" aria-live="polite" x-show="hasComments" x-text="commentsCount"></span>
+
+                <svg class="h-8 w-8 text-black" role="img" aria-hidden="true">
+                    <use href="/images/icons/spritemap.svg#sprite-chat-bubble"></use>
+                </svg>
+            </p>
+
+            <span class="text-sm font-medium text-black">
+                What do you think so far?
+                <button class="ml-1 font-semibold text-brand-green underline hover:text-brand-green-700" type="button" aria-label="Comment section trigger" x-text="hasComments ? 'Post a comment.' : 'Be the first to post a comment.'"></button>
+            </span>
+        </div>
+    </div>
+</div>
+<p>That said, both the sender and the URL should raise suspicion. Neither lastpassnewsletter[.]com nor lastpasscompliance[.]com are official LastPass domains, nor is bitwardencompliance[.]com a real Bitwarden site. Never enter your master password or other credentials unless you navigate directly to your password manager's website or vault—links from emails, texts, or social media messages are at risk of being phishing attempts. If you've supplied your credentials to a suspicious site, update them immediately from a trusted device. You also shouldn't need to download software or use DocuSign for your password manager, and any actions on your account should occur when you are logged in to the legitimate site or vault. </p>
+            </article>
+
+    </div></body></html>

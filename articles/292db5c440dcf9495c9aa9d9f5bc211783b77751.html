@@ -1,0 +1,40 @@
+<html><body><div><article class="editor-content" data-autopogo>
+        <hr class="custom-gradient-background my-6 h-[6px] max-w-[75px] border-0">
+        <p><a href="https://lifehacker.com/tech/i-compared-siri-ai-to-gemini-on-iphone" target="_blank">Siri AI</a> is the biggest feature of Apple's upcoming suite of updates. Whether you're running iOS 27, macOS 27, or even watchOS 27, the thing that you'll likely notice first (<a href="https://lifehacker.com/tech/how-to-join-apples-new-siri-ai-waitlist" target="_blank">assuming you're running a compatible device</a>) is that Siri is <em>much</em> smarter now, and even more capable than it was in previous versions. <a href="https://lifehacker.com/tech/how-to-install-the-macos-27-beta" target="_blank">If the beta previews have been any indication</a>, this really is the biggest upgrade Apple has ever given Siri.  </p><p>But it seems that the company isn't limiting itself to the upgrades it already announced. As it continues beta testing these new updates, and with them, Siri AI itself, Apple seems to be tinkering with its new AI-powered assistant, quietly planting new features that beta testers need to discover for themselves. One such feature? A new Siri AI menu that appears whenever you highlight text in macOS 27. </p><p><a href="https://www.macrumors.com/2026/07/20/secret-siri-interface-macos-27-beta-enable/" target="_blank" title="open in a new window" rel="noopener">As reported by MacRumors</a>, this new menu appears whenever you select text in macOS 27. When you do, you'll see a floating menu in the top left of your highlighted text. If you move your cursor over it, the menu expands to reveal options, such as "Proofread," "Rewrite," "How does this sound?" and "Edit with Siri." You can also ask Siri AI to pull out key points from the text, or summarize it completely. Depending on the text, you might see other options, too: If you highlight a text from a friend, Siri AI might show you contact info; if the text contains a date, Siri AI might prompt you to create a Calendar entry. It plays into Siri AI's contextual awareness, which is part of Apple's mission to make its assistant more useful in specific scenarios. </p>
+<p>The thing is, this menu is disabled by default, as least as of macOS 27 developer beta 3 and public beta 1. Apple did not include it in the release notes, either; instead, <a href="https://www.reddit.com/r/MacOSBeta/comments/1v0hvjd/macos_27_has_a_hidden_lightweight_ui_for_siri_ai/" target="_blank" title="open in a new window" rel="noopener">a Redditor stumbled upon it</a>, and shared instructions for turning it on on r/MacOSBeta.   </p><p>Keep in mind, this feature, as with macOS 27 as a whole, is in beta testing. MacRumors says that the feature does not always work, so you may run into odd bugs or glitches after turning it on. Still, if you're already running the beta and are curious, this is an interesting feature to explore. </p><div class="pogoClear relative my-10 border-b-[1.5px] border-t-[1.5px] border-dashed border-black py-5 sm:my-14 sm:border-0 sm:py-0" data-ga-click data-ga-template="News" data-ga-module="openweb_widget" data-ga-element="openweb_scroll" data-ga-item="openweb_scroll_midpage" x-data="{
+         commentsCount: null,
+         hasComments: false,
+         async fetchCommentsCount() {
+             try {
+                 if (window.openweb &amp;&amp; typeof window.openweb.getMessagesCount === 'function') {
+                     this.commentsCount = await window.openweb.getMessagesCount('01KY08S8XGV4Q8WRBN860XT19D');
+                     this.hasComments = this.commentsCount !== null &amp;&amp; this.commentsCount &gt; 0;
+                 }
+             } catch (e) {
+                 console.warn('Failed to fetch comment count:', e);
+             }
+         }
+     }" x-init="fetchCommentsCount()" x-cloak>
+    <p class="absolute top-1/2 hidden w-full -translate-y-1/2 border-t-[1.5px] border-dashed border-black sm:block"></p>
+
+    <div class="relative flex justify-center">
+        <div class="flex max-w-fit items-center gap-x-3 bg-white px-5">
+            <p class="relative">
+                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-akshar text-sm font-medium text-black" aria-live="polite" x-show="hasComments" x-text="commentsCount"></span>
+
+                <svg class="h-8 w-8 text-black" role="img" aria-hidden="true">
+                    <use href="/images/icons/spritemap.svg#sprite-chat-bubble"></use>
+                </svg>
+            </p>
+
+            <span class="text-sm font-medium text-black">
+                What do you think so far?
+                <button class="ml-1 font-semibold text-brand-green underline hover:text-brand-green-700" type="button" aria-label="Comment section trigger" x-text="hasComments ? 'Post a comment.' : 'Be the first to post a comment.'"></button>
+            </span>
+        </div>
+    </div>
+</div>
+<p>To try it out, you'll need to open your Mac's Terminal app. Then, paste and run the following command: <code>sudo mkdir -p /Library/Preferences/FeatureFlags/Domain &amp;&amp; sudo defaults write /Library/Preferences/FeatureFlags/Domain/WritingTools LightweightUI_macOS -dict Enabled -bool true</code></p><p>You'll need to restart your Mac for the feature to take effect. But once you do, you should see the menu whenever you highlight text—albeit with some possible hiccups. If the feature is too unstable at this point, or you simply don't like it, you can undo it by pasting the following command into Terminal: <code>sudo defaults write /Library/Preferences/FeatureFlags/Domain/WritingTools LightweightUI_macOS -dict Enabled -bool false</code></p>
+            </article>
+
+    </div></body></html>
