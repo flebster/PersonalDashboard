@@ -12,7 +12,7 @@ SOURCE = PROJECT_FOLDER / "news.json"
 
 WEB_FOLDER = PROJECT_FOLDER / "web"
 
-DESTINATION = WEB_FOLDER / "news.json"
+DESTINATION = PROJECT_FOLDER / "news.json"
 
 
 def build_web_dashboard():
