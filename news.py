@@ -1,3 +1,4 @@
+from dashboard.webbuilder import build_web_dashboard
 from dashboard.config import load_config
 from dashboard.feeds import load_feeds
 from dashboard.downloader import get_articles
@@ -88,7 +89,7 @@ def main():
 
 
     save_database(database)
-
+    build_web_dashboard()
 
     print()
     print("--------------------")
