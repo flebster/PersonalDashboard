@@ -1,89 +1,108 @@
-"""
-Personal Dashboard
-Main program
-"""
-
 from dashboard.config import load_config
 from dashboard.feeds import load_feeds
 from dashboard.downloader import get_articles
 from dashboard.article import download_article
-from dashboard.storage import save_article
+from dashboard.storage import (
+    load_database,
+    save_database,
+    save_article,
+    article_exists
+)
 
 
 def main():
 
-    # Load configuration
     config = load_config()
 
-    # Load RSS feeds
     feeds = load_feeds()
 
-    print()
-    print("=" * 70)
-    print(config["application"]["name"])
-    print("=" * 70)
-    print()
+    database = load_database()
 
-    total_feeds = 0
-    total_articles = 0
-    downloaded_articles = 0
+
+    print("Starting Personal Dashboard")
+
+    new_articles = 0
+
 
     for feed in feeds:
 
-        total_feeds += 1
 
-        print(f"Checking {feed['name']}...")
+        print()
 
-        try:
+        print("Checking:", feed["name"])
 
-            articles = get_articles(feed)
 
-        except Exception as error:
+        articles = get_articles(feed)
 
-            print(f"Error reading feed: {error}")
-            print()
-            continue
 
-        print(f"Found {len(articles)} articles")
-
-        total_articles += len(articles)
-
-        #
-        # Only download the first 3 articles while testing.
-        # Later we'll remove this limit.
-        #
         for article in articles[:3]:
 
-            print(f"  Downloading: {article['title']}")
 
-            downloaded = download_article(article["link"])
+            if article_exists(
+                database,
+                article["link"]
+            ):
+
+                print(
+                    "Already saved:",
+                    article["title"]
+                )
+
+                continue
+
+
+
+            downloaded = download_article(
+                article["link"]
+            )
+
 
             if downloaded is None:
 
-                print("    Failed.")
                 continue
 
-            filename = save_article(
+
+
+            record = save_article(
                 downloaded,
                 article["link"]
             )
 
-            downloaded_articles += 1
 
-            print(f"    Saved as {filename}")
+            record["source"] = feed["name"]
 
-        print()
+            record["category"] = feed["category"]
 
-    print("=" * 70)
-    print("Finished")
-    print("=" * 70)
+            database["articles"].append(
+                record
+            )
 
-    print(f"Feeds checked      : {total_feeds}")
-    print(f"Articles found     : {total_articles}")
-    print(f"Articles saved     : {downloaded_articles}")
 
-    print("=" * 70)
+            new_articles += 1
+
+
+            print(
+                "Saved:",
+                article["title"]
+            )
+
+
+    save_database(database)
+
+
+    print()
+    print("--------------------")
+    print(
+        "New articles:",
+        new_articles
+    )
+
+    print(
+        "Total articles:",
+        len(database["articles"])
+    )
 
 
 if __name__ == "__main__":
+
     main()
