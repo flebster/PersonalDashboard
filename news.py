@@ -35,7 +35,7 @@ def main():
         articles = get_articles(feed)
 
 
-        for article in articles[:3]:
+        for article in articles:
 
 
             if article_exists(
