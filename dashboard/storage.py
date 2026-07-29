@@ -1,6 +1,6 @@
 """
 Article storage manager
-Handles saving articles and news.json
+Handles saving and loading news.json
 """
 
 import json
@@ -14,6 +14,9 @@ PROJECT_FOLDER = Path(__file__).parent.parent
 ARTICLE_FOLDER = PROJECT_FOLDER / "articles"
 
 DATABASE_FILE = PROJECT_FOLDER / "news.json"
+
+
+ARTICLE_FOLDER.mkdir(exist_ok=True)
 
 
 def load_database():
@@ -33,9 +36,8 @@ def load_database():
         return json.load(file)
 
 
-def save_database(database):
 
-    print("Saving database:", DATABASE_FILE)
+def save_database(database):
 
     with open(
         DATABASE_FILE,
@@ -51,11 +53,13 @@ def save_database(database):
         )
 
 
+
 def create_id(url):
 
     return hashlib.sha1(
         url.encode("utf-8")
     ).hexdigest()
+
 
 
 def article_exists(database, url):
@@ -71,22 +75,14 @@ def article_exists(database, url):
     return False
 
 
+
 def save_article(article, url):
-
-    print("Creating article folder:", ARTICLE_FOLDER)
-
-    ARTICLE_FOLDER.mkdir(
-        exist_ok=True
-    )
 
     article_id = create_id(url)
 
     filename = article_id + ".html"
 
     filepath = ARTICLE_FOLDER / filename
-
-
-    print("Saving article:", filepath)
 
 
     with open(
@@ -98,9 +94,6 @@ def save_article(article, url):
         file.write(
             article["html"]
         )
-
-
-    print("Saved:", filepath)
 
 
     return {
