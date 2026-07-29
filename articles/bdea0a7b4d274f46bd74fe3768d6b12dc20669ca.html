@@ -1,0 +1,101 @@
+<html><body><div><div class="entry-content">
+    
+<p>The annual smartphone release cycle has become predictably iterative while true hardware innovation has been overshadowed by marketing hype. Apple’s 2025 lineup gave us an uninspired colorway and a <a href="https://www.ifixit.com/News/113388/iphone-17-pro-teardown">regressive redesign</a> that actually hinders battery repairs—a disappointing shift from the repair friendly <a href="https://www.ifixit.com/News/64865/iphone-14-teardown">dual-entry design</a> of the iPhone 14 and the <a href="https://www.ifixit.com/News/100352/we-hot-wired-the-iphone-16">electrically releasing adhesive</a> of the iPhone 16. Samsung hasn’t been much better; since introducing their <a href="https://www.ifixit.com/News/108201/galaxy-s25-ultra-teardown-quick-battery-fix-slow-progress-on-repairability">handy battery pouches</a>, they’ve largely coasted on predictable spec bumps and larger vapor chambers.</p>
+
+
+
+<p>So when Samsung announced a Privacy Screen implemented in the OLED panel, you can bet it caught my attention. Breaking the cycle of mundane updates, the baked-in privacy feature is controllable through software to restrict viewing angles and thwart snooping shoulder-surfers. I was eager to see the mechanics behind this anti-eavesdropping tech, so naturally it needed the iFixit teardown treatment.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><p class="wp-block-embed__wrapper">
+
+</p></figure>
+
+
+
+<p>Per Samsung’s marketing material, the screen can be set to restrict viewing angles on demand, the goal being to prevent shoulder surfers from eaves dropping uninvited.</p>
+
+
+
+<p>That’s cool and all, but you can achieve more or less the same with a $10 privacy screen. Where the fancy Samsung Privacy Screen shines is in its ability to make specific sections of a screen private. Think notifications of a sensitive nature that you want to receive but don’t want to share with nosy onlookers on the subway, in the mall, or when your parole officer happens to be looking over your shoulder. </p>
+
+
+
+<p>The Samsung Privacy Screen’s pixel-based answer is more sophisticated than the <a href="https://www.3m.com/3M/en_US/privacy-screen-protectors-us/">micro-louver technology</a> used in cheap privacy screens. And thanks to our DSX2000 from Evident Microscopy, we can actually see it.</p>
+
+
+
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" src="https://valkyrie.cdn.ifixit.com/media/2026/05/22095040/S26U-diamond-pattern.jpg" alt="" class="wp-image-117500" srcset="https://valkyrie.cdn.ifixit.com/media/2026/05/22095040/S26U-diamond-pattern.jpg 3950w, https://valkyrie.cdn.ifixit.com/media/2026/05/22095040/S26U-diamond-pattern-1536x864.jpg 1536w, https://valkyrie.cdn.ifixit.com/media/2026/05/22095040/S26U-diamond-pattern-2048x1152.jpg 2048w, https://valkyrie.cdn.ifixit.com/media/2026/05/22095040/S26U-diamond-pattern-1600x900.jpg 1600w" sizes="(max-width: 3950px) 100vw, 3950px"><figcaption class="wp-element-caption">A close up look at the S26 Ultra’s Privacy Display</figcaption></figure>
+
+
+
+<p>But the S26 Ultra’s screen isn’t without its drawbacks. As widely reported already, the colors aren’t as vibrant as last year’s S25 Ultra, and to see why we have to take a closer look at how the Privacy Display is constructed—and what Samsung had to compromise to implement the technology.</p>
+
+
+
+<p>Here’s the OLED from last year’s S25 Ultra. You may have seen something like this before; a repeating pattern of pixels, in Samsung’s patented <a href="https://www.samsungdisplay.com/eng/patents.jsp">diamond pixel pattern</a>, in this case, all existing on a single, level, plane. </p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" src="https://valkyrie.cdn.ifixit.com/media/2026/05/22111159/S25U.jpg" alt="" class="wp-image-117508" srcset="https://valkyrie.cdn.ifixit.com/media/2026/05/22111159/S25U.jpg 3933w, https://valkyrie.cdn.ifixit.com/media/2026/05/22111159/S25U-1536x864.jpg 1536w, https://valkyrie.cdn.ifixit.com/media/2026/05/22111159/S25U-2048x1152.jpg 2048w, https://valkyrie.cdn.ifixit.com/media/2026/05/22111159/S25U-1600x900.jpg 1600w" sizes="(max-width: 3933px) 100vw, 3933px"><figcaption class="wp-element-caption">A magnified view of the S25 Ultra’s display panel</figcaption></figure>
+
+
+
+<p>The combination of pixel density and light dispersion allows these OLED pixels to “mix” colors from those primary reds, greens, and blues. Unsurprisingly, our eyes aren’t able to distinguish the individual pixels measuring 10 microns across, so manipulating the light intensity of each pixel fools our brains into seeing a mixed set of colors resulting in pinks, oranges, and around 1 billion other color variations (being male, I can <a href="https://www.smithsonianmag.com/smart-news/men-and-women-see-things-differently-literally-180954815/">distinguish very few</a> of these and name even fewer). </p>
+
+
+
+<p>The Privacy Display on the S26 Ultra also uses a repeating diamond pattern (Samsung’s patented Round Diamond Pixel pattern), but notice that the pixels are now distributed on two planes. What’s more, every other set of four pixels appears to have a structure surrounding it.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" src="https://valkyrie.cdn.ifixit.com/media/2026/05/22101009/S26U-diamond-structure.jpg" alt="" class="wp-image-117503" srcset="https://valkyrie.cdn.ifixit.com/media/2026/05/22101009/S26U-diamond-structure.jpg 3962w, https://valkyrie.cdn.ifixit.com/media/2026/05/22101009/S26U-diamond-structure-1536x864.jpg 1536w, https://valkyrie.cdn.ifixit.com/media/2026/05/22101009/S26U-diamond-structure-2048x1152.jpg 2048w, https://valkyrie.cdn.ifixit.com/media/2026/05/22101009/S26U-diamond-structure-1600x900.jpg 1600w" sizes="(max-width: 3962px) 100vw, 3962px"><figcaption class="wp-element-caption"><em>A close up of the S26 Ultra’s display panel reveals Samsung’s patented Round Diamond Pixel layout</em></figcaption></figure>
+
+
+
+<p>According to Samsung’s marketing material, the raised ridges ensconce each set of alternating pixels thereby reducing the angle at which light can escape. The pixels on the lower plane don’t have these structures and allow light to escape freely at a wider angle. </p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" src="https://valkyrie.cdn.ifixit.com/media/2026/05/22100013/S26U-3D-Panel-copy.jpg" alt="" class="wp-image-117502" srcset="https://valkyrie.cdn.ifixit.com/media/2026/05/22100013/S26U-3D-Panel-copy.jpg 1570w, https://valkyrie.cdn.ifixit.com/media/2026/05/22100013/S26U-3D-Panel-copy-1536x862.jpg 1536w" sizes="(max-width: 1570px) 100vw, 1570px"><figcaption class="wp-element-caption"><em>A 3D analysis of the S26 Ultra’s screen reveals the structures surrounding a subset of pixels</em></figcaption></figure>
+
+
+
+<p>That means that the privacy display is active when the pixels in the “valleys” are off, leaving only the pixels buried inside those structures switched on. At this point you might begin to see a problem. With privacy mode on, half the pixels are inactive. That means half the amount of light reaching your eyes, and half the color vibrancy. </p>
+
+
+
+<figure class="wp-block-video"><video autoplay loop muted src="https://valkyrie.cdn.ifixit.com/media/2026/05/22112804/S26U-Privacy-Display.mp4" playsinline></video></figure>
+
+
+
+<p>But here’s the thing, I doubt that the average person is going to have Privacy Display turned on all the time. For day to day usage, the privacy display function won’t be on for anything but the occasional pop up notification.</p>
+
+
+
+<p>Unfortunately, that’s not the biggest tradeoff to these new screens. Take a look at the S25 Ultra alongside the S26 Ultra, both set to 50% brightness and with the S26 Ultra’s Privacy Display turned off. The magnification is the same across both recordings.</p>
+
+
+
+<figure class="wp-block-video"><video autoplay loop muted src="https://valkyrie.cdn.ifixit.com/media/2026/05/22113922/s25u.Vs26ump4.mp4" playsinline></video></figure>
+
+
+
+<p>Both screens support a resolution of 3120×1440 meaning the pixel density is the same. It also seems that the S26 Ultra’s screen is brighter on the blues and greens but noticeably weaker on the reds. So why are people reporting that the S26 Ultra’s screen is less bright and less vibrant?</p>
+
+
+
+<p>The problem appears to be the size and shape of those pixels and the structures around half the pixels on the screen are very likely to be a culprit too. Even with privacy mode off, the LEDs buried inside those structures aren’t “mixing” light as effectively as they otherwise would. Add to that the seemingly lower output of the reds and suddenly instead of RGB you’re getting rGB only half the time. Simply put, the new structures that enable the Privacy Display appear to be introducing interference in how the light is reaching our eyes.</p>
+
+
+
+<p>Mystery solved? Maybe. It’s honestly not what I was expecting to find when I threw these phones under the microscope and there might be more going on here than just pixel size. Everything from the type of OLED technology used to the filters (if any) applied can change the brightness and vibrancy of the screen.</p>
+
+
+
+<p>And then there’s the <a href="https://www.tomsguide.com/phones/samsung-phones/samsung-galaxy-s26-ultra-owners-are-literally-seeing-red-as-they-report-a-strange-tint-on-their-screens">latest chatter</a> around some of these screens outputting <em>too much</em> red. What’s going on with Samsung’s new screen tech? Let us know in the comments if you have a guess as to why these screens are missing the mark on color output.</p>
+    
+  </div>
+
+      </div></body></html>
