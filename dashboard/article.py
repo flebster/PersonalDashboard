@@ -1,77 +1,121 @@
-"""
-Article downloader and extractor
-"""
-
+from pathlib import Path
+from datetime import datetime
 import requests
-
-from readability import Document
 
 from bs4 import BeautifulSoup
 
+from dashboard.utils import clean_filename
 
-def download_article(url):
 
-    print("Downloading:", url)
+PROJECT_ROOT = Path(__file__).parent.parent
+
+
+def download_article(article):
+
+    url = article["url"]
+
+    source = article.get(
+        "source",
+        "unknown"
+    )
+
+
+    today = datetime.utcnow()
+
+
+    folder = (
+        PROJECT_ROOT
+        / "articles"
+        / str(today.year)
+        / f"{today.month:02d}"
+        / clean_filename(source)
+    )
+
+
+    folder.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+
+    filename = (
+        clean_filename(article["title"])
+        + ".html"
+    )
+
+
+    filepath = folder / filename
+
 
     try:
 
         response = requests.get(
             url,
-            timeout=20,
+            timeout=15,
             headers={
                 "User-Agent":
                 "Mozilla/5.0"
             }
         )
 
+
+        if response.status_code == 403:
+
+            return {
+                "status": "blocked",
+                "file": None
+            }
+
+
+        if response.status_code == 404:
+
+            return {
+                "status": "missing",
+                "file": None
+            }
+
+
         response.raise_for_status()
 
 
-    except Exception as error:
-
-        print("Download failed:")
-        print(error)
-
-        return None
-
-
-    try:
-
-        document = Document(
-            response.text
-        )
-
-        html = document.summary()
-
-        title = document.short_title()
-
-
         soup = BeautifulSoup(
-            html,
+            response.text,
             "html.parser"
         )
 
 
-        text = soup.get_text(
-            separator="\n",
-            strip=True
+        for tag in soup(
+            [
+                "script",
+                "style",
+                "nav",
+                "footer"
+            ]
+        ):
+            tag.decompose()
+
+
+        filepath.write_text(
+            str(soup),
+            encoding="utf-8"
+        )
+
+
+        relative = filepath.relative_to(
+            PROJECT_ROOT
         )
 
 
         return {
-
-            "title": title,
-
-            "html": html,
-
-            "text": text
-
+            "status": "saved",
+            "file": str(relative)
         }
 
 
-    except Exception as error:
+    except Exception as e:
 
-        print("Extraction failed:")
-        print(error)
-
-        return None
+        return {
+            "status": "error",
+            "message": str(e),
+            "file": None
+        }
