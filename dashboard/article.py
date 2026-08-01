@@ -38,7 +38,7 @@ def download_article(article):
     )
 
 
-    article_id = article.get("id", "")
+article_id = article.get("id", "")
 
 if article_id:
     article_id = article_id[:8]
