@@ -21,12 +21,19 @@ def main():
 
     print("Starting Personal Dashboard")
 
+
     new_articles = 0
+    already_saved = 0
+    offline_saved = 0
     blocked_articles = 0
+    missing_articles = 0
     failed_articles = 0
+    feeds_checked = 0
 
 
     for feed in feeds:
+
+        feeds_checked += 1
 
         print()
         print("Checking:", feed["name"])
@@ -48,9 +55,18 @@ def main():
                     article["title"]
                 )
 
+                already_saved += 1
+
                 continue
 
-            
+
+            # Add source/category before downloading
+            # so article.py can use them
+
+            article["source"] = feed["name"]
+            article["category"] = feed["category"]
+
+
             result = download_article(article)
 
 
@@ -66,6 +82,18 @@ def main():
                 continue
 
 
+            if result["status"] == "missing":
+
+                print(
+                    "Missing (404):",
+                    article["title"]
+                )
+
+                missing_articles += 1
+
+                continue
+
+
             if result["status"] != "saved":
 
                 print(
@@ -76,6 +104,7 @@ def main():
                 failed_articles += 1
 
                 continue
+
 
 
             record = {
@@ -103,12 +132,12 @@ def main():
             }
 
 
-            database["articles"].append(
-                record
-            )
+            database["articles"].append(record)
 
 
             new_articles += 1
+
+            offline_saved += 1
 
 
             print(
@@ -123,26 +152,61 @@ def main():
 
 
     print()
-    print("--------------------")
+
+    print("==============================")
+    print("Personal Dashboard Update")
+    print("==============================")
+
+
+    print(
+        "Feeds checked:",
+        feeds_checked
+    )
+
+
     print(
         "New articles:",
         new_articles
     )
 
+
     print(
-        "Blocked:",
+        "Already saved:",
+        already_saved
+    )
+
+
+    print(
+        "Offline copies:",
+        offline_saved
+    )
+
+
+    print(
+        "Blocked (403):",
         blocked_articles
     )
 
+
     print(
-        "Failed:",
+        "Missing (404):",
+        missing_articles
+    )
+
+
+    print(
+        "Errors:",
         failed_articles
     )
+
 
     print(
         "Total articles:",
         len(database["articles"])
     )
+
+
+    print("==============================")
 
 
 if __name__ == "__main__":
