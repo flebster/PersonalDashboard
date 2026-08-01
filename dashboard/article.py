@@ -14,9 +14,23 @@ def download_article(article):
 
     url = article.get("url") or article.get("link")
 
+    if not url:
+        return {
+            "status": "error",
+            "message": "No URL found",
+            "file": None
+        }
+
+
     source = article.get(
         "source",
         "unknown"
+    )
+
+
+    title = article.get(
+        "title",
+        "untitled"
     )
 
 
@@ -38,20 +52,25 @@ def download_article(article):
     )
 
 
-article_id = article.get("id", "")
+    article_id = article.get(
+        "id",
+        ""
+    )
 
-if article_id:
-    article_id = article_id[:8]
+
+    if article_id:
+        article_id = article_id[:8]
 
 
-filename = (
-    clean_filename(article["title"])
-    + "-"
-    + article_id
-    + ".html"
-)
+    filename = (
+        clean_filename(title)
+        + "-"
+        + article_id
+        + ".html"
+    )
 
-filepath = folder / filename
+
+    filepath = folder / filename
 
 
     try:
@@ -60,8 +79,7 @@ filepath = folder / filename
             url,
             timeout=15,
             headers={
-                "User-Agent":
-                "Mozilla/5.0"
+                "User-Agent": "Mozilla/5.0"
             }
         )
 
@@ -96,9 +114,11 @@ filepath = folder / filename
                 "script",
                 "style",
                 "nav",
-                "footer"
+                "footer",
+                "header"
             ]
         ):
+
             tag.decompose()
 
 
@@ -108,14 +128,23 @@ filepath = folder / filename
         )
 
 
-        relative = filepath.relative_to(
+        relative_path = filepath.relative_to(
             PROJECT_ROOT
         )
 
 
         return {
             "status": "saved",
-            "file": str(relative)
+            "file": str(relative_path)
+        }
+
+
+    except requests.exceptions.Timeout:
+
+        return {
+            "status": "error",
+            "message": "Timeout",
+            "file": None
         }
 
 
