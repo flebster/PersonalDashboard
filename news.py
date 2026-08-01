@@ -6,7 +6,6 @@ from dashboard.article import download_article
 from dashboard.storage import (
     load_database,
     save_database,
-    save_article,
     article_exists
 )
 
@@ -23,13 +22,13 @@ def main():
     print("Starting Personal Dashboard")
 
     new_articles = 0
+    blocked_articles = 0
+    failed_articles = 0
 
 
     for feed in feeds:
 
-
         print()
-
         print("Checking:", feed["name"])
 
 
@@ -52,27 +51,57 @@ def main():
                 continue
 
 
-
-            downloaded = download_article(
-                article["link"]
-            )
+            result = download_article(article)
 
 
-            if downloaded is None:
+            if result["status"] == "blocked":
+
+                print(
+                    "Blocked (403):",
+                    article["title"]
+                )
+
+                blocked_articles += 1
 
                 continue
 
 
+            if result["status"] != "saved":
 
-            record = save_article(
-                downloaded,
-                article["link"]
-            )
+                print(
+                    "Failed:",
+                    article["title"]
+                )
+
+                failed_articles += 1
+
+                continue
 
 
-            record["source"] = feed["name"]
+            record = {
 
-            record["category"] = feed["category"]
+                "id": article.get("id"),
+
+                "title": article["title"],
+
+                "url": article["link"],
+
+                "file": result["file"],
+
+                "downloaded": result.get(
+                    "downloaded"
+                ),
+
+                "read": False,
+
+                "saved": False,
+
+                "source": feed["name"],
+
+                "category": feed["category"]
+
+            }
+
 
             database["articles"].append(
                 record
@@ -89,13 +118,25 @@ def main():
 
 
     save_database(database)
+
     build_web_dashboard()
+
 
     print()
     print("--------------------")
     print(
         "New articles:",
         new_articles
+    )
+
+    print(
+        "Blocked:",
+        blocked_articles
+    )
+
+    print(
+        "Failed:",
+        failed_articles
     )
 
     print(
