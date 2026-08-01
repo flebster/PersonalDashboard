@@ -12,7 +12,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 
 def download_article(article):
 
-    url = article["url"]
+    url = article.get("url") or article.get("link")
 
     source = article.get(
         "source",
