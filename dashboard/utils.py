@@ -2,9 +2,6 @@ import re
 
 
 def clean_filename(text, max_length=80):
-    """
-    Converts article titles into safe filenames.
-    """
 
     text = text.lower()
 
