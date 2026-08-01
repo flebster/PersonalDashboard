@@ -2,34 +2,23 @@
 Creates files needed by the web dashboard.
 """
 
-import shutil
 from pathlib import Path
+import shutil
 
 
 PROJECT_FOLDER = Path(__file__).parent.parent
 
 SOURCE = PROJECT_FOLDER / "news.json"
 
-WEB_FOLDER = PROJECT_FOLDER / "web"
-
-DESTINATION = PROJECT_FOLDER / "news.json"
-
 
 def build_web_dashboard():
 
-    WEB_FOLDER.mkdir(
-        exist_ok=True
-    )
+    print("Preparing web dashboard")
 
-    shutil.copy(
-        SOURCE,
-        DESTINATION
-    )
+    if not SOURCE.exists():
+        print("news.json not found")
+        return
 
-    print(
-        "Web dashboard updated:"
-    )
 
-    print(
-        DESTINATION
-    )
+    print("Dashboard data already available:")
+    print(SOURCE)
