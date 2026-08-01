@@ -38,11 +38,18 @@ def download_article(article):
     )
 
 
-    filename = (
-        clean_filename(article["title"])
-        + ".html"
-    )
+    article_id = article.get("id", "")
 
+if article_id:
+    article_id = article_id[:8]
+
+
+filename = (
+    clean_filename(article["title"])
+    + "-"
+    + article_id
+    + ".html"
+)
 
     filepath = folder / filename
 
