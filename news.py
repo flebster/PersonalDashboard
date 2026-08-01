@@ -50,7 +50,7 @@ def main():
 
                 continue
 
-            print(article)
+            
             result = download_article(article)
 
 
