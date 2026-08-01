@@ -1,46 +1,71 @@
 fetch("news.json")
 
-.then(response => response.json())
+.then(r => r.json())
 
 .then(data => {
 
+    const container =
+        document.getElementById("articles");
 
-let container =
-document.getElementById("articles");
+    container.innerHTML = "";
 
+    data.articles
 
-container.innerHTML="";
+        .sort((a,b)=>
+            new Date(b.downloaded) -
+            new Date(a.downloaded)
+        )
 
+        .forEach(article=>{
 
-data.articles.forEach(article => {
+            const card =
+                document.createElement("div");
 
+            card.className="card";
 
-let card =
-document.createElement("div");
+            const date =
+                new Date(article.downloaded);
 
+            const formatted =
+                date.toLocaleDateString(
+                    undefined,
+                    {
+                        month:"short",
+                        day:"numeric"
+                    });
 
-card.className="card";
-
-
-card.innerHTML = `
+            card.innerHTML=`
 
 <h2>${article.title}</h2>
 
-<p class="source">
-${article.source || ""}
-</p>
+<div class="meta">
+
+${article.source}
+ •
+${formatted}
+
+</div>
+
+<div class="badge">
+
+${article.category}
+
+</div>
+
+<div class="actions">
 
 <button>
+
 Read Article
+
 </button>
+
+</div>
 
 `;
 
+            container.appendChild(card);
 
-container.appendChild(card);
-
-
-});
-
+        });
 
 });
