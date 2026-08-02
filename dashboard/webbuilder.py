@@ -1,12 +1,8 @@
 """
 Builds the GitHub Pages website files.
 
-GitHub Pages can deploy from:
-- repository root
-- /docs
-
-This builder publishes the dashboard files
-to the repository root.
+GitHub Pages deploys from repository root.
+This copies frontend files from /web to the root.
 """
 
 from pathlib import Path
@@ -15,34 +11,44 @@ import shutil
 
 PROJECT_FOLDER = Path(__file__).parent.parent
 
-NEWS_FILE = PROJECT_FOLDER / "news.json"
-
 WEB_FOLDER = PROJECT_FOLDER / "web"
 
 
 
 def copy_file(source, destination):
 
-    if source.exists():
-
-        shutil.copy2(
-            source,
-            destination
-        )
-
-        print(
-            "Copied:",
-            source.name,
-            "->",
-            destination.name
-        )
-
-    else:
+    if not source.exists():
 
         print(
             "Missing:",
             source
         )
+
+        return
+
+
+    if source.resolve() == destination.resolve():
+
+        print(
+            "Already in place:",
+            destination.name
+        )
+
+        return
+
+
+    shutil.copy2(
+        source,
+        destination
+    )
+
+
+    print(
+        "Copied:",
+        source.name,
+        "->",
+        destination.name
+    )
 
 
 
@@ -52,16 +58,6 @@ def build_web_dashboard():
     print("Preparing GitHub Pages dashboard")
     print("-------------------------------")
 
-
-    # Copy data file
-
-    copy_file(
-        NEWS_FILE,
-        PROJECT_FOLDER / "news.json"
-    )
-
-
-    # Copy frontend files from web folder
 
     frontend_files = [
         "index.html",
