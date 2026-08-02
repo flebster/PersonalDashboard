@@ -169,8 +169,7 @@ function renderArticles(articleList) {
         */
 
         const articleLink =
-            "../" + article.file;
-
+    article.file;
 
 
         card.innerHTML = `
