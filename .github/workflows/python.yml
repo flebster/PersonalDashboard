@@ -26,6 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Fix article paths
+        run: python fix_article_paths.py
+        
       - name: Run Personal Dashboard
         run: python news.py
 
