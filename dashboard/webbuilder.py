@@ -1,8 +1,12 @@
 """
-Builds the web dashboard files.
+Builds the GitHub Pages website files.
 
-Copies the article database into the web folder
-so GitHub Pages can display the dashboard.
+GitHub Pages can deploy from:
+- repository root
+- /docs
+
+This builder publishes the dashboard files
+to the repository root.
 """
 
 from pathlib import Path
@@ -11,54 +15,75 @@ import shutil
 
 PROJECT_FOLDER = Path(__file__).parent.parent
 
+NEWS_FILE = PROJECT_FOLDER / "news.json"
+
 WEB_FOLDER = PROJECT_FOLDER / "web"
 
-NEWS_FILE = PROJECT_FOLDER / "news.json"
+
+
+def copy_file(source, destination):
+
+    if source.exists():
+
+        shutil.copy2(
+            source,
+            destination
+        )
+
+        print(
+            "Copied:",
+            source.name,
+            "->",
+            destination.name
+        )
+
+    else:
+
+        print(
+            "Missing:",
+            source
+        )
 
 
 
 def build_web_dashboard():
 
-    print("Preparing web dashboard")
+    print()
+    print("Preparing GitHub Pages dashboard")
+    print("-------------------------------")
 
 
-    # Make sure web folder exists
+    # Copy data file
 
-    WEB_FOLDER.mkdir(
-        parents=True,
-        exist_ok=True
+    copy_file(
+        NEWS_FILE,
+        PROJECT_FOLDER / "news.json"
     )
 
 
-    if not NEWS_FILE.exists():
+    # Copy frontend files from web folder
 
-        print(
-            "news.json not found"
+    frontend_files = [
+        "index.html",
+        "style.css",
+        "app.js"
+    ]
+
+
+    for filename in frontend_files:
+
+        copy_file(
+            WEB_FOLDER / filename,
+            PROJECT_FOLDER / filename
         )
 
-        return
+
+    print("-------------------------------")
+    print("Dashboard build complete")
+    print()
 
 
 
-    # Copy database to website
+if __name__ == "__main__":
 
-    destination = (
-        WEB_FOLDER /
-        "news.json"
-    )
-
-
-    shutil.copy2(
-        NEWS_FILE,
-        destination
-    )
-
-
-    print(
-        "Copied news.json to web folder"
-    )
-
-
-    print(
-        destination
-    )
+    build_web_dashboard()
