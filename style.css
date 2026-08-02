@@ -1,133 +1,265 @@
-:root{
-    --background:#f5f5f7;
-    --card:#ffffff;
-    --text:#1d1d1f;
-    --secondary:#6e6e73;
-    --accent:#007aff;
-    --border:#e5e5ea;
+/* 
+Personal Dashboard
+Version 7.0
+Main dashboard styling
+*/
+
+
+* {
+    box-sizing: border-box;
 }
 
-*{
-    box-sizing:border-box;
+
+body {
+
+    margin: 0;
+
+    padding: 20px;
+
+    background: #f5f5f7;
+
+    color: #1d1d1f;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
 }
 
-body{
-    margin:0;
-    background:var(--background);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    color:var(--text);
+
+/* Header */
+
+.dashboard-header {
+
+    max-width: 900px;
+
+    margin: 0 auto 25px auto;
+
+    text-align: center;
+
 }
 
-header{
-    position:sticky;
-    top:0;
-    background:rgba(255,255,255,.90);
-    backdrop-filter:blur(18px);
-    padding:18px;
-    border-bottom:1px solid var(--border);
-    z-index:100;
+
+.dashboard-header h1 {
+
+    font-size: 2rem;
+
+    margin-bottom: 8px;
+
 }
 
-header h1{
-    margin:0;
-    font-size:30px;
+
+#status {
+
+    color: #6e6e73;
+
+    font-size: 0.95rem;
+
 }
 
-header p{
-    margin-top:4px;
-    color:var(--secondary);
+
+
+/* Search */
+
+.controls {
+
+    max-width: 900px;
+
+    margin: 0 auto 25px auto;
+
 }
 
-#articles{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
+
+#search {
+
+    width: 100%;
+
+    padding: 14px 18px;
+
+    font-size: 1rem;
+
+    border-radius: 14px;
+
+    border: 1px solid #d2d2d7;
+
+    background: white;
+
+    outline: none;
+
 }
 
-.card{
 
-    background:white;
+#search:focus {
 
-    border-radius:20px;
+    border-color: #0071e3;
 
-    margin-bottom:22px;
+}
 
-    padding:22px;
+
+
+/* Article area */
+
+#articles {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+
+/* Article cards */
+
+.card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    margin-bottom: 18px;
 
     box-shadow:
-        0 8px 30px rgba(0,0,0,.08);
+        0 4px 12px
+        rgba(0,0,0,0.08);
 
-    transition:.2s;
-}
-
-.card:hover{
-
-    transform:translateY(-3px);
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
 
 }
 
-.card h2{
 
-    margin:0;
+.card:hover {
 
-    font-size:26px;
+    transform: translateY(-2px);
 
-    line-height:1.25;
-}
-
-.meta{
-
-    margin-top:12px;
-
-    color:var(--secondary);
-
-    font-size:15px;
-}
-
-.badge{
-
-    display:inline-block;
-
-    margin-top:12px;
-
-    padding:5px 10px;
-
-    border-radius:999px;
-
-    background:#eef5ff;
-
-    color:var(--accent);
-
-    font-size:13px;
-
-    font-weight:600;
-}
-
-.actions{
-
-    margin-top:18px;
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.12);
 
 }
 
-button{
 
-    background:var(--accent);
 
-    color:white;
+.card h2 {
 
-    border:none;
+    margin-top: 0;
 
-    padding:11px 18px;
+    font-size: 1.25rem;
 
-    border-radius:12px;
+    line-height: 1.3;
 
-    cursor:pointer;
-
-    font-size:15px;
 }
 
-button:hover{
 
-    opacity:.9;
+.card .source {
+
+    color: #6e6e73;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card .category {
+
+    display: inline-block;
+
+    background: #e8e8ed;
+
+    border-radius: 20px;
+
+    padding: 5px 12px;
+
+    font-size: 0.8rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Read button */
+
+.card a {
+
+    display: inline-block;
+
+    background: #0071e3;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-size: 0.95rem;
+
+}
+
+
+.card a:hover {
+
+    background: #0077ed;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    color: #6e6e73;
+
+    margin-top: 40px;
+
+    font-size: 0.85rem;
+
+}
+
+
+
+/* Mobile adjustments */
+
+@media (max-width: 600px) {
+
+
+    body {
+
+        padding: 12px;
+
+    }
+
+
+    .card {
+
+        padding: 18px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .dashboard-header h1 {
+
+        font-size: 1.6rem;
+
+    }
+
 
 }
