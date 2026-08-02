@@ -19,6 +19,7 @@ DATABASE_FILE = PROJECT_FOLDER / "news.json"
 ARTICLE_FOLDER.mkdir(exist_ok=True)
 
 
+
 def load_database():
 
     if not DATABASE_FILE.exists():
@@ -26,6 +27,7 @@ def load_database():
         return {
             "articles": []
         }
+
 
     with open(
         DATABASE_FILE,
@@ -96,6 +98,12 @@ def save_article(article, url):
         )
 
 
+    # Path used by the website
+    web_path = (
+        "articles/" + filename
+    )
+
+
     return {
 
         "id": article_id,
@@ -104,7 +112,7 @@ def save_article(article, url):
 
         "url": url,
 
-        "file": str(filepath),
+        "file": web_path,
 
         "downloaded": datetime.now().isoformat(),
 
