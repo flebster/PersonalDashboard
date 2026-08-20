@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- FAVICON -->
+<link href="/public/build/images/favicon-48x48.png" rel="icon" sizes="48x48"/>
+<link href="/public/build/images/favicon-96x96.png" rel="icon" sizes="96x96"/>
+<link href="/public/build/images/favicon-144x144.png" rel="icon" sizes="144x144"/>
+<link href="/public/build/images/favicon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="/public/build/images/favicon-240x240.png" rel="icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-240x240.png" rel="apple-touch-icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-192x192.png" rel="shortcut icon"/>
+<link href="https://www.howtogeek.com/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" rel="canonical">
+<!-- RSS Feed Discovery -->
+<link href="https://www.howtogeek.com/feed/" rel="alternate" title="How-To Geek Feed" type="application/rss+xml">
+<title>Google Maps kept changing my shared route—this simple trick keeps it on track</title>
+<meta content="Google Maps may recalculate shared routes, but carefully chosen waypoints can keep everyone heading in the same direction." name="description">
+<meta content="max-image-preview:large" name="robots">
+<meta content="02190cc2d688eab03da3653a68a98e4f" name="p:domain_verify">
+<meta content="Google Maps kept changing my shared route—this simple trick keeps it on track" property="og:title"/>
+<meta content="article" property="og:type"/>
+<meta content="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?w=1600&amp;h=900&amp;fit=crop" property="og:image"/>
+<meta content="1600" property="og:image:width"/>
+<meta content="900" property="og:image:height"/>
+<meta content="https://www.howtogeek.com/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Google Maps may recalculate shared routes, but carefully chosen waypoints can keep everyone heading in the same direction." property="og:description"/>
+<meta content="How-To Geek" property="og:site_name"/>
+<meta content="2026-08-19T18:45:13Z" property="article:published_time"/>
+<meta content="2026-08-19T18:45:13Z" property="article:modified_time"/>
+<meta content="Iphone" property="article:section"/>
+<meta content="Tony Phillips" property="article:author"/>
+<meta content="https://www.facebook.com/howtogeek/" property="article:publisher"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@howtogeek" name="twitter:site"/>
+<meta content="Google Maps kept changing my shared route—this simple trick keeps it on track" name="twitter:title"/>
+<meta content="Google Maps may recalculate shared routes, but carefully chosen waypoints can keep everyone heading in the same direction." name="twitter:description"/>
+<meta content="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=70&amp;fit=crop&amp;w=1200&amp;h=628&amp;dpr=1" name="twitter:image"/>
+<meta content="218849339757813" property="fb:app_id"/>
+<link as="image" fetchpriority="low" href="https://images.valnetcdn.com/sharedimages/img-lcp.svg" rel="preload"/>
+
+<link href="https://www.google-analytics.com" rel="preconnect"/>
+<!-- DNS Prefetch + Preconnect for image CDN -->
+<link href="https://static0.howtogeekimages.com/" rel="dns-prefetch"/>
+<link crossorigin="" href="https://static0.howtogeekimages.com/" rel="preconnect"/>
+
+
+<link as="image" fetchpriority="high" href="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=600&amp;h=338&amp;dpr=2" media="(max-width: 480px)" rel="preload">
+<link as="image" fetchpriority="high" href="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=70&amp;fit=crop&amp;w=1600&amp;h=900&amp;dpr=1" media="(min-width: 481px)" rel="preload">
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.howtogeekimages.com/assets/fonts/roboto/roboto-regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.howtogeekimages.com/assets/fonts/roboto/roboto-bold.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.howtogeekimages.com/assets/fonts/icons/icomoon.woff2?v=7.26.11" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.howtogeekimages.com/assets/fonts/icons/icomoon.woff?v=7.26.11" rel="preload" type="font/woff"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---<script type="text/javascript" src="https://tru.am/scripts/custom/valnet.js" defer></script>-->
+<!-- Google Analytics v4 -->
+
+
+<!-- End Google Analytics v4 -->
+<!-- sentinel header -->
+
+
+
+<!-- end of sentinel header -->
+
+
+
+
+
+<link href="https://static0.howtogeekimages.com/assets/article-regular.ee29f03c.css" rel="stylesheet"/>
+<!-- Google Analytics -->
+
+<!-- End Google Analytics -->
+
+
+<!-- GLOABL JS VARIABLES -->
+
+
+
+
+
+
+
+</link></link></meta></meta></meta></link></link></head>
+<body class="w-website js-tldr theme-tech">
+<div id="amazon-root"></div>
+
+
+<!-- No AdsNinja v10 Client! -->
+<div id="body-anchor"></div>
+
+<input class="css-menu--checkbox" id="side_menu" name="side_menu" type="checkbox"/>
+<div class="side-navigation side_menu" id="side-navigation">
+<div class="side-navigation-topbar">
+<label class="js-search-focus css-menu--checkbox-wrapper css-menu--toggle" data-stnl='{"category": "Click Interactions","name": "Website Header", "action": "Site Search Click"}' for="search-menu">
+<span class="menu-icon topbar-icon icon i-search-menu"></span>
+</label>
+<label class="menu-icon topbar-icon icon i-close-menu css-menu--toggle" for="side_menu">
+<span>Close</span>
+</label>
+</div>
+
+<!--
+	    <footer class="side-navigation-footer">
+	        	            Array
+	        	        <div id="ccpa-link"></div>
+	        <div class="footer-copy">
+	            Copyright &copy; 2026 www.howtogeek.com
+	        </div>
+	    </footer>
+	    -->
+</div>
+
+
+<!-- Subnav Image header menu Bar end -->
+<!-- Subnav Search Bar start -->
+<div class="w-ticker" data-type="header">
+</div>
+<div class="w-header-search">
+<input class="css-menu--checkbox" id="search-menu" name="search-menu" type="checkbox"/>
+<div class="header-search-content css-menu--target">
+<label class="header-search-exit icon i-close css-menu--toggle" for="search-menu">
+<span>Close</span>
+</label>
+<div class="header-search">
+<form action="/search/?q=" class="search-form js-searchBox icon i-search" id="searchform2" method="get">
+<input autocomplete="off" class="input-text search-input" id="js-search-input" name="q" placeholder="Search How-To Geek" type="text"/>
+</form>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<main class="w-content">
+<article class="w-article widget article layout-rich">
+
+<div class="article-header-bg"></div>
+<div class="w-article-header-comp">
+<div class="article-header-data">
+<div class="w-article-header-author-img" data-nosnippet="">
+<div class="article-header-author-img">
+<a href="/author/tony-phillips/">
+<picture>
+<source height="36" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress%2Fwp-content%2Fauthors%2F659e5a65add09-Me.jpg?fit=crop&amp;w=36&amp;h=36" width="36"/>
+<img alt="4" decoding="async" height="90" loading="lazy" src="https://static0.howtogeekimages.com/wordpress%2Fwp-content%2Fauthors%2F659e5a65add09-Me.jpg?fit=crop&amp;w=90&amp;h=90" style="display:block;height:auto;max-width:100%;" width="90"/>
+</picture>
+</a>
+</div>
+</div>
+<div class="article-meta">
+<div class="w-author" data-nosnippet="">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/tony-phillips/">Tony Phillips</a>
+</div>
+</div>
+<div class="meta_txt article-date">
+<time datetime="2026-08-19T18:45:13Z"><span class="is-mobile-hidden">Published</span> Aug 19, 2026, 2:45 PM EDT</time>
+</div>
+</div>
+<div class="with-excerpt" data-nosnippet="">Tony Phillips is an experienced Microsoft Office user with a dual-honors degree in Linguistics and Hispanic Studies. Prior to starting with How-to Geek in January 2024, he worked as a document producer, data manager, and content creator for over ten years, and loves making spreadsheets and documents in his spare time.<br/>
+<br/>
+Tony is also an academic proofreader, experienced in reading, editing, and formatting over 3 million words of personal statements, resumes, reference letters, research proposals, and dissertations. Before joining <em>How-To Geek</em>, Tony formatted and wrote documents for legal firms, including contracts, Wills, and Powers of Attorney.<br/>
+<br/>
+Tony is obsessed with Microsoft Office! He will find any reason to create a spreadsheet, exploring ways to add complex formulas and discover new ways to make data tick. He also takes pride in producing Word documents that look the part. He has worked as a data manager in a secondary school in the UK and has years of experience in the classroom with Microsoft PowerPoint. He loves to encounter problems in Microsoft Office and use his expertise and legal-level training to find solutions.<br/>
+<br/>
+Outside of the Microsoft world, Tony is a keen dog owner and lover, football fan, astrophotographer, gardener, and golfer. </div>
+</div>
+</div>
+<a class="w-header-user-box on-load-show" id="login-button-article-sidebar">
+<div class="user-box-title">Sign in to your <span class="brand-color">How-To Geek</span> account</div>
+<div class="icon i-user-full"></div>
+</a>
+<aside class="w-quick-action-sidebar">
+<div class="quick-action-sidebar" data-nosnippet="">
+<div class="icon i-sensa"></div>
+<div class="qa-action-list google-addus google-addus--dropdown w-google-addus-btn w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="qa-action-item sensa-feature action-btn google circle small no-label" data-google-addus-toggle="" title="Add Us" type="button">
+<div class="qa-icon main-icon icon icon-xlarge i-google" data-is-icon="true"></div>
+<div class="qa-label title" data-is-text="true">Add Us</div>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2h2ZDNSdloyVmxheTVqYjIwb0FBUAE" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+<div class="qa-action-list sensa-features">
+<!-- AI Article Summary -->
+</div>
+<div class="qa-action-list complement-action">
+<div class="qa-action-item" onclick="window.toggleQAPanel('jump')">
+<div class="qa-label title">Jump links</div>
+<label class="qa-icon icon i-flash" for="qa-quicklinks-checkbox"></label>
+</div>
+<div class="w-jump-links">
+<div class="w-table-content">
+<h3 class="title icon i-flash">Jump Links</h3>
+<div class="table-content">
+<div class="w-table-content-list">
+<ul class="table-content-list">
+<li class="table-content-element icon">
+<div class="table-content-link">
+<a href="#why-google-maps-changes-shared-routes">Why Google Maps changes shared routes</a>
+</div>
+</li>
+</ul>
+<ul class="table-content-list">
+<li class="table-content-element icon">
+<div class="table-content-link">
+<a href="#add-stops-to-constrain-the-route">Add stops to constrain the route</a>
+</div>
+</li>
+</ul>
+<ul class="table-content-list">
+<li class="table-content-element icon">
+<div class="table-content-link">
+<a href="#choose-your-stops-strategically">Choose your stops strategically</a>
+</div>
+</li>
+</ul>
+<ul class="table-content-list">
+<li class="table-content-element icon">
+<div class="table-content-link">
+<a href="#waypoints-aren-39-t-an-absolute-route-lock">Waypoints aren't an absolute route lock</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="qa-action-list base-action">
+<button class="qa-action-item ai-feature action-btn circle small no-label" data-id="2027254" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Like%20Article%22%2C%22once%22%3A%22true%22%7D" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="qa-label title" data-is-text="true">
+                                    Like
+                                            </div>
+<div class="qa-icon main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="qa-label text qa-like-label" data-is-text="true">
+                            Like
+                                </div>
+</button>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container" data-id="2027254" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" data-preference="Notifications" data-title="Google Maps kept changing my shared route—this simple trick keeps it on track" data-type="article" data-value="1" onclick="openActionBar()" title="Follow">
+<div class="qa-label title">follow</div>
+<div class="qa-icon icon-xlarge icon i-follow unfollowed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Follow
+                            </div>
+</div>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container is-hidden" data-id="2027254" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" data-preference="" data-title="Google Maps kept changing my shared route—this simple trick keeps it on track" data-type="article" data-value="0" title="Unfollow">
+<div class="qa-label title">followed</div>
+<div class="qa-icon icon-xlarge icon i-follow followed followed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Followed
+                            </div>
+</div>
+<a class="qa-action-item sensa-feature" data-stnl='{"category":"Click Interactions", "name":"Quick Action Sidebar", "action":"Jump to Thread Click", "once":"true"}' href="#threads" onclick="event.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})" title="Threads">
+<div class="qa-icon icon i-thread"></div>
+<div class="qa-label title">
+							Thread
+													</div>
+</a>
+</div>
+<div class="qa-action-list login-action">
+<button class="qa-action-item user" data-is-quick-action-login-button="true" itemprop="url">
+<div class="qa-label title">Log in</div>
+<div class="qa-icon icon i-user-full" onclick="document.getElementById('side-navigation') &amp;&amp; document.getElementById('side-navigation').classList.remove('is-open');"></div>
+</button>
+</div>
+<div class="sensa-widget-container w-sensa-widget">
+<button class="close-btn icon i-close" onclick="const c=this.closest('.sensa-widget-container'); c.style.height='0'; c.dataset.loaded='false';" type="button"></button>
+<div class="sensa-widget-wrapper">
+<div class="sensa-widget-content" id="top-of-sensa-content">
+<div class="sensa-widget-response-container">
+<span class="sensa-summary-prompt icon i-sensa-2" id="sensa-factual-summary-prompt" style="display: flex;">
+							Here is a fact-based summary of the story contents:
+						</span>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-factual-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-simple-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-satirical-commentary"></div>
+</div>
+<div class="sensa-summary-footer">
+<div class="sensa-summary-footer-content">
+<span class="sensa-summary-prompt">Try something different:
+							</span>
+<div class="sensa-option-buttons">
+<button aria-controls="sensa-factual-summary" aria-expanded="false" class="sensa-button prompt icon i-sensa-2" data-target="#sensa-factual-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Show me the facts
+								</button>
+<button aria-controls="sensa-simple-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-simple-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Explain it like I’m 5
+								</button>
+<button aria-controls="sensa-satirical-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-satirical-commentary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Give me a lighthearted recap
+								</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! -->
+<section class="article-body valnet-segment-Mobile" id="article-body" itemprop="articleBody">
+<div class="content-block-regular"><p>Google Maps is great for finding the quickest way from point A to point B. However, when I choose a specific route and share it with someone else, it sometimes sends them on a different path. I found a simple workaround that keeps shared journeys much closer to the route I originally chose.</p> <!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><h2 id="why-google-maps-changes-shared-routes">
+                        Why Google Maps changes shared routes
+               </h2>
+<h3 id="choosing-a-route-isn-39-t-the-same-as-locking-it">
+            Choosing a route isn't the same as locking it
+    </h3>
+<div class="body-img portrait">
+<div class="responsive-img image-expandable img-article-item-portrait" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:127.96803652968%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=49&amp;fit=crop&amp;w=360&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=49&amp;fit=crop&amp;w=360&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=70&amp;fit=crop&amp;w=600&amp;dpr=1" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=70&amp;fit=crop&amp;w=600&amp;dpr=1"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1"/>
+<img alt="Google Maps showing three driving routes from Los Angeles to Las Vegas, with one route selected and the Share button highlighted." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1" decoding="async" height="960" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-three-driving-routes-from-los-angeles-to-las-vegas-with-one-route-selected-and-the-share-button-highlighted.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1" width="750">
+</img></source></picture>
+</div>
+</div>
+<p> In <a href="http://maps.google.com/maps" rel="noopener noreferrer" target="_blank">Google Maps</a>, you can choose between different routes before sharing directions. For example, you might want to avoid a certain road, take a more scenic option, or simply use a route that makes more sense for a particular journey.</p> <p>The problem is that Google Maps is still a navigation app after I've shared those directions—it carries on <a href="https://www.howtogeek.com/skip-the-app-this-google-maps-widget-puts-live-traffic-on-your-home-screen/" target="_blank">considering things like real-time traffic</a>, road conditions, and user preferences. So even if I've selected a particular route on my phone, the person opening the shared link might not get exactly the same one.</p> <p>That's normally a good thing. If there's an accident or road closure since I created the directions, I'd rather Maps find a sensible alternative than send someone into a problem just because that's what I originally selected. It becomes frustrating, however, when the route itself is the point.</p> <p>A <a href="https://www.howtogeek.com/best-evs-for-every-road-trip/" target="_blank">scenic drive</a> is an obvious example. If I've picked a particular road because I want to enjoy the journey, getting there faster via freeway kind of defeats the point. In this case, I want Maps to stay as close to that choice as possible.</p> <!-- No AdsNinja v10 Client! --><h2 id="add-stops-to-constrain-the-route">
+                        Add stops to constrain the route
+               </h2>
+<h3 id="give-maps-a-few-destinations-it-can-39-t-skip">
+            Give Maps a few destinations it can't skip
+    </h3>
+<div class="valnet-gallery images-count-5">
+<div class="article__gallery type-gallery" data-article-gallery="article-gallery-modal-1-2058074533" data-gallery-id="main-carousel-1-2058074533" data-gallery-lightbox="gallery-modal-1-2058074533" data-gallery-thumbnail-id="gallery-thumbnails-1-2058074533" data-gallery-thumbnail-img-class="gallery-thumbnails-1-2058074533-img" data-gallery-type="" id="article-gallery-1-2058074533" style="--gallery-thumb-h: 93px; --gallery-aspect-sm: 0.8 / 1; --gallery-aspect-md: 1.3 / 1;">
+<div class="w-gallery-carousel"><section class="splide splide-gallery" data-gallery-expanded-id="main-expanable-carousel-1-2058074533" data-gallery-expanded-thumbnail-id="expanded-gallery-thumbnails-1-2058074533" id="main-carousel-1-2058074533"><button class="expand icon i-expand" type="button"></button><div class="splide__track"><ul class="splide__list" style="--gallery-aspect-sm: 0.8 / 1; --gallery-aspect-md: 1.3 / 1; --gallery-aspect-lg: 1.7 / 1;"><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin without any intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="617"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2"/><img alt="The Edit stops option in Google Maps." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="617"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose added as an intermediate stop." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="617"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose and Lampasas added as intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="617"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=contain&amp;w=309&amp;h=550&amp;dpr=2"/><img alt="Google Maps showing a route from Dallas to Austin through Glen Rose, Lampasas, and Marble Falls." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=contain&amp;w=308&amp;h=550&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="617"/></picture></li></ul></div></section><section class="splide gallery-thumbnails" id="gallery-thumbnails-1-2058074533" style="display: inline-flex; width: 100%; height: 93px;"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin without any intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="The Edit stops option in Google Maps." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose added as an intermediate stop." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose and Lampasas added as intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Google Maps showing a route from Dallas to Austin through Glen Rose, Lampasas, and Marble Falls." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li></ul></div></section></div><div class="w-gallery-carousel-fullscreen"><section class="splide splide-gallery" id="main-expanable-carousel-1-2058074533"><button class="lightbox__exit-btn close-btn icon i-close" type="button"><span class="txt">Close</span></button><div class="splide__track lightbox__swipper"><ul class="splide__list swiper-wrapper"><li class="splide__slide gallery-main-img image-portrait"><div class="body-img responsive-img"><img alt="Google Maps showing a driving route from Dallas to Austin without any intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="878"/></div></li><li class="splide__slide gallery-main-img image-portrait"><div class="body-img responsive-img"><img alt="The Edit stops option in Google Maps." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="878"/></div></li><li class="splide__slide gallery-main-img image-portrait"><div class="body-img responsive-img"><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose added as an intermediate stop." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="878"/></div></li><li class="splide__slide gallery-main-img image-portrait"><div class="body-img responsive-img"><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose and Lampasas added as intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="878"/></div></li><li class="splide__slide gallery-main-img image-portrait"><div class="body-img responsive-img"><img alt="Google Maps showing a route from Dallas to Austin through Glen Rose, Lampasas, and Marble Falls." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=contain&amp;w=878&amp;h=1100&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="878"/></div></li></ul></div></section><section aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel." class="splide gallery-thumbnails-expanded" id="expanded-gallery-thumbnails-1-2058074533"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin without any intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-without-any-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="The Edit stops option in Google Maps." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/the-edit-stops-option-in-google-maps.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose added as an intermediate stop." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-added-as-an-intermediate-stop.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Google Maps showing a driving route from Dallas to Austin with Glen Rose and Lampasas added as intermediate stops." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-driving-route-from-dallas-to-austin-with-glen-rose-and-lampasas-added-as-intermediate-stops.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Google Maps showing a route from Dallas to Austin through Glen Rose, Lampasas, and Marble Falls." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-route-from-dallas-to-austin-through-glen-rose-lampasas-and-marble-falls.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li></ul></div></section></div>
+
+</div>
+</div>
+<p>The workaround is to add intermediate stops along the route before sharing it. Instead of creating a journey that looks like <strong>Start → Destination</strong>, I can turn it into <strong>Start → Stop 1 → Stop 2 → Stop 3 → Destination</strong>.</p> <p>When I do this, Google Maps has to calculate a route that reaches those waypoints. It still decides which roads to use between them, but it has much less freedom to send the journey off in a completely different direction.</p> <p>For example, suppose I'm driving from Dallas to Austin but want to take a slower, more scenic route through the Texas Hill Country rather than sticking to I-35. I could add stops in Glen Rose, Lampasas, and Marble Falls, giving Maps a series of points that keep the journey on the western route.</p>
+<aside class="display-card article article-card small no-badge active-content" data-include-community-rating="false" data-nosnippet="" id="940e-4680-9e2ccbba619b">
+<a href="/google-maps-3d-immersive-view-fixed-android-autos-biggest-problem/">
+<img alt="New Google maps immersive mode shown on Android Auto" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/new-google-maps-immersive-mode.jpg?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" decoding="async" height="248" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/new-google-maps-immersive-mode.jpg?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" width="440"/>
+</a>
+<span class="article-card-label" data-field="label"><label>Related</label></span>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/google-maps-3d-immersive-view-fixed-android-autos-biggest-problem/" target="_blank" title="Google Maps’ new 3D Immersive View is so good I’m ditching Waze">
+			Google Maps’ new 3D Immersive View is so good I’m ditching Waze
+		</a>
+</h5>
+<p class="display-card-excerpt">The biggest update in a decade is a good one. </p>
+<div class="w-display-card-extra">
+<div class="total-info extra-comments">
+<label class="total-info-label">Posts</label>
+<a class="total-info-number icon i-thread" href="/google-maps-3d-immersive-view-fixed-android-autos-biggest-problem/#threads" title="Total Posts">
+<span class="num">9</span>
+</a>
+</div>
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="w-author">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/cory-gunther/" rel="author" title="Posts by Cory Gunther">Cory Gunther</a>
+</div>
+</div>
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="QXVnIDEyLCAyMDI2" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</aside>
+<p>Those stops don't have to be places I'm actually planning to spend any time. They can simply be strategic points that keep the route moving in the direction I've chosen. Then, if there's a particular town or scenic stretch I want to pass through, I can add another waypoint.</p> <p>Once the stops are in place, I can share the directions as normal. The person receiving them now has the same sequence of destinations to follow, rather than simply being given a starting point and a final destination.</p> <!-- No AdsNinja v10 Client! --><h2 id="choose-your-stops-strategically">
+                        Choose your stops strategically
+               </h2>
+<h3 id="a-few-waypoints-are-usually-enough">
+            A few waypoints are usually enough
+    </h3>
+<div class="body-img portrait">
+<div class="responsive-img image-expandable img-article-item-portrait" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:104.90307867731%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=49&amp;fit=crop&amp;w=360&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=49&amp;fit=crop&amp;w=360&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=70&amp;fit=crop&amp;w=600&amp;dpr=1" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=70&amp;fit=crop&amp;w=600&amp;dpr=1"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1"/>
+<img alt="Google Maps showing a Dallas-to-Austin route with eight intermediate stops and Austin as the final destination." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1" decoding="async" height="787" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/google-maps-showing-a-dallas-to-austin-route-with-eight-intermediate-stops-and-austin-as-the-final-destination.png?q=70&amp;fit=crop&amp;w=750&amp;dpr=1" width="750"/>
+</picture>
+</div>
+</div>
+<p> There's no point turning a journey into a long list of destinations. The best approach is to identify where Maps is most likely to take the route somewhere you don't want it to go, then add a stop to prevent that.</p> <p>If the first part of the journey is straightforward, but Maps keeps trying to send me onto a freeway for the final stretch, I don't need to add stops all the way from the beginning. One or two destinations along the route are usually enough to keep Maps heading in the right direction.</p>
+<p>It's also worth noting that there's a hard limit on how many stops you can add. <a href="https://support.google.com/maps/answer/144339" rel="noopener noreferrer" target="_blank">Google says</a>, "You can add up to nine stops, which includes the final destination." That means a particularly long journey with lots of waypoints might need to be split into two routes. If I hit that limit, I can make the final stop on the first route the starting point for the second, then share both sets of directions. It isn't quite as convenient as having one continuous route, but it lets me keep using strategic stops on a longer journey.</p>
+<aside class="display-card article article-card small no-badge active-content" data-include-community-rating="false" data-nosnippet="" id="49ed-41f3-bec395ab9d8a">
+<a href="/gestures-every-driver-should-know-google-maps/">
+<img alt="A hand performing a pinch gesture on a smartphone displaying Google Maps navigation inside a car, with the Google Maps logo in the background." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/10/a-hand-performing-a-pinch-gesture-on-a-smartphone-displaying-google-maps-navigation-inside-a-car-with-the-google-maps-logo-in-the-background.png?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" decoding="async" height="248" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/10/a-hand-performing-a-pinch-gesture-on-a-smartphone-displaying-google-maps-navigation-inside-a-car-with-the-google-maps-logo-in-the-background.png?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" width="440"/>
+</a>
+<span class="article-card-label" data-field="label"><label>Related</label></span>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/gestures-every-driver-should-know-google-maps/" target="_blank" title="9 Google Maps gestures every driver should know">
+			9 Google Maps gestures every driver should know
+		</a>
+</h5>
+<p class="display-card-excerpt">Google Maps is a lot easier to use than it seems.</p>
+<div class="w-display-card-extra">
+<div class="total-info extra-comments">
+<label class="total-info-label">Posts</label>
+<a class="total-info-number icon i-thread" href="/gestures-every-driver-should-know-google-maps/#threads" title="Total Posts">
+<span class="num">9</span>
+</a>
+</div>
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="w-author">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/jorge-aguilar/" rel="author" title="Posts by Jorge A. Aguilar">Jorge A. Aguilar</a>
+</div>
+</div>
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="SnVuIDE1LCAyMDI2" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><h2 id="waypoints-aren-39-t-an-absolute-route-lock">
+                        Waypoints aren't an absolute route lock
+               </h2>
+<h3 id="maps-can-override-your-plans-when-it-needs-to">
+            Maps can override your plans when it needs to
+    </h3>
+<p>There's an important limitation when using waypoints in Maps to keep a journey on track: adding stops doesn't permanently lock the app to your chosen road. If a road is closed, adding a destination along that road isn't going to make the closure disappear. You still want Maps to find another way to reach the stop, but because everyone is navigating to the same waypoints, the overall journey should remain much closer to the route you've planned.</p> <p>That's why I'd describe intermediate stops as a way of constraining the route, not a way of locking it. I'm giving Maps much stronger instructions about where I want to go, but I'm not overriding its core function as a navigation app that responds to what's happening on the road.</p> <hr/><h3 id="give-maps-clearer-instructions">
+            Give Maps clearer instructions
+    </h3>
+<p>I don't expect Google Maps to follow my plan blindly, especially when traffic or road conditions change. The useful thing about waypoints is that I can tell it <em>why </em>I chose a particular route without having to dictate every turn. When planning a longer journey, I also make sure Maps isn't prioritizing something I don't want it to. If I'd rather get there a little sooner than save a small amount of fuel, I make sure I <a href="https://www.howtogeek.com/google-maps-tiny-tweak-saved-hours-of-driving/" target="_blank">tell Maps not to prioritize fuel-efficient routes</a>. Between the two, I have much more control over the route I'm actually asking Maps to follow.</p> </div><div id="article-waypoint"></div></section>
+<aside class="article-options" data-nosnippet="">
+<aside class="w-promotion-offer promo-article-footer w-promotion-widget" data-nosnippet="" data-popup="false" data-promotion-zone="R29vZ2xlIFJhbmtpbmcgUHJvbW8=" data-sentinel-tracking="true" style="min-height: 250px;">
+<link href="https://static0.howtogeekimages.com/assets/promotions.284cabdc.css" rel="stylesheet"/>
+<div class="promotion-offer-box" data-style-path-url="https://static0.howtogeekimages.com/assets/promotions.284cabdc.css">
+<div class="card"> <a class="btn" data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=howtogeek.com" target="_blank"></a> <h1 class="msg"><b>Google is updating how articles are shown.</b> Don't miss our industry-leading content, written by humans, by setting <a data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=howtogeek.com" target="_blank">How-To Geek as a preferred source</a>.</h1> </div>
+
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<div class="article-tags">
+<ul class="article-tags-list">
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/category/ios/" title="Apple iPhone">
+<div class="article-tags-img">
+<img alt="Apple iPhone" decoding="async" height="32" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/10/iphone-threads.jpg?q=50&amp;fit=crop&amp;w=32&amp;h=32&amp;dpr=1.5" width="32"/>
+</div>
+<div class="article-tags-name">Apple iPhone</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/category/android/" title="Android">
+<div class="article-tags-img">
+<img alt="Android" decoding="async" height="32" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/10/android-threads.jpg?q=50&amp;fit=crop&amp;w=32&amp;h=32&amp;dpr=1.5" width="32"/>
+</div>
+<div class="article-tags-name">Android</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/tag/google-maps/" title="Google Maps">
+<div class="article-tags-name">Google Maps</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="w-sharing-bottom" id="threads">
+<div class="w-like-btn inactive" data-action="like-article">
+<button class="btn-fab tertiary xsmall" data-id="2027254" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="fab-label" data-is-text="true">
+                                                                                        Like
+                                                                                            </div>
+</button>
+</div>
+<div class="w-follow-btn" data-action="follow-article">
+<div class="btn-fab tertiary xsmall follow-container btn-follow" data-id="2027254" data-id-tag="" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" data-preference="Notifications" data-title="Google Maps kept changing my shared route—this simple trick keeps it on track" data-type="article" data-value="1" title="Follow">
+<div class="main-icon icon-xlarge icon i-follow"></div>
+<div class="fab-label">
+                                                                        Follow
+                                                            </div>
+</div>
+<div class="btn-fab tertiary xsmall follow-container btn-follow is-hidden" data-id="2027254" data-id-tag="" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" data-preference="" data-title="Google Maps kept changing my shared route—this simple trick keeps it on track" data-type="article" data-value="0" title="Unfollow">
+<div class="main-icon icon-xlarge icon i-follow followed"></div>
+<span class="fab-label">
+                                                            Followed
+                                                    </span>
+</div>
+</div>
+<!-- Share module with popup list -->
+<div class="option-btn btn-share" id="sharingButtonPopup">
+<span class="icon i-share"></span>
+<span class="text">Share</span>
+<div class="w-sharing-option w-sharing-popup" id="sharePopup" style="color: black">
+<a class="sharing-btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F%2F&amp;src=sdkpreparse" target="_blank">
+<span class="icon i-facebook"></span>
+<span class="text">Facebook</span>
+</a>
+<a class="sharing-btn btn-x" href="https://twitter.com/intent/tweet?text=Google%20Maps%20kept%20changing%20my%20shared%20route%E2%80%94this%20simple%20trick%20keeps%20it%20on%20track&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F" target="_blank">
+<span class="icon i-x"></span>
+<span class="text">X</span>
+</a>
+<a class="sharing-btn btn-whatsapp" href="https://web.whatsapp.com/send?text=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F" target="_blank">
+<span class="icon i-whatsapp"></span>
+<span class="text">WhatsApp</span>
+</a>
+<a class="sharing-btn btn-threads" href="https://www.threads.net/intent/post?text=Google%20Maps%20kept%20changing%20my%20shared%20route%E2%80%94this%20simple%20trick%20keeps%20it%20on%20track%20https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F" rel="noopener" target="_blank">
+<span class="icon i-threads"></span>
+<span class="text">Threads</span>
+</a>
+<a class="sharing-btn btn-bluesky" href="https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F" target="_blank">
+<span class="icon i-bluesky"></span>
+<span class="text">Bluesky</span>
+</a>
+<a class="sharing-btn btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F&amp;title=Google%20Maps%20kept%20changing%20my%20shared%20route%E2%80%94this%20simple%20trick%20keeps%20it%20on%20track&amp;source=www.howtogeek.com&amp;summary=Google%20Maps%20may%20recalculate%20shared%20routes%2C%20but%20carefully%20chosen%20waypoints%20can%20keep%20everyone%20heading%20in%20the%20same%20direction." target="_blank">
+<span class="icon i-linkedin"></span>
+<span class="text">LinkedIn</span>
+</a>
+<a class="sharing-btn btn-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F" target="_blank">
+<span class="icon i-reddit"></span>
+<span class="text">Reddit</span>
+</a>
+<a class="sharing-btn btn-flipboard" href="http://share.flipboard.com/bookmarklet/popout?v=2&amp;title=Google%20Maps%20kept%20changing%20my%20shared%20route%E2%80%94this%20simple%20trick%20keeps%20it%20on%20track&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fgoogle-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track%2F&amp;utm_campaign=tools&amp;utm_medium=article-share&amp;utm_source=www.howtogeek.com" target="_blank">
+<span class="icon i-flipboard"></span>
+<span class="text">Flipboard</span>
+</a>
+<a class="sharing-btn copy-link-button btn-copy-url" data-url="https://www.howtogeek.com/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" href="javascript:;">
+<span class="icon i-copy-url" data-url="https://www.howtogeek.com/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/"></span>
+<span class="text">Copy link</span>
+</a>
+<a class="sharing-btn btn-mail" href="mailto:?Subject=Google Maps kept changing my shared route—this simple trick keeps it on track&amp;Body=Check%20this%20out%21%0Ahttps://www.howtogeek.com/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/">
+<span class="icon i-mail-1"></span>
+<span class="text">Email</span>
+</a>
+</div>
+</div>
+<div class="w-google-addus-btn w-google-addus-btn--sharing-bottom w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn-fab google small" data-google-addus-toggle="" title="Add Us" type="button">
+<span class="icon i-google"></span>
+<span class="fab-label"><span class="text">Add Us</span></span>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2h2ZDNSdloyVmxheTVqYjIwb0FBUAE" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<div class="article-credit-container">
+<div class="affiliate-sponsored">
+<span data-nosnippet="">Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. <a href="https://www.valnetinc.com/en/terms-of-use">Read More</a>.</span>
+</div>
+</div>
+</aside>
+<div class="gallery-lightbox" id="single-image-modal" style="display: none">
+<button class="lightbox__exit-btn icon i-close"><span class="txt">Close</span></button>
+<div class="lightbox">
+<div class="lightbox__swipper" id="swipper-main">
+<div class="swiper-wrapper" id="single-image-modal-container">
+</div>
+</div>
+</div>
+</div>
+<aside class="sidebar adsninja-rail-container" data-tab="sidebar" id="secondary" role="complementary">
+<div class="article-add-google article-add-google--sidebar" data-nosnippet="" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D">
+<a class="article-add-google__link" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener noreferrer" target="_blank">
+<span class="article-add-google__content">
+<span class="article-add-google__title">
+<span aria-hidden="true" class="article-add-google__icon"></span>
+<span aria-hidden="true" class="article-add-google__divider"></span>
+<picture class="article-add-google__brand-logo">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" decoding="async" height="42" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek" width="249"/>
+</picture>
+</span>
+<span class="article-add-google__description">See more How-To Geek stories on Google.</span>
+</span>
+<span class="article-add-google__cta">Add us on Google</span>
+</a>
+</div>
+<div class="sidebar-first" id="sidebar-first" style="min-height:310px;"></div>
+<article class="sidebar-tabs">
+<ul class="js-tabs-ul tabs-ul tabs-header">
+<li class="selected" id="js-tab-1">
+<h3 class="section-title">
+                                                    Desktop
+                                            </h3>
+</li>
+<li class="" id="js-tab-2">
+<h3 class="section-title">
+                                                    Mobile
+                                            </h3>
+</li>
+</ul>
+<div class="js-tab-pane tab-content sidebar-el-content" id="js-content-tab-1">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/cachyos-better-arch-based-distro-if-youre-not-gaming/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="A laptop screen with the CachyOS logo showing in a Linux terminal." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240">
+</img></source></source></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/cachyos-better-arch-based-distro-if-youre-not-gaming/" title="Why CachyOS is the better Arch-based distro if you're not gaming 24/7">
+			Why CachyOS is the better Arch-based distro if you're not gaming 24/7
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="NyBob3VycyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/windows-11-hidden-end-task-shortcut/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Windows 11 laptop showing End task on an app in the taskbar." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240">
+</img></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/windows-11-hidden-end-task-shortcut/" title="Windows 11's hidden &quot;End task&quot; shortcut is the one feature every power user should enable">
+			Windows 11's hidden "End task" shortcut is the one feature every power user should enable
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTAgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/default-windows-setting-making-your-ssd-slower-than-it-should-be/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="SanDisk M.2 SSD solid state drive 1" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/default-windows-setting-making-your-ssd-slower-than-it-should-be/" title="This default Windows setting is making your SSD slower than it should be">
+			This default Windows setting is making your SSD slower than it should be
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTAgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/desktop/">See More</a>
+</div>
+<div class="js-tab-pane tab-content sidebar-el-content is-hidden" id="js-content-tab-2">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/motorola-qi2-wireless-charging-moto-snap-charger/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Motorola Moto Edge 70 Max using Qi2 wireless charging" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/motorola-qi2-wireless-charging-moto-snap-charger/" title="Finally, an Android maker besides Google is embracing magnetic charging">
+			Finally, an Android maker besides Google is embracing magnetic charging
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="OSBob3VycyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Google Maps showing two driving routes between Dallas and Austin on a smartphone." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" title="Google Maps kept changing my shared route—this simple trick keeps it on track">
+			Google Maps kept changing my shared route—this simple trick keeps it on track
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="OSBob3VycyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/your-samsung-galaxy-has-features-that-are-begging-for-nfc-tags-instead-of-buttons/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="NFC tag being tapped by an Android device." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/your-samsung-galaxy-has-features-that-are-begging-for-nfc-tags-instead-of-buttons/" title="Your Samsung Galaxy has 2 features that are begging for NFC tags instead of buttons">
+			Your Samsung Galaxy has 2 features that are begging for NFC tags instead of buttons
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTEgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/mobile/">See More</a>
+</div>
+</article>
+<div class="sidebar-sticky">
+<div class="sidebar-default" id="sidebar-default" style="min-height:310px;"></div>
+<div class="sidebar-tab" data-active-tab="trendingNow" data-is-tab-container="true">
+<div class="section-header tabs-header-alt">
+<button class="section-title is-active" data-target="trendingNow">Trending Now</button>
+</div>
+<div class="sidebar-tabs">
+<div class="trending-now" data-tab="trendingNow">
+<div class="sentinel-article-sidebarSticky">
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/your-phones-google-maps-defaults-to-the-slowest-routeheres-how-to-fix-it/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="Google Maps routes on Android phone" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/06/google-maps-routes-on-android-phone.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/06/google-maps-routes-on-android-phone.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/your-phones-google-maps-defaults-to-the-slowest-routeheres-how-to-fix-it/" title="Your phone's Google Maps defaults to the slowest route—here's how to fix it">
+			Your phone's Google Maps defaults to the slowest route—here's how to fix it
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/every-google-maps-user-should-change-these-settings-now/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="Large Google Maps pin with a settings gear icon, surrounded by markers for lists, bookmarks, and fuel stations on a stylized map background." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/01/large-google-maps-pin-with-a-settings-gear-icon-surrounded-by-markers-for-lists-bookmarks-and-fuel-stations-on-a-stylized-map-background.png?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/01/large-google-maps-pin-with-a-settings-gear-icon-surrounded-by-markers-for-lists-bookmarks-and-fuel-stations-on-a-stylized-map-background.png?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/every-google-maps-user-should-change-these-settings-now/" title="Every Google Maps user should change these settings now">
+			Every Google Maps user should change these settings now
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/settings-i-change-in-waze-for-the-best-android-auto-experience/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="Waze on phone in car." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/07/waze-on-phone-in-car.png?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/07/waze-on-phone-in-car.png?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/settings-i-change-in-waze-for-the-best-android-auto-experience/" title="I change these 4 settings in Waze for the best Android Auto experience">
+			I change these 4 settings in Waze for the best Android Auto experience
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+</aside>
+</article>
+</main>
+<div class="w-article-footer layout-rich">
+<div class="article-footer-bg"></div>
+
+</div>
+<!-- No AdsNinja v10 Client! -->
+
+
+
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<!-- LISTING PAGES WITH SUB CONTENT AND HAS VIGNETTES -->
+</body>
+</html>

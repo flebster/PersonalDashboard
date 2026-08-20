@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- FAVICON -->
+<link href="/public/build/images/favicon-48x48.png" rel="icon" sizes="48x48"/>
+<link href="/public/build/images/favicon-96x96.png" rel="icon" sizes="96x96"/>
+<link href="/public/build/images/favicon-144x144.png" rel="icon" sizes="144x144"/>
+<link href="/public/build/images/favicon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="/public/build/images/favicon-240x240.png" rel="icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-240x240.png" rel="apple-touch-icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-192x192.png" rel="shortcut icon"/>
+<link href="https://www.howtogeek.com/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" rel="canonical">
+<!-- RSS Feed Discovery -->
+<link href="https://www.howtogeek.com/feed/" rel="alternate" title="How-To Geek Feed" type="application/rss+xml">
+<title>How I stopped hitting Claude's 5-hour limit without paying for Pro</title>
+<meta content="And complete your task" name="description">
+<meta content="max-image-preview:large" name="robots">
+<meta content="02190cc2d688eab03da3653a68a98e4f" name="p:domain_verify">
+<meta content="How I stopped hitting Claude's 5-hour limit without paying for Pro" property="og:title"/>
+<meta content="article" property="og:type"/>
+<meta content="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_20260807_011748_upscayl_2x_upscayl-standard-4x-1.png?w=1600&amp;h=900&amp;fit=crop" property="og:image"/>
+<meta content="1600" property="og:image:width"/>
+<meta content="900" property="og:image:height"/>
+<meta content="https://www.howtogeek.com/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="And complete your task" property="og:description"/>
+<meta content="How-To Geek" property="og:site_name"/>
+<meta content="2026-08-19T19:45:12Z" property="article:published_time"/>
+<meta content="2026-08-19T19:45:12Z" property="article:modified_time"/>
+<meta content="AI &amp; Machine Learning" property="article:section"/>
+<meta content="Vishwamoorthy Ramakrishnan" property="article:author"/>
+<meta content="https://www.facebook.com/howtogeek/" property="article:publisher"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@howtogeek" name="twitter:site"/>
+<meta content="How I stopped hitting Claude's 5-hour limit without paying for Pro" name="twitter:title"/>
+<meta content="And complete your task" name="twitter:description"/>
+<meta content="@xcomVishwamoorthy24" name="twitter:creator"/>
+<meta content="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_20260807_011748_upscayl_2x_upscayl-standard-4x-1.png?q=70&amp;fit=crop&amp;w=1200&amp;h=628&amp;dpr=1" name="twitter:image"/>
+<meta content="218849339757813" property="fb:app_id"/>
+<link as="image" fetchpriority="low" href="https://images.valnetcdn.com/sharedimages/img-lcp.svg" rel="preload"/>
+
+<link href="https://www.google-analytics.com" rel="preconnect"/>
+<!-- DNS Prefetch + Preconnect for image CDN -->
+<link href="https://static0.howtogeekimages.com/" rel="dns-prefetch"/>
+<link crossorigin="" href="https://static0.howtogeekimages.com/" rel="preconnect"/>
+
+
+<link as="image" fetchpriority="high" href="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_20260807_011748_upscayl_2x_upscayl-standard-4x-1.png?q=49&amp;fit=crop&amp;w=600&amp;h=338&amp;dpr=2" media="(max-width: 480px)" rel="preload">
+<link as="image" fetchpriority="high" href="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_20260807_011748_upscayl_2x_upscayl-standard-4x-1.png?q=49&amp;fit=crop&amp;w=1600&amp;h=900&amp;dpr=2" media="(min-width: 481px)" rel="preload">
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.howtogeekimages.com/assets/fonts/roboto/roboto-regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.howtogeekimages.com/assets/fonts/roboto/roboto-bold.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.howtogeekimages.com/assets/fonts/icons/icomoon.woff2?v=7.26.11" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.howtogeekimages.com/assets/fonts/icons/icomoon.woff?v=7.26.11" rel="preload" type="font/woff"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---<script type="text/javascript" src="https://tru.am/scripts/custom/valnet.js" defer></script>-->
+<!-- Google Analytics v4 -->
+
+
+<!-- End Google Analytics v4 -->
+<!-- sentinel header -->
+
+
+
+<!-- end of sentinel header -->
+
+
+
+
+
+<link href="https://static0.howtogeekimages.com/assets/article-regular.ee29f03c.css" rel="stylesheet"/>
+<!-- Google Analytics -->
+
+<!-- End Google Analytics -->
+
+
+<!-- GLOABL JS VARIABLES -->
+
+
+
+
+
+
+
+<link href="https://static0.howtogeekimages.com/assets/highlightjs-a11y-light.075435bb.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" rel="stylesheet"/>
+<link href="https://static0.howtogeekimages.com/assets/highlightjs-a11y-dark.a2ace42a.css" media="(prefers-color-scheme: dark)" rel="stylesheet"/>
+
+
+</link></link></meta></meta></meta></link></link></head>
+<body class="w-website js-tldr theme-tech">
+<div id="amazon-root"></div>
+
+
+<!-- No AdsNinja v10 Client! -->
+<div id="body-anchor"></div>
+
+<input class="css-menu--checkbox" id="side_menu" name="side_menu" type="checkbox"/>
+<div class="side-navigation side_menu" id="side-navigation">
+<div class="side-navigation-topbar">
+<label class="js-search-focus css-menu--checkbox-wrapper css-menu--toggle" data-stnl='{"category": "Click Interactions","name": "Website Header", "action": "Site Search Click"}' for="search-menu">
+<span class="menu-icon topbar-icon icon i-search-menu"></span>
+</label>
+<label class="menu-icon topbar-icon icon i-close-menu css-menu--toggle" for="side_menu">
+<span>Close</span>
+</label>
+</div>
+
+<!--
+	    <footer class="side-navigation-footer">
+	        	            Array
+	        	        <div id="ccpa-link"></div>
+	        <div class="footer-copy">
+	            Copyright &copy; 2026 www.howtogeek.com
+	        </div>
+	    </footer>
+	    -->
+</div>
+
+
+<!-- Subnav Image header menu Bar end -->
+<!-- Subnav Search Bar start -->
+<div class="w-ticker" data-type="header">
+</div>
+<div class="w-header-search">
+<input class="css-menu--checkbox" id="search-menu" name="search-menu" type="checkbox"/>
+<div class="header-search-content css-menu--target">
+<label class="header-search-exit icon i-close css-menu--toggle" for="search-menu">
+<span>Close</span>
+</label>
+<div class="header-search">
+<form action="/search/?q=" class="search-form js-searchBox icon i-search" id="searchform2" method="get">
+<input autocomplete="off" class="input-text search-input" id="js-search-input" name="q" placeholder="Search How-To Geek" type="text"/>
+</form>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<main class="w-content">
+<article class="w-article widget article layout-rich">
+
+<div class="article-header-bg"></div>
+<div class="w-article-header-comp">
+<div class="article-header-data">
+<div class="w-article-header-author-img" data-nosnippet="">
+<div class="article-header-author-img">
+<a href="/author/vishwamoorthy-ramakrishnan/">
+<picture>
+<source height="36" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress%2Fwp-content%2Fauthors%2F6a62327064bd1-photo_2026-07-23_20-54-31.jpg?fit=crop&amp;w=36&amp;h=36" width="36"/>
+<img alt="4" decoding="async" height="90" loading="lazy" src="https://static0.howtogeekimages.com/wordpress%2Fwp-content%2Fauthors%2F6a62327064bd1-photo_2026-07-23_20-54-31.jpg?fit=crop&amp;w=90&amp;h=90" style="display:block;height:auto;max-width:100%;" width="90"/>
+</picture>
+</a>
+</div>
+</div>
+<div class="article-meta">
+<div class="w-author" data-nosnippet="">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/vishwamoorthy-ramakrishnan/">Vishwamoorthy Ramakrishnan</a>
+</div>
+</div>
+<div class="meta_txt article-date">
+<time datetime="2026-08-19T19:45:12Z"><span class="is-mobile-hidden">Published</span> Aug 19, 2026, 3:45 PM EDT</time>
+</div>
+</div>
+<div class="with-excerpt" data-nosnippet=""><p dir="ltr">Vishwamoorthy's interest in tech started early, as a school student, watching Pixel 2 XL camera review videos and being awestruck by what a phone camera with excellent software could do. That curiosity stuck with him: since 2022, he's published over 1,500 articles covering smartphones, Android, and consumer tech news at <a href="https://www.fonearena.com/blog/author/vishwamoorthy" rel="noopener noreferrer" target="_blank">FoneArena</a>, one of India's leading tech publications.</p>
+<p dir="ltr">Lately, he's obsessed with how AI is reshaping the business world, the deals, the products, the quiet feature rollouts nobody notices until they're everywhere. Reading and writing about tech is what keeps him going; doomscrolling is what keeps him honest. </p>
+</div>
+</div>
+</div>
+<a class="w-header-user-box on-load-show" id="login-button-article-sidebar">
+<div class="user-box-title">Sign in to your <span class="brand-color">How-To Geek</span> account</div>
+<div class="icon i-user-full"></div>
+</a>
+<aside class="w-quick-action-sidebar">
+<div class="quick-action-sidebar" data-nosnippet="">
+<div class="icon i-sensa"></div>
+<div class="qa-action-list google-addus google-addus--dropdown w-google-addus-btn w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="qa-action-item sensa-feature action-btn google circle small no-label" data-google-addus-toggle="" title="Add Us" type="button">
+<div class="qa-icon main-icon icon icon-xlarge i-google" data-is-icon="true"></div>
+<div class="qa-label title" data-is-text="true">Add Us</div>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2h2ZDNSdloyVmxheTVqYjIwb0FBUAE" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+<div class="qa-action-list sensa-features">
+<!-- AI Article Summary -->
+</div>
+<div class="qa-action-list base-action">
+<button class="qa-action-item ai-feature action-btn circle small no-label" data-id="2027015" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Like%20Article%22%2C%22once%22%3A%22true%22%7D" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="qa-label title" data-is-text="true">
+                                    Like
+                                            </div>
+<div class="qa-icon main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="qa-label text qa-like-label" data-is-text="true">
+                            Like
+                                </div>
+</button>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container" data-id="2027015" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" data-preference="Notifications" data-title="How I stopped hitting Claude's 5-hour limit without paying for Pro" data-type="article" data-value="1" onclick="openActionBar()" title="Follow">
+<div class="qa-label title">follow</div>
+<div class="qa-icon icon-xlarge icon i-follow unfollowed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Follow
+                            </div>
+</div>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container is-hidden" data-id="2027015" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" data-preference="" data-title="How I stopped hitting Claude's 5-hour limit without paying for Pro" data-type="article" data-value="0" title="Unfollow">
+<div class="qa-label title">followed</div>
+<div class="qa-icon icon-xlarge icon i-follow followed followed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Followed
+                            </div>
+</div>
+<a class="qa-action-item sensa-feature" data-stnl='{"category":"Click Interactions", "name":"Quick Action Sidebar", "action":"Jump to Thread Click", "once":"true"}' href="#threads" onclick="event.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})" title="Threads">
+<div class="qa-icon icon i-thread"></div>
+<div class="qa-label title">
+							Thread
+													</div>
+</a>
+</div>
+<div class="qa-action-list login-action">
+<button class="qa-action-item user" data-is-quick-action-login-button="true" itemprop="url">
+<div class="qa-label title">Log in</div>
+<div class="qa-icon icon i-user-full" onclick="document.getElementById('side-navigation') &amp;&amp; document.getElementById('side-navigation').classList.remove('is-open');"></div>
+</button>
+</div>
+<div class="sensa-widget-container w-sensa-widget">
+<button class="close-btn icon i-close" onclick="const c=this.closest('.sensa-widget-container'); c.style.height='0'; c.dataset.loaded='false';" type="button"></button>
+<div class="sensa-widget-wrapper">
+<div class="sensa-widget-content" id="top-of-sensa-content">
+<div class="sensa-widget-response-container">
+<span class="sensa-summary-prompt icon i-sensa-2" id="sensa-factual-summary-prompt" style="display: flex;">
+							Here is a fact-based summary of the story contents:
+						</span>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-factual-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-simple-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-satirical-commentary"></div>
+</div>
+<div class="sensa-summary-footer">
+<div class="sensa-summary-footer-content">
+<span class="sensa-summary-prompt">Try something different:
+							</span>
+<div class="sensa-option-buttons">
+<button aria-controls="sensa-factual-summary" aria-expanded="false" class="sensa-button prompt icon i-sensa-2" data-target="#sensa-factual-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Show me the facts
+								</button>
+<button aria-controls="sensa-simple-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-simple-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Explain it like I’m 5
+								</button>
+<button aria-controls="sensa-satirical-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-satirical-commentary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Give me a lighthearted recap
+								</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! -->
+<section class="article-body valnet-segment-NewTech" id="article-body" itemprop="articleBody">
+<div class="content-block-regular"><p>With AI chatbots like Claude, ChatGPT, and Gemini becoming our go-to thinking partner/co-worker, more often than not, we use them extensively. Like many, I love using Claude (web or app), especially for high-value tasks such as brainstorming ideas, solution architecture for apps, document generation, or data analysis. However, as a free-tier user, I frequently hit the rolling 5-hour session limits.</p> <!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><p>Official documentation of Claude <a href="https://support.claude.com/en/articles/8114491-get-started-with-claude#h_57262af5ae" rel="noopener noreferrer" target="_blank">says</a>, "<em>The number of messages you can send (in the free tier) will vary based on demand.</em>” So there isn’t any fixed number of messages or token limits, after which you know you’ll hit the rolling 5-hour limit. Hitting a limit mid-task can be a frustrating blocker. In some cases, I’ve hit session limits with a single prompt.</p> <p>If you’re someone like me, here are my top strategies to tackle the rolling session limits and maximize Claude’s free tier on both the web and the app.</p>
+<pre><code class="plaintext">#Suggested prompt structure:
+
+# Task Overview
+I need to accomplish {big goal or complex project}.
+
+# Strategic Planning Request
+Act as a strategic project manager. Do not execute the task yet. Instead, break this goal down into {number} clear, sequential steps.
+
+# Output Requirements
+For each step, please provide:
+
+The Action: What specifically needs to be done.
+
+The 'Why': The reasoning or logic behind this step.
+
+The Tools: Recommended tools, frameworks, or methods.
+[Optional] Output this plan as a Markdown file.</code></pre>
+<!-- No AdsNinja v10 Client! --><h2 id="claude-39-s-token-problem">
+                        Claude's token problem
+               </h2>
+<h3 id="and-how-you-can-use-it-effectively">
+            And how you can use it effectively
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:58.84476534296%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Claude AI Model Selection pane-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="970" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-ai-model-selection-pane-2.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650">
+</img></source></picture>
+</div>
+</div>
+<p> We eventually want the LLM model behind the chatbot to remember everything we say, which companies call the “context window," and answer effectively. But with every prolonged session, there exists a hidden cost: token usage. Before an LLM reads your prompt, a tool called a tokenizer chops the text into pieces (tokens) and turns them into quantifiable numbers. Every word you type in a prompt, the context of previous messages, and Claude’s responses all drain your token budget.</p> <p>Additionally, the AI model you choose for a prompt also counts. Free users can pick Haiku (for the fastest answers) or Sonnet (the sweet spot for everyday tasks). When you choose Sonnet for a certain task, be mindful of the fact that it has a dedicated "Effort" (Low to Max) menu underneath. By default, effort will be set to "Medium," but you can always increase or decrease levels depending on tasks. Keeping the effort lower saves your session limits, while turning it up provides thorough responses but burns through your limits faster.</p> <div class="table-container">
+<table align="" border="1" cellpadding="1" cellspacing="1" style="" summary="">
+<thead>
+<tr>
+<th scope="col">
+<p>Model</p>
+</th>
+<th scope="col">
+<p>Rate Limit Use</p>
+</th>
+<th scope="col">
+<p>Best For</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<p>Claude Haiku</p>
+</th>
+<td>
+<p>Free with lightest rate use</p>
+</td>
+<td>
+<p>Quick answers, summaries, and simple extraction</p>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<p>Claude Sonnet</p>
+</th>
+<td>
+<p>Free with moderate rate use</p>
+</td>
+<td>
+<p>Coding, writing, analysis, and multi-step workflows</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- No AdsNinja v10 Client! --><h2 id="every-word-in-a-prompt-counts">
+                        Every word in a prompt counts
+               </h2>
+<h3 id="so-make-it-structured-and-llm-friendly">
+            So, make it structured and LLM-friendly
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:51.067235859125%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Detailed prompt in Claude using PTOC structure_upscayl_3x_upscayl-standard-4x" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="842" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/detailed-prompt-in-claude-using-ptoc-structure_upscayl_3x_upscayl-standard-4x.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture>
+</div>
+</div>
+<p> Make sure all your initial prompts have a persona that you want Claude to act as, which I often type as "You're a backend developer/news writer/solution architect..." depending on the task. Define the task and context properly in the initial prompt, as this acts as a navigator for Claude in that particular session.</p>
+<section class="emaki-custom-block emaki-custom-note" data-nosnippet="">
+<div class="emaki-custom note" id="custom_block_14">
+<div class="custom_block-content note"><p>It’s always recommended to remember the P (Persona), T (Task Description), O (Output Format) and C (Context) formats while crafting an initial prompt. Make sure your initial prompt has all these aspects covered in it to get better results throughout the session.</p> </div>
+</div>
+</section>
+<pre><code class="plaintext">#Suggested Prompt Structure following PTOC Style
+
+# Persona
+You’re an experienced {role/profession}.
+
+# Task Description
+Your objective is to {specific action, goal, or problem you want Claude to solve}.
+
+# Output
+Please format the result as {desired format, e.g., a Markdown table, a bulleted list, a Python script, an outline}. Ensure that you include {any specific structural rules, length constraints, or required elements}.
+
+# Context
+This is for {target audience or specific project}. Keep in mind that {any background information, tone requirements, constraints, or previous steps already taken}.</code></pre>
+<!-- No AdsNinja v10 Client! --><h2 id="use-it-as-a-strategic-planner">
+                        Use it as a strategic planner
+               </h2>
+<h3 id="always-ask-for-a-step-by-step-process">
+            Always ask for a step-by-step process
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:51.013874066169%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Asking Claude a clear step by step breakdown" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="842" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/asking-claude-a-clear-step-by-step-breakdown.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture>
+</div>
+</div>
+<p> When you have a big task to achieve, like coding an app, setting up a productivity system for yourself, or anything that involves clear steps, you can use Claude’s excellent reasoning capability to brainstorm and come up with strategic steps with detailed descriptions and the tool use.</p> <p>To do so, provide a clear prompt following the PTOC structure outlined above, and then ask Claude for a step-by-step guide detailing the "why" behind each action.</p> <p>With a clear plan of action from Claude, have a copy of it as a Word doc or get it as an .md (markdown) file from Claude for a safe backup. Now that we have a clear plan of action, you don't need to waste Claude's usage on simple tasks defined in each step; you can try other free chatbots like <a href="https://www.howtogeek.com/stop-using-gemini-like-google-assistantheres-what-youre-missing/" target="_blank">Gemini </a>or ChatGPT to finish the step. After the completion of each step, you can just inform Claude of the completion, or if you face any blockers, you can query it to clarify the approach.</p> <!-- No AdsNinja v10 Client! --><h2 id="get-a-handoff-file-message-from-claude">
+                        Get a handoff file/message from Claude
+               </h2>
+<h3 id="before-you-exhaust-your-session-limit">
+            Before you exhaust your session limit
+    </h3>
+<div class="valnet-gallery images-count-5">
+<div class="article__gallery type-gallery" data-article-gallery="article-gallery-modal-1-778286914" data-gallery-id="main-carousel-1-778286914" data-gallery-lightbox="gallery-modal-1-778286914" data-gallery-thumbnail-id="gallery-thumbnails-1-778286914" data-gallery-thumbnail-img-class="gallery-thumbnails-1-778286914-img" data-gallery-type="" id="article-gallery-1-778286914" style="--gallery-thumb-h: 93px; --gallery-aspect-sm: 1.9239013933548 / 1; --gallery-aspect-md: 1.9239013933548 / 1;">
+<div class="w-gallery-carousel"><section class="splide splide-gallery" data-gallery-expanded-id="main-expanable-carousel-1-778286914" data-gallery-expanded-thumbnail-id="expanded-gallery-thumbnails-1-778286914" id="main-carousel-1-778286914"><button class="expand icon i-expand" type="button"></button><div class="splide__track"><ul class="splide__list" style="--gallery-aspect-sm: 1.9239013933548 / 1; --gallery-aspect-md: 1.9239013933548 / 1; --gallery-aspect-lg: 1.9239013933548 / 1;"><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="getting handoff document from Claude-1" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="claude new chat initiation-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="uploading hand-off document to Claude-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Claude handoff doc and progress-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Claude new chat with old context-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li></ul></div></section><section class="splide gallery-thumbnails" id="gallery-thumbnails-1-778286914" style="display: inline-flex; width: 100%; height: 93px;"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="getting handoff document from Claude-1" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="claude new chat initiation-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="uploading hand-off document to Claude-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Claude handoff doc and progress-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Claude new chat with old context-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li></ul></div></section></div><div class="w-gallery-carousel-fullscreen"><section class="splide splide-gallery" id="main-expanable-carousel-1-778286914"><button class="lightbox__exit-btn close-btn icon i-close" type="button"><span class="txt">Close</span></button><div class="splide__track lightbox__swipper"><ul class="splide__list swiper-wrapper"><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="getting handoff document from Claude-1" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=contain&amp;w=3590&amp;h=1866&amp;dpr=2" decoding="async" height="1866" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=contain&amp;w=3590&amp;h=1866&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="3590"/></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="claude new chat initiation-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=contain&amp;w=7508&amp;h=3792&amp;dpr=2" decoding="async" height="3792" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=contain&amp;w=7508&amp;h=3792&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="7508"/></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="uploading hand-off document to Claude-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=contain&amp;w=7508&amp;h=3828&amp;dpr=2" decoding="async" height="3828" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=contain&amp;w=7508&amp;h=3828&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="7508"/></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="Claude handoff doc and progress-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=contain&amp;w=7484&amp;h=3828&amp;dpr=2" decoding="async" height="3828" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=contain&amp;w=7484&amp;h=3828&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="7484"/></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="Claude new chat with old context-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=contain&amp;w=7508&amp;h=3836&amp;dpr=2" decoding="async" height="3836" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=contain&amp;w=7508&amp;h=3836&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="7508"/></div></li></ul></div></section><section aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel." class="splide gallery-thumbnails-expanded" id="expanded-gallery-thumbnails-1-778286914"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="getting handoff document from Claude-1" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/getting-handoff-document-from-claude-1.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="claude new chat initiation-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-initiation-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="uploading hand-off document to Claude-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/uploading-hand-off-document-to-claude-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Claude handoff doc and progress-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-handoff-doc-and-progress-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Claude new chat with old context-2" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/claude-new-chat-with-old-context-2.png?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li></ul></div></section></div>
+
+</div>
+</div>
+<p>As I mentioned before, the longer the session, the more tokens you burn in every consecutive prompt. It’s always suggested to switch to a new chat window when the conversation goes on for a long time and in multiple sessions. But the caveat is that you lose all the context of the previous chat—but there’s a way to seamlessly carry that context to your new window.</p> <p>Just ask Claude to generate a concise, comprehensive summary of the current progress, established rules, and remaining steps. This is called a handoff document. You can either ask the model to generate as text or as a Markdown (.md) file, which works well with any chatbot.</p> <p>Then, open a brand-new chat in Claude or any other free AI chatbot if you’ve hit the session limit and paste that handoff.md file as the starting context. In this way, you can carry the task to a different chat window or AI chatbot without losing any important context.</p> <!-- No AdsNinja v10 Client! --><h2 id="be-mindful-when-generating-documents">
+                        Be mindful when generating documents
+               </h2>
+<h3 id="being-detailed-about-the-document-upfront-helps">
+            Being detailed about the document upfront helps
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:44.837421563035%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Excel sheet generation via Claude" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="740" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/excel-sheet-generation-via-claude.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture>
+</div>
+</div>
+<p> I’ve generated numerous documents with Claude, and it does a great job—be it a process document or an Excel sheet for a specific use case. But it takes up a lot of tokens, as it involves tool/skill use—libraries like Pandas, openpyxl, and LibreOffice for Excel/Word document generation. In some cases, I’ve exhausted the session limit with just a single prompt, which involved creating an Excel sheet of multiple pages with clear brand guidelines logic defined in the initial prompt.</p> <p>Always proofread your prompt to check if you’ve covered all aspects of the required document—style guidelines, logic, content, structure, etc.—in the input prompt. And, if you have a few changes in the generated document, explicitly instruct the model to only output the specific paragraphs, rows, or lines that need changing. This reduces the output token count and keeps the session alive longer.</p>
+<aside class="display-card article article-card small no-badge active-content" data-include-community-rating="false" data-nosnippet="" id="dd6d-4026-9d7fe6391b7f">
+<a href="/how-to-get-the-most-out-of-claude/">
+<img alt="Claude Code open on a tablet and monitor on a desktop." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/07/claude-code-open-on-a-tablet-and-monitor-on-a-desktop.jpg?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" decoding="async" height="248" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/07/claude-code-open-on-a-tablet-and-monitor-on-a-desktop.jpg?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" width="440"/>
+</a>
+<span class="article-card-label" data-field="label"><label>Related</label></span>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/how-to-get-the-most-out-of-claude/" target="_blank" title="These 5 changes unlocked 100 percent of Claude's power">
+			These 5 changes unlocked 100 percent of Claude's power
+		</a>
+</h5>
+<p class="display-card-excerpt">Five small workflow changes that turned Claude from a simple Q&amp;A chatbot into an actual assistant that gets things done.</p>
+<div class="w-display-card-extra">
+<div class="total-info extra-comments">
+<label class="total-info-label">Posts</label>
+<a class="total-info-number icon i-thread" href="/how-to-get-the-most-out-of-claude/#threads" title="Total Posts">
+<span class="num">2</span>
+</a>
+</div>
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="w-author">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/dibakar-ghosh/" rel="author" title="Posts by Dibakar Ghosh">Dibakar Ghosh</a>
+</div>
+</div>
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="QXVnIDIsIDIwMjY=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><h2 id="create-claude-projects-for-repetitive-tasks">
+                        Create Claude projects for repetitive tasks
+               </h2>
+<h3 id="takes-some-time-amp-effort-but-it-39-s-worth-it">
+            Takes some time &amp; effort, but it's worth it!
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:48.455923638405%">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="setting up project instructions in Claude" class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="800" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/setting-up-project-instructions-in-claude.jpeg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture>
+</div>
+</div>
+<p>Projects are the best way to fast-track your day-to-day <a href="https://www.howtogeek.com/microsoft-excel-claude-automations-saved-hours-of-manual-work/" target="_blank">repetitive tasks</a>. Projects allow you to create self-contained workspaces with their own chat histories and knowledge bases. Within each project, you can upload reference documents and provide clear instructions.</p>
+<p>With this set of predefined parameters, you’re actually skipping a few best practices mentioned above, like entering detailed context before every new session, output format, etc., and getting the job done quickly within a project. It might take some time to set up a project, but it’s totally worth the time.</p> <p>For setting up project instructions, I mostly use other free AI chatbots like Gemini or Claude itself if you're ok with session limits; describe the project, task, documents to refer to, etc.; and tell it to create clear instructions for Claude as a Markdown file, which I’ll copy and paste to Claude’s project instruction attribute.</p> <p>I’d recommend paying more attention to the instruction set you feed into Claude. Be sure to clearly define the types of tasks you want Claude to do, the skills to apply, the output mode for each skill, etc. This is the heart of project creation, so spend some time playing around by tinkering with the instruction set.</p>
+<section class="emaki-custom-block emaki-custom-note" data-nosnippet="">
+<div class="emaki-custom note" id="custom_block_41">
+<div class="custom_block-content note"><p>According to official <a href="https://support.claude.com/en/articles/9517075-what-are-projects#:~:text=Projects%20are%20available%20to%20all%20users%2C%20including%20those%20with%20free%20Claude%20accounts.%20Free%20users%20can%20create%20a%20maximum%20of%20five%20projects." rel="noopener noreferrer" target="_blank">documentation</a> from Claude, free Claude users can create a maximum of <strong>five </strong>projects only. Some of the advanced Project features (like Retrieval Augmented Generation for massive document libraries or team sharing) are reserved for paid Pro/Team tiers.</p> </div>
+</div>
+</section><hr/><h3 id="claude-is-a-powerful-thinking-partner-with-capped-session-limits">
+            Claude is a powerful thinking partner, with capped session limits
+    </h3>
+<p>Personally, I treat Claude as a collaborative thinking partner who asks questions when needed and does an excellent job of producing output. In fact, the way it clarifies doubts before arriving at a solution is something I love, unlike other free AI chatbots like <a href="https://www.howtogeek.com/reasons-im-canceling-my-chatgpt-subscription-and-making-the-most-of-local-llms/" target="_blank">ChatGPT</a>, which just acknowledge and do whatever you say.</p> <p>With this kind of reasoning power comes usage limits. But if you can see those constraints as a reason to be more strategic, rather than a frustrating blocker, you can get a lot more mileage from the free tier. Keep these tricks in mind, and you’ll be able to easily extend your sessions, achieve your goals, and make Claude’s limitations work in your favor.</p> </div><div id="article-waypoint"></div></section>
+<aside class="article-options" data-nosnippet="">
+<aside class="w-promotion-offer promo-article-footer w-promotion-widget" data-nosnippet="" data-popup="false" data-promotion-zone="R29vZ2xlIFJhbmtpbmcgUHJvbW8=" data-sentinel-tracking="true" style="min-height: 250px;">
+<link href="https://static0.howtogeekimages.com/assets/promotions.284cabdc.css" rel="stylesheet"/>
+<div class="promotion-offer-box" data-style-path-url="https://static0.howtogeekimages.com/assets/promotions.284cabdc.css">
+<div class="card"> <a class="btn" data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=howtogeek.com" target="_blank"></a> <h1 class="msg"><b>Google is updating how articles are shown.</b> Don't miss our industry-leading content, written by humans, by setting <a data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=howtogeek.com" target="_blank">How-To Geek as a preferred source</a>.</h1> </div>
+
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<div class="article-tags">
+<ul class="article-tags-list">
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/category/ai-machine-learning/" title="AI &amp; Machine Learning">
+<div class="article-tags-name">AI &amp; Machine Learning</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/tag/ai/" title="AI (Artificial Intelligence)">
+<div class="article-tags-name">AI (Artificial Intelligence)</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="w-sharing-bottom" id="threads">
+<div class="w-like-btn inactive" data-action="like-article">
+<button class="btn-fab tertiary xsmall" data-id="2027015" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="fab-label" data-is-text="true">
+                                                                                        Like
+                                                                                            </div>
+</button>
+</div>
+<div class="w-follow-btn" data-action="follow-article">
+<div class="btn-fab tertiary xsmall follow-container btn-follow" data-id="2027015" data-id-tag="" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" data-preference="Notifications" data-title="How I stopped hitting Claude's 5-hour limit without paying for Pro" data-type="article" data-value="1" title="Follow">
+<div class="main-icon icon-xlarge icon i-follow"></div>
+<div class="fab-label">
+                                                                        Follow
+                                                            </div>
+</div>
+<div class="btn-fab tertiary xsmall follow-container btn-follow is-hidden" data-id="2027015" data-id-tag="" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" data-preference="" data-title="How I stopped hitting Claude's 5-hour limit without paying for Pro" data-type="article" data-value="0" title="Unfollow">
+<div class="main-icon icon-xlarge icon i-follow followed"></div>
+<span class="fab-label">
+                                                            Followed
+                                                    </span>
+</div>
+</div>
+<!-- Share module with popup list -->
+<div class="option-btn btn-share" id="sharingButtonPopup">
+<span class="icon i-share"></span>
+<span class="text">Share</span>
+<div class="w-sharing-option w-sharing-popup" id="sharePopup" style="color: black">
+<a class="sharing-btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F%2F&amp;src=sdkpreparse" target="_blank">
+<span class="icon i-facebook"></span>
+<span class="text">Facebook</span>
+</a>
+<a class="sharing-btn btn-x" href="https://twitter.com/intent/tweet?text=How%20I%20stopped%20hitting%20Claude%27s%205-hour%20limit%20without%20paying%20for%20Pro&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F" target="_blank">
+<span class="icon i-x"></span>
+<span class="text">X</span>
+</a>
+<a class="sharing-btn btn-whatsapp" href="https://web.whatsapp.com/send?text=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F" target="_blank">
+<span class="icon i-whatsapp"></span>
+<span class="text">WhatsApp</span>
+</a>
+<a class="sharing-btn btn-threads" href="https://www.threads.net/intent/post?text=How%20I%20stopped%20hitting%20Claude%27s%205-hour%20limit%20without%20paying%20for%20Pro%20https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F" rel="noopener" target="_blank">
+<span class="icon i-threads"></span>
+<span class="text">Threads</span>
+</a>
+<a class="sharing-btn btn-bluesky" href="https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F" target="_blank">
+<span class="icon i-bluesky"></span>
+<span class="text">Bluesky</span>
+</a>
+<a class="sharing-btn btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F&amp;title=How%20I%20stopped%20hitting%20Claude%27s%205-hour%20limit%20without%20paying%20for%20Pro&amp;source=www.howtogeek.com&amp;summary=And%20complete%20your%20task" target="_blank">
+<span class="icon i-linkedin"></span>
+<span class="text">LinkedIn</span>
+</a>
+<a class="sharing-btn btn-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F" target="_blank">
+<span class="icon i-reddit"></span>
+<span class="text">Reddit</span>
+</a>
+<a class="sharing-btn btn-flipboard" href="http://share.flipboard.com/bookmarklet/popout?v=2&amp;title=How%20I%20stopped%20hitting%20Claude%27s%205-hour%20limit%20without%20paying%20for%20Pro&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fexhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last%2F&amp;utm_campaign=tools&amp;utm_medium=article-share&amp;utm_source=www.howtogeek.com" target="_blank">
+<span class="icon i-flipboard"></span>
+<span class="text">Flipboard</span>
+</a>
+<a class="sharing-btn copy-link-button btn-copy-url" data-url="https://www.howtogeek.com/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/" href="javascript:;">
+<span class="icon i-copy-url" data-url="https://www.howtogeek.com/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/"></span>
+<span class="text">Copy link</span>
+</a>
+<a class="sharing-btn btn-mail" href="mailto:?Subject=How I stopped hitting Claude's 5-hour limit without paying for Pro&amp;Body=Check%20this%20out%21%0Ahttps://www.howtogeek.com/exhausting-your-free-claude-limits-within-a-few-prompts-heres-how-to-make-them-last/">
+<span class="icon i-mail-1"></span>
+<span class="text">Email</span>
+</a>
+</div>
+</div>
+<div class="w-google-addus-btn w-google-addus-btn--sharing-bottom w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn-fab google small" data-google-addus-toggle="" title="Add Us" type="button">
+<span class="icon i-google"></span>
+<span class="fab-label"><span class="text">Add Us</span></span>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2h2ZDNSdloyVmxheTVqYjIwb0FBUAE" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<div class="article-credit-container">
+<div class="affiliate-sponsored">
+<span data-nosnippet="">Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. <a href="https://www.valnetinc.com/en/terms-of-use">Read More</a>.</span>
+</div>
+</div>
+</aside>
+<div class="gallery-lightbox" id="single-image-modal" style="display: none">
+<button class="lightbox__exit-btn icon i-close"><span class="txt">Close</span></button>
+<div class="lightbox">
+<div class="lightbox__swipper" id="swipper-main">
+<div class="swiper-wrapper" id="single-image-modal-container">
+</div>
+</div>
+</div>
+</div>
+<aside class="sidebar adsninja-rail-container" data-tab="sidebar" id="secondary" role="complementary">
+<div class="article-add-google article-add-google--sidebar" data-nosnippet="" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D">
+<a class="article-add-google__link" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener noreferrer" target="_blank">
+<span class="article-add-google__content">
+<span class="article-add-google__title">
+<span aria-hidden="true" class="article-add-google__icon"></span>
+<span aria-hidden="true" class="article-add-google__divider"></span>
+<picture class="article-add-google__brand-logo">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" decoding="async" height="42" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek" width="249"/>
+</picture>
+</span>
+<span class="article-add-google__description">See more How-To Geek stories on Google.</span>
+</span>
+<span class="article-add-google__cta">Add us on Google</span>
+</a>
+</div>
+<div class="sidebar-first" id="sidebar-first" style="min-height:310px;"></div>
+<article class="sidebar-tabs">
+<ul class="js-tabs-ul tabs-ul tabs-header">
+<li class="selected" id="js-tab-1">
+<h3 class="section-title">
+                                                    Desktop
+                                            </h3>
+</li>
+<li class="" id="js-tab-2">
+<h3 class="section-title">
+                                                    Mobile
+                                            </h3>
+</li>
+</ul>
+<div class="js-tab-pane tab-content sidebar-el-content" id="js-content-tab-1">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/cachyos-better-arch-based-distro-if-youre-not-gaming/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="A laptop screen with the CachyOS logo showing in a Linux terminal." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/11/a-laptop-screen-with-the-cachyos-logo-showing-in-a-linux-terminal.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240">
+</img></source></source></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/cachyos-better-arch-based-distro-if-youre-not-gaming/" title="Why CachyOS is the better Arch-based distro if you're not gaming 24/7">
+			Why CachyOS is the better Arch-based distro if you're not gaming 24/7
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="NyBob3VycyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/windows-11-hidden-end-task-shortcut/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Windows 11 laptop showing End task on an app in the taskbar." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/windows-11-laptop-showing-end-task-on-an-app-in-the-taskbar.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240">
+</img></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/windows-11-hidden-end-task-shortcut/" title="Windows 11's hidden &quot;End task&quot; shortcut is the one feature every power user should enable">
+			Windows 11's hidden "End task" shortcut is the one feature every power user should enable
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTAgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/default-windows-setting-making-your-ssd-slower-than-it-should-be/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="SanDisk M.2 SSD solid state drive 1" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/05/52651352030_c8d2a72e65_o-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/default-windows-setting-making-your-ssd-slower-than-it-should-be/" title="This default Windows setting is making your SSD slower than it should be">
+			This default Windows setting is making your SSD slower than it should be
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTAgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/desktop/">See More</a>
+</div>
+<div class="js-tab-pane tab-content sidebar-el-content is-hidden" id="js-content-tab-2">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/motorola-qi2-wireless-charging-moto-snap-charger/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Motorola Moto Edge 70 Max using Qi2 wireless charging" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/motorola-moto-edge-70-max-qi2-wireless-charging.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/motorola-qi2-wireless-charging-moto-snap-charger/" title="Finally, an Android maker besides Google is embracing magnetic charging">
+			Finally, an Android maker besides Google is embracing magnetic charging
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="OSBob3VycyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Google Maps showing two driving routes between Dallas and Austin on a smartphone." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/google-maps-showing-two-driving-routes-between-dallas-and-austin-on-a-smartphone.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/google-maps-kept-changing-shared-route-simple-trick-keeps-it-on-track/" title="Google Maps kept changing my shared route—this simple trick keeps it on track">
+			Google Maps kept changing my shared route—this simple trick keeps it on track
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="OSBob3VycyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/your-samsung-galaxy-has-features-that-are-begging-for-nfc-tags-instead-of-buttons/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="NFC tag being tapped by an Android device." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/img_3825.jpeg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/your-samsung-galaxy-has-features-that-are-begging-for-nfc-tags-instead-of-buttons/" title="Your Samsung Galaxy has 2 features that are begging for NFC tags instead of buttons">
+			Your Samsung Galaxy has 2 features that are begging for NFC tags instead of buttons
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTEgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/mobile/">See More</a>
+</div>
+</article>
+<div class="sidebar-sticky">
+<div class="sidebar-default" id="sidebar-default" style="min-height:310px;"></div>
+<div class="sidebar-tab" data-active-tab="trendingNow" data-is-tab-container="true">
+<div class="section-header tabs-header-alt">
+<button class="section-title is-active" data-target="trendingNow">Trending Now</button>
+</div>
+<div class="sidebar-tabs">
+<div class="trending-now" data-tab="trendingNow">
+<div class="sentinel-article-sidebarSticky">
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/i-used-claude-to-fix-windows-problems-that-microsofts-tools-couldnt-solve/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="Claude Code open on a tablet and monitor on a desktop." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/07/claude-code-open-on-a-tablet-and-monitor-on-a-desktop.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/07/claude-code-open-on-a-tablet-and-monitor-on-a-desktop.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/i-used-claude-to-fix-windows-problems-that-microsofts-tools-couldnt-solve/" title="I used Claude to fix 4 Windows problems that Microsoft's tools couldn't solve">
+			I used Claude to fix 4 Windows problems that Microsoft's tools couldn't solve
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/871065/chatgpt-how-to-use-the-ai-chatbot-for-free/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="ChatGPT logo on a phone." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/02/ChatGPT-logo-and-convo.jpg?q=50&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=1.5" decoding="async" height="67" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/02/ChatGPT-logo-and-convo.jpg?q=50&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=1.5" width="100"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/871065/chatgpt-how-to-use-the-ai-chatbot-for-free/" title="ChatGPT: How to Use the AI Chatbot for Free">
+			ChatGPT: How to Use the AI Chatbot for Free
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/googles-gemma-ai-runs-locally-on-my-300-mini-pc-and-it-replaced-chatgpt-for-more-than-i-expected/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="An image of a Peladn W04 mini PC sitting on a countertop." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/img_0629.jpeg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/img_0629.jpeg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/googles-gemma-ai-runs-locally-on-my-300-mini-pc-and-it-replaced-chatgpt-for-more-than-i-expected/" title="Google's Gemma AI runs locally on my $300 mini PC, and it replaced ChatGPT for more than I expected">
+			Google's Gemma AI runs locally on my $300 mini PC, and it replaced ChatGPT for more than I expected
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+</aside>
+</article>
+</main>
+<div class="w-article-footer layout-rich">
+<div class="article-footer-bg"></div>
+
+</div>
+<!-- No AdsNinja v10 Client! -->
+
+
+
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<!-- LISTING PAGES WITH SUB CONTENT AND HAS VIGNETTES -->
+</body>
+</html>
