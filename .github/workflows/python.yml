@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -26,12 +27,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Verify EbookLib
+        run: |
+          python -c "from ebooklib import epub; print('EbookLib installed successfully')"
+
       - name: Run Personal Dashboard
         run: python news.py
-      
+
       - name: Build EPUB newspaper
         run: python dashboard/epub_builder.py
-      
+
+      - name: Upload EPUB
+        uses: actions/upload-artifact@v4
+        with:
+          name: Personal-Newspaper
+          path: exports/*.epub
+          if-no-files-found: error
+          retention-days: 7
+
       - name: Commit updated files
         run: |
           git config user.name "github-actions"
