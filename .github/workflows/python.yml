@@ -28,7 +28,10 @@ jobs:
 
       - name: Run Personal Dashboard
         run: python news.py
-
+      
+      - name: Build EPUB newspaper
+        run: python dashboard/epub_builder.py
+      
       - name: Commit updated files
         run: |
           git config user.name "github-actions"
