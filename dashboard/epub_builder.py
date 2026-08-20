@@ -403,18 +403,12 @@ def build_epub():
 
     # Table of contents
 
-    book.toc = (
-        epub.Link(
-            "front-page.xhtml",
-            "Front Page",
-            "front-page"
-        ),
+    # Table of contents
 
-        tuple(
-            chapters
-        )
-
-    )
+book.toc = [
+    front_page,
+    *chapters
+]
 
 
 
