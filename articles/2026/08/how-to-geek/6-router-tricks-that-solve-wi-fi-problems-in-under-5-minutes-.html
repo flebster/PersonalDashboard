@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- FAVICON -->
+<link href="/public/build/images/favicon-48x48.png" rel="icon" sizes="48x48"/>
+<link href="/public/build/images/favicon-96x96.png" rel="icon" sizes="96x96"/>
+<link href="/public/build/images/favicon-144x144.png" rel="icon" sizes="144x144"/>
+<link href="/public/build/images/favicon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="/public/build/images/favicon-240x240.png" rel="icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-240x240.png" rel="apple-touch-icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-192x192.png" rel="shortcut icon"/>
+<link href="https://www.howtogeek.com/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" rel="canonical">
+<!-- RSS Feed Discovery -->
+<link href="https://www.howtogeek.com/feed/" rel="alternate" title="How-To Geek Feed" type="application/rss+xml">
+<title>6 router tricks that solve Wi-Fi problems in under 5 minutes</title>
+<meta content="Is it the router or your ISP? It might be neither, and you can fix it for free" name="description">
+<meta content="max-image-preview:large" name="robots">
+<meta content="02190cc2d688eab03da3653a68a98e4f" name="p:domain_verify">
+<meta content="6 router tricks that solve Wi-Fi problems in under 5 minutes" property="og:title"/>
+<meta content="article" property="og:type"/>
+<meta content="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/closeup-of-the-self-hosted-internet-status-page-reading-the-internet-is-fine-and-asking-if-the-user-is-the-problem-with-router-pihole-and-internet-all-showing-up.jpg?w=1600&amp;h=900&amp;fit=crop" property="og:image"/>
+<meta content="1600" property="og:image:width"/>
+<meta content="900" property="og:image:height"/>
+<meta content="https://www.howtogeek.com/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Is it the router or your ISP? It might be neither, and you can fix it for free" property="og:description"/>
+<meta content="How-To Geek" property="og:site_name"/>
+<meta content="2026-08-21T17:30:13Z" property="article:published_time"/>
+<meta content="2026-08-21T17:30:13Z" property="article:modified_time"/>
+<meta content="Networking" property="article:section"/>
+<meta content="Monica J. White" property="article:author"/>
+<meta content="https://www.facebook.com/howtogeek/" property="article:publisher"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@howtogeek" name="twitter:site"/>
+<meta content="6 router tricks that solve Wi-Fi problems in under 5 minutes" name="twitter:title"/>
+<meta content="Is it the router or your ISP? It might be neither, and you can fix it for free" name="twitter:description"/>
+<meta content="@xcommonicajwrites" name="twitter:creator"/>
+<meta content="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/closeup-of-the-self-hosted-internet-status-page-reading-the-internet-is-fine-and-asking-if-the-user-is-the-problem-with-router-pihole-and-internet-all-showing-up.jpg?q=70&amp;fit=crop&amp;w=1200&amp;h=628&amp;dpr=1" name="twitter:image"/>
+<meta content="218849339757813" property="fb:app_id"/>
+<link as="image" fetchpriority="low" href="https://images.valnetcdn.com/sharedimages/img-lcp.svg" rel="preload"/>
+
+<link href="https://www.google-analytics.com" rel="preconnect"/>
+<!-- DNS Prefetch + Preconnect for image CDN -->
+<link href="https://static0.howtogeekimages.com/" rel="dns-prefetch"/>
+<link crossorigin="" href="https://static0.howtogeekimages.com/" rel="preconnect"/>
+
+
+<link as="image" fetchpriority="high" href="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/closeup-of-the-self-hosted-internet-status-page-reading-the-internet-is-fine-and-asking-if-the-user-is-the-problem-with-router-pihole-and-internet-all-showing-up.jpg?q=49&amp;fit=crop&amp;w=600&amp;h=338&amp;dpr=2" media="(max-width: 480px)" rel="preload">
+<link as="image" fetchpriority="high" href="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/closeup-of-the-self-hosted-internet-status-page-reading-the-internet-is-fine-and-asking-if-the-user-is-the-problem-with-router-pihole-and-internet-all-showing-up.jpg?q=70&amp;fit=crop&amp;w=1600&amp;h=900&amp;dpr=1" media="(min-width: 481px)" rel="preload">
+<!-- article.customUniqueCSS -->
+
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.howtogeekimages.com/assets/fonts/roboto/roboto-regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.howtogeekimages.com/assets/fonts/roboto/roboto-bold.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.howtogeekimages.com/assets/fonts/icons/icomoon.woff2?v=7.26.11" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.howtogeekimages.com/assets/fonts/icons/icomoon.woff?v=7.26.11" rel="preload" type="font/woff"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---<script type="text/javascript" src="https://tru.am/scripts/custom/valnet.js" defer></script>-->
+<!-- Google Analytics v4 -->
+
+
+<!-- End Google Analytics v4 -->
+<!-- sentinel header -->
+
+
+
+<!-- end of sentinel header -->
+
+
+
+
+
+<link href="https://static0.howtogeekimages.com/assets/article-regular.ee29f03c.css" rel="stylesheet"/>
+<!-- Google Analytics -->
+
+<!-- End Google Analytics -->
+
+
+<!-- GLOABL JS VARIABLES -->
+
+
+
+
+
+
+
+</link></link></meta></meta></meta></link></link></head>
+<body class="w-website js-tldr theme-tech">
+<div id="amazon-root"></div>
+
+
+<!-- No AdsNinja v10 Client! -->
+<div id="body-anchor"></div>
+
+<input class="css-menu--checkbox" id="side_menu" name="side_menu" type="checkbox"/>
+<div class="side-navigation side_menu" id="side-navigation">
+<div class="side-navigation-topbar">
+<label class="js-search-focus css-menu--checkbox-wrapper css-menu--toggle" data-stnl='{"category": "Click Interactions","name": "Website Header", "action": "Site Search Click"}' for="search-menu">
+<span class="menu-icon topbar-icon icon i-search-menu"></span>
+</label>
+<label class="menu-icon topbar-icon icon i-close-menu css-menu--toggle" for="side_menu">
+<span>Close</span>
+</label>
+</div>
+
+<!--
+	    <footer class="side-navigation-footer">
+	        	            Array
+	        	        <div id="ccpa-link"></div>
+	        <div class="footer-copy">
+	            Copyright &copy; 2026 www.howtogeek.com
+	        </div>
+	    </footer>
+	    -->
+</div>
+
+
+<!-- Subnav Image header menu Bar end -->
+<!-- Subnav Search Bar start -->
+<div class="w-ticker" data-type="header">
+</div>
+<div class="w-header-search">
+<input class="css-menu--checkbox" id="search-menu" name="search-menu" type="checkbox"/>
+<div class="header-search-content css-menu--target">
+<label class="header-search-exit icon i-close css-menu--toggle" for="search-menu">
+<span>Close</span>
+</label>
+<div class="header-search">
+<form action="/search/?q=" class="search-form js-searchBox icon i-search" id="searchform2" method="get">
+<input autocomplete="off" class="input-text search-input" id="js-search-input" name="q" placeholder="Search How-To Geek" type="text"/>
+</form>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<main class="w-content">
+<article class="w-article widget list layout-rich">
+
+<div class="article-header-bg"></div>
+<div class="w-article-header-comp">
+<div class="article-header-data">
+<div class="w-article-header-author-img" data-nosnippet="">
+<div class="article-header-author-img">
+<a href="/author/monica-j-white/">
+<picture>
+<source height="36" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress%2Fwp-content%2Fauthors%2F6913ae25adf64-headshot-square.jpg?fit=crop&amp;w=36&amp;h=36" width="36"/>
+<img alt="4" decoding="async" height="90" loading="lazy" src="https://static0.howtogeekimages.com/wordpress%2Fwp-content%2Fauthors%2F6913ae25adf64-headshot-square.jpg?fit=crop&amp;w=90&amp;h=90" style="display:block;height:auto;max-width:100%;" width="90"/>
+</picture>
+</a>
+</div>
+</div>
+<div class="article-meta">
+<div class="w-author" data-nosnippet="">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/monica-j-white/">Monica J. White</a>
+</div>
+</div>
+<div class="meta_txt article-date">
+<time datetime="2026-08-21T17:30:13Z"><span class="is-mobile-hidden">Published</span> Aug 21, 2026, 1:30 PM EDT</time>
+</div>
+</div>
+<div class="with-excerpt" data-nosnippet="">Monica J. White is a journalist with over a decade of experience in covering technology. She built her first PC nearly 20 years ago, and she has since built and tested dozens of PCs.<br/>
+<br/>
+PC hardware is her main beat, and graphics cards and the GPU market at large are her main area of interest, but she has written thousands of articles covering everything related to PCs, laptops, handhelds, and peripherals. From GPUs and CPUs to headsets and software, Monica's always willing to geek out over all things related to computing.<br/>
+<br/>
+Outside of her work with <em>How-To Geek</em>, Monica contributes to <a href="https://www.techradar.com/author/monica-j-white" rel="noopener noreferrer nofollow" target="_blank">TechRadar</a>, <a href="https://www.pcgamer.com/author/monica-j-white/" rel="noopener noreferrer nofollow" target="_blank">PC Gamer</a>, <a href="https://www.tomsguide.com/author/monica-j-white" rel="noopener noreferrer nofollow" target="_blank">Tom's Guide</a>, <a href="https://www.laptopmag.com/author/monica-j-white" rel="noopener noreferrer nofollow" target="_blank">Laptop Mag</a>, <a href="https://www.slashgear.com/author/monicajwhite/" rel="noopener noreferrer nofollow" target="_blank">SlashGear</a>, <a href="https://whop.com/blog/author/monicawhite/" rel="noopener noreferrer nofollow" target="_blank">Whop</a>, and <a href="https://www.digitaltrends.com/users/mwhite/" rel="noopener noreferrer nofollow" target="_blank">Digital Trends</a>, among others. Her ultimate goal is to make PC gaming and computing approachable and fun to any audience.<br/>
+<br/>
+Monica spends a lot of time elbow-deep in her PC case, as she's always making upgrades, testing something, or plotting out her next build. She's the go-to tech support person in her immediate circle, so she's never out of things to do. Whenever she has spare time, you'll find her gaming until the early hours and hanging out with her dog. </div>
+</div>
+</div>
+<a class="w-header-user-box on-load-show" id="login-button-article-sidebar">
+<div class="user-box-title">Sign in to your <span class="brand-color">How-To Geek</span> account</div>
+<div class="icon i-user-full"></div>
+</a>
+<aside class="w-quick-action-sidebar">
+<div class="quick-action-sidebar" data-nosnippet="">
+<div class="icon i-sensa"></div>
+<div class="qa-action-list google-addus google-addus--dropdown w-google-addus-btn w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="qa-action-item sensa-feature action-btn google circle small no-label" data-google-addus-toggle="" title="Add Us" type="button">
+<div class="qa-icon main-icon icon icon-xlarge i-google" data-is-icon="true"></div>
+<div class="qa-label title" data-is-text="true">Add Us</div>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2h2ZDNSdloyVmxheTVqYjIwb0FBUAE" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+<div class="qa-action-list sensa-features">
+<!-- AI Article Summary -->
+</div>
+<div class="qa-action-list base-action">
+<button class="qa-action-item ai-feature action-btn circle small no-label" data-id="2027409" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Like%20Article%22%2C%22once%22%3A%22true%22%7D" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="qa-label title" data-is-text="true">
+                                    Like
+                                            </div>
+<div class="qa-icon main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="qa-label text qa-like-label" data-is-text="true">
+                            Like
+                                </div>
+</button>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container" data-id="2027409" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" data-preference="Notifications" data-title="6 router tricks that solve Wi-Fi problems in under 5 minutes" data-type="article" data-value="1" onclick="openActionBar()" title="Follow">
+<div class="qa-label title">follow</div>
+<div class="qa-icon icon-xlarge icon i-follow unfollowed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Follow
+                            </div>
+</div>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container is-hidden" data-id="2027409" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" data-preference="" data-title="6 router tricks that solve Wi-Fi problems in under 5 minutes" data-type="article" data-value="0" title="Unfollow">
+<div class="qa-label title">followed</div>
+<div class="qa-icon icon-xlarge icon i-follow followed followed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Followed
+                            </div>
+</div>
+<a class="qa-action-item sensa-feature" data-stnl='{"category":"Click Interactions", "name":"Quick Action Sidebar", "action":"Jump to Thread Click", "once":"true"}' href="#threads" onclick="event.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})" title="Threads">
+<div class="qa-icon icon i-thread"></div>
+<div class="qa-label title">
+							Thread
+													</div>
+</a>
+</div>
+<div class="qa-action-list login-action">
+<button class="qa-action-item user" data-is-quick-action-login-button="true" itemprop="url">
+<div class="qa-label title">Log in</div>
+<div class="qa-icon icon i-user-full" onclick="document.getElementById('side-navigation') &amp;&amp; document.getElementById('side-navigation').classList.remove('is-open');"></div>
+</button>
+</div>
+<div class="sensa-widget-container w-sensa-widget">
+<button class="close-btn icon i-close" onclick="const c=this.closest('.sensa-widget-container'); c.style.height='0'; c.dataset.loaded='false';" type="button"></button>
+<div class="sensa-widget-wrapper">
+<div class="sensa-widget-content" id="top-of-sensa-content">
+<div class="sensa-widget-response-container">
+<span class="sensa-summary-prompt icon i-sensa-2" id="sensa-factual-summary-prompt" style="display: flex;">
+							Here is a fact-based summary of the story contents:
+						</span>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-factual-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-simple-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-satirical-commentary"></div>
+</div>
+<div class="sensa-summary-footer">
+<div class="sensa-summary-footer-content">
+<span class="sensa-summary-prompt">Try something different:
+							</span>
+<div class="sensa-option-buttons">
+<button aria-controls="sensa-factual-summary" aria-expanded="false" class="sensa-button prompt icon i-sensa-2" data-target="#sensa-factual-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Show me the facts
+								</button>
+<button aria-controls="sensa-simple-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-simple-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Explain it like I’m 5
+								</button>
+<button aria-controls="sensa-satirical-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-satirical-commentary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Give me a lighthearted recap
+								</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! -->
+<section class="article-body valnet-segment-PcHardware" id="article-body" itemprop="articleBody">
+<div class="content-block-regular"><p>I'm not a fan of Wi-Fi—<a href="https://www.howtogeek.com/devices-in-your-home-that-shouldnt-be-on-wi-fi/" target="_blank">Ethernet all the way</a>. But for some devices, it just makes no sense (or is impossible) to connect via cable, and on those devices, when Wi-Fi is sluggish, it's a massive nuisance.</p> <!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><p>Sounds familiar? Good news—you might be able to fix it for free in under five minutes.</p> <!-- No AdsNinja v10 Client! --><h2 id="move-your-router-somewhere-better">
+                        Move your router somewhere better
+               </h2>
+<h3 id="it-could-be-sitting-in-the-exact-wrong-spot">
+            It could be sitting in the exact wrong spot
+    </h3>
+<div class="valnet-gallery images-count-5">
+<div class="article__gallery type-gallery" data-article-gallery="article-gallery-modal-1-464909548" data-gallery-id="main-carousel-1-464909548" data-gallery-lightbox="gallery-modal-1-464909548" data-gallery-thumbnail-id="gallery-thumbnails-1-464909548" data-gallery-thumbnail-img-class="gallery-thumbnails-1-464909548-img" data-gallery-type="" id="article-gallery-1-464909548" style="--gallery-thumb-h: 93px; --gallery-aspect-sm: 1.5 / 1; --gallery-aspect-md: 1.5 / 1;">
+<div class="w-gallery-carousel"><section class="splide splide-gallery" data-gallery-expanded-id="main-expanable-carousel-1-464909548" data-gallery-expanded-thumbnail-id="expanded-gallery-thumbnails-1-464909548" id="main-carousel-1-464909548"><button class="expand icon i-expand" type="button"></button><div class="splide__track"><ul class="splide__list" style="--gallery-aspect-sm: 1.5 / 1; --gallery-aspect-md: 1.5 / 1; --gallery-aspect-lg: 1.7 / 1;"><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"><img alt="A Netgear Orbi Wi-Fi router on a table." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></source></picture><small class="body-img-caption">Credit: Jerome Thomas / How-To Geek Jerome</small></figure></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Cables plugged into the ExpressVPN Aircove Go." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><small class="body-img-caption">Credit: Sergio Rodriguez / How-To Geek</small></figure></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Gaming port on a TP Link router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="TP Link logo on the Archer BE900 router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Acer Predator T7 Router Monitor at CES 2024." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure></li></ul></div></section><section class="splide gallery-thumbnails" id="gallery-thumbnails-1-464909548" style="display: inline-flex; width: 100%; height: 93px;"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="A Netgear Orbi Wi-Fi router on a table." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Cables plugged into the ExpressVPN Aircove Go." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Gaming port on a TP Link router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="TP Link logo on the Archer BE900 router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Acer Predator T7 Router Monitor at CES 2024." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li></ul></div></section></div><div class="w-gallery-carousel-fullscreen"><section class="splide splide-gallery" id="main-expanable-carousel-1-464909548"><button class="lightbox__exit-btn close-btn icon i-close" type="button"><span class="txt">Close</span></button><div class="splide__track lightbox__swipper"><ul class="splide__list swiper-wrapper"><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="A Netgear Orbi Wi-Fi router on a table." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" decoding="async" height="1400" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/><small class="body-img-caption">Credit: Jerome Thomas / How-To Geek Jerome</small></figure></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="Cables plugged into the ExpressVPN Aircove Go." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" decoding="async" height="1400" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/><small class="body-img-caption">Credit: Sergio Rodriguez / How-To Geek</small></figure></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="Gaming port on a TP Link router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" decoding="async" height="1400" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="TP Link logo on the Archer BE900 router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" decoding="async" height="1400" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="Acer Predator T7 Router Monitor at CES 2024." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" decoding="async" height="1400" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure></div></li></ul></div></section><section aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel." class="splide gallery-thumbnails-expanded" id="expanded-gallery-thumbnails-1-464909548"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="A Netgear Orbi Wi-Fi router on a table." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53512907163_277ea180fc_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Cables plugged into the ExpressVPN Aircove Go." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53614786104_43efe54933_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Gaming port on a TP Link router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53158036235_47e62dfe10_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="TP Link logo on the Archer BE900 router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53157812559_b4256d61b5_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Acer Predator T7 Router Monitor at CES 2024." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53451250206_74036d1436_o.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li></ul></div></section></div>
+
+</div>
+</div>
+<p>Router placement is more important than it seems, and <a href="https://www.howtogeek.com/sitting-close-to-your-router-can-hurt-your-internet-connectionheres-why/" target="_blank">your Wi-Fi might be dealing with dead zones</a>, where the signal isn't as strong. Many of us stuff the router in whatever place is convenient and fairly hidden, because hey, routers aren't exactly decorative ... but that doesn't help their performance whatsoever.</p> <p>Aim for something central, elevated, and out in the open. Think a shelf and not the floor, but also a shelf and not a closed cabinet.</p> <p>Check the signal strength on your phone in the worst room and see whether moving the router helps at all. It very well might, or might I even say, it should.</p>
+<aside class="display-card article article-card small no-badge active-content" data-include-community-rating="false" data-nosnippet="" id="f467-4e37-933c827a27cc">
+<a href="/rebooting-your-router-doesnt-fix-your-wi-fi-but-these-things-will/">
+<img alt="A Wi-Fi router with angled antennas." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/02/img20251121144028.jpg?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" decoding="async" height="248" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/02/img20251121144028.jpg?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" width="440"/>
+</a>
+<span class="article-card-label" data-field="label"><label>Related</label></span>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/rebooting-your-router-doesnt-fix-your-wi-fi-but-these-things-will/" target="_blank" title="I stopped rebooting my router to fix Wi-Fi, and these 7 tricks worked instead">
+			I stopped rebooting my router to fix Wi-Fi, and these 7 tricks worked instead
+		</a>
+</h5>
+<p class="display-card-excerpt">Rebooting your router won't fix your Wi-Fi: 7 tricks that actually work</p>
+<div class="w-display-card-extra">
+<div class="total-info extra-comments">
+<label class="total-info-label">Posts</label>
+<a class="total-info-number icon i-thread" href="/rebooting-your-router-doesnt-fix-your-wi-fi-but-these-things-will/#threads" title="Total Posts">
+<span class="num">2</span>
+</a>
+</div>
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="w-author">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/monica-j-white/" rel="author" title="Posts by Monica J. White">Monica J. White</a>
+</div>
+</div>
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="SnVuIDksIDIwMjY=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><h2 id="pick-the-right-band">
+                        Pick the right band
+               </h2>
+<h3 id="don-39-t-let-your-router-do-this-for-you">
+            Don't let your router do this for you
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='"Justin Duino \/ How-To Geek"' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:56.25%">
+<figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Samsung Galaxy home Wi-Fi inspection scanning." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="928" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/04/samsung-galaxy-home-wi-fi-inspection.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture><small class="body-img-caption">Credit: Justin Duino / How-To Geek</small></figure>
+</div>
+</div>
+<p>When picking between 2.4GHz and 5GHz (or maybe even 6GHz), you might be tempted to always go for the highest number. I don't blame you, but that's not how this thing works.</p> <p>2.4GHz travels furthest and gets through walls best, so if you shove all of your stuff onto the 6GHz band, some devices are going to have a bad time. The ideal setup is to match the device to the band and not let your router do any guesswork whatsoever. In fact, doing this helped me <a href="https://www.howtogeek.com/i-hid-my-5ghz-wi-fi-network-and-my-devices-got-fasterheres-why-it-works/" target="_blank">fix some Wi-Fi issues I've had myself</a>.</p> <p>Worth noting that you should <a href="https://www.howtogeek.com/i-followed-the-most-common-wi-fi-tip-on-the-internet-and-it-cost-me-half-my-smart-home/" target="_blank">never disable the 2.4GHz band entirely</a>. Just let your less demanding devices cruise along on the longer-range 2.4GHz band, and move the ones that need speed to 5GHz.</p> <!-- No AdsNinja v10 Client! --><h2 id="narrow-your-2-4ghz-channel-width">
+                        Narrow your 2.4GHz channel width
+               </h2>
+<h3 id="wider-isn-39-t-faster">
+            Wider isn't faster
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='"Hannah Stryker \/ How-To Geek"' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:66.666666666667%">
+<figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Power barrel jack and USB ports on the back of the BE7200 Dual Band WiFi 7 XGS PON VoIP Router." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53574558077_5f2381c6e8_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture><small class="body-img-caption">Credit: Hannah Stryker / How-To Geek</small></figure>
+</div>
+</div>
+<p>Here's another setting where letting your router handle all the decision making can end badly. If it's set to auto or 20/40MHz on the 2.4GHz band, you may feel like setting it up at a straight 20MHz is counterintuitive, but it can genuinely help if your Wi-Fi is acting up.</p> <p>It's true that wider channels carry more data, but the entire 2.4GHz band is only a bit over 83MHz wide, so if you bond two channels together, the majority of it will be gone in one go.</p> <p>The payoff to sticking to 20MHz is stability, which is what you're looking for here. And, as I said above, most of the stuff that uses 2.4GHz isn't going to demand a monster-like connection, so you'll win stability without sacrificing anything much.</p> <!-- No AdsNinja v10 Client! --><h2 id="split-your-bands-into-two-networks">
+                        Split your bands into two networks
+               </h2>
+<h3 id="smart-connect-isn-39-t-always-the-smartest-way-to-go">
+            Smart Connect isn't always the smartest way to go
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='"Patrick Campanale \/ How-To Geek"' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:56.25%">
+<figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="The ports on the Unifi Flex Mini 2.5G Ethernet switch with the link lights illuminated." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="928" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/06/a7308302.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture><small class="body-img-caption">Credit: Patrick Campanale / How-To Geek</small></figure>
+</div>
+</div>
+<p>Many routers, especially those provided by your ISP, ship with all the bands bundled under one network name, plus a feature called Smart Connect (or band steering). That feature decides which band houses which device. As mentioned, your router makes the wrong decisions with things like that, so it's better to take the time to set it right. Band steering tends to prioritize 5GHz; an unnecessary decision that may lower the quality of your Wi-Fi.</p> <p>The cleanest way to deal with this debacle is, in my opinion, to split these two bands (2.4GHz and 5GHz) into two separate SSIDs. It'll take about two minutes in your router settings and it'll make setting up all the devices much easier. Once you decide what goes where based on use case and distance, you might see improvements in your Wi-Fi.</p> <!-- No AdsNinja v10 Client! --><h2 id="turn-off-dfs-channels-for-a-few-days">
+                        Turn off DFS channels for a few days
+               </h2>
+<h3 id="a-quick-fix-with-a-longer-testing-time">
+            A quick fix with a longer testing time
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='"Justin Duino \/ How-To Geek"' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:66.666666666667%">
+<figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="Xiaomi Mi Router AX9000 on display at MWC 2024." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/53557474735_286ea9f146_o.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</picture><small class="body-img-caption">Credit: Justin Duino / How-To Geek</small></figure>
+</div>
+</div>
+<p>This is a fix for something else entirely. Well, kind of. If your 5GHz network occasionally vanishes for a minute or two and then comes back, don't blame your router right away—there could be more to it.</p> <p>Parts of the 5GHz band are shared with radar systems, and any router sitting on one of those channels is legally required to stop transmitting and move elsewhere when it detects a radar signal. This whole mechanism is called Dynamic Frequency Selection.</p>
+<p>Some of you are probably frowning right now, having never heard of any such things. Some of us are more exposed to this than others; those who live near airports, coastlines, or weather radar installations, may have this happen more than others.</p> <p>In any case, to fix this, find the DFS toggle in your 5GHz settings or manually pin the router to channels 36 to 48 or 149 to 165. Those sit outside of radar ranges.</p> <div class="w-display-card-vignette">
+<div class="vq">
+<input checked="" id="vq-s0" name="vq-nav" type="radio"/>
+<input id="vq-s1" name="vq-nav" type="radio"/>
+<input id="vq-s2" name="vq-nav" type="radio"/>
+<input id="vq-s3" name="vq-nav" type="radio"/>
+<input id="vq-s4" name="vq-nav" type="radio"/>
+<input id="vq-s5" name="vq-nav" type="radio"/>
+<input id="vq-s6" name="vq-nav" type="radio"/>
+<input id="vq-s7" name="vq-nav" type="radio"/>
+<input id="vq-s8" name="vq-nav" type="radio"/>
+<input id="vq-sR" name="vq-nav" type="radio"/>
+<input id="vq-1a" name="vq-1" type="radio"/><input id="vq-1b" name="vq-1" type="radio"/><input id="vq-1c" name="vq-1" type="radio"/><input id="vq-1d" name="vq-1" type="radio"/>
+<input id="vq-2a" name="vq-2" type="radio"/><input id="vq-2b" name="vq-2" type="radio"/><input id="vq-2c" name="vq-2" type="radio"/><input id="vq-2d" name="vq-2" type="radio"/>
+<input id="vq-3a" name="vq-3" type="radio"/><input id="vq-3b" name="vq-3" type="radio"/><input id="vq-3c" name="vq-3" type="radio"/><input id="vq-3d" name="vq-3" type="radio"/>
+<input id="vq-4a" name="vq-4" type="radio"/><input id="vq-4b" name="vq-4" type="radio"/><input id="vq-4c" name="vq-4" type="radio"/><input id="vq-4d" name="vq-4" type="radio"/>
+<input id="vq-5a" name="vq-5" type="radio"/><input id="vq-5b" name="vq-5" type="radio"/><input id="vq-5c" name="vq-5" type="radio"/><input id="vq-5d" name="vq-5" type="radio"/>
+<input id="vq-6a" name="vq-6" type="radio"/><input id="vq-6b" name="vq-6" type="radio"/><input id="vq-6c" name="vq-6" type="radio"/><input id="vq-6d" name="vq-6" type="radio"/>
+<input id="vq-7a" name="vq-7" type="radio"/><input id="vq-7b" name="vq-7" type="radio"/><input id="vq-7c" name="vq-7" type="radio"/><input id="vq-7d" name="vq-7" type="radio"/>
+<input id="vq-8a" name="vq-8" type="radio"/><input id="vq-8b" name="vq-8" type="radio"/><input id="vq-8c" name="vq-8" type="radio"/><input id="vq-8d" name="vq-8" type="radio"/>
+<div aria-hidden="true" class="vq-tally"><span class="vq-t vq-t1"></span><span class="vq-t vq-t2"></span><span class="vq-t vq-t3"></span><span class="vq-t vq-t4"></span><span class="vq-t vq-t5"></span><span class="vq-t vq-t6"></span><span class="vq-t vq-t7"></span><span class="vq-t vq-t8"></span></div>
+<div class="vq-head">
+<img alt="How-To Geek" class="vq-logo" height="22" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.6" width="130"/>
+<span class="vq-pill">Quiz</span>
+</div>
+<div class="vq-wrap">
+<section class="vq-panel vq-p0"><div class="vq-intro"><span class="vq-intro-overline">8 Questions · Test Your Knowledge</span><h2 class="vq-intro-title">Home networking &amp; Wi-Fi<br/></h2><div class="vq-intro-rule"></div><p class="vq-intro-sub">Think you know your routers from your repeaters — put your home networking know-how to the ultimate test.</p><div class="vq-topics"><span class="vq-topic">Wi-Fi</span><span class="vq-topic">Routers</span><span class="vq-topic">Security</span><span class="vq-topic">Hardware</span><span class="vq-topic">Protocols</span></div><div class="vq-cta-row"><label class="vq-btn" for="vq-s1">Begin</label></div></div></section>
+<section class="vq-panel vq-p1"><div class="vq-step"><span class="vq-step-num">01 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:13%"></div></div><span class="vq-step-cat">Wi-Fi</span></div><div class="vq-qblock"><p class="vq-qtext">What does the '5 GHz' band in Wi-Fi offer compared to the '2.4 GHz' band?</p></div><div class="vq-opts"><label class="vq-opt vq-o-1a" for="vq-1a"><span class="vq-let">A</span>Longer range but slower speeds</label><label class="vq-opt vq-o-1b" for="vq-1b"><span class="vq-let">B</span>Faster speeds but shorter range</label><label class="vq-opt vq-o-1c" for="vq-1c"><span class="vq-let">C</span>Better wall penetration and faster speeds</label><label class="vq-opt vq-o-1d" for="vq-1d"><span class="vq-let">D</span>Lower interference but identical speeds</label></div><div class="vq-fb vq-fb-ok vq-f1ok">That's right! The 5 GHz band delivers faster data rates but loses signal strength more quickly over distance and through walls. It's ideal for devices close to the router that need maximum throughput, like streaming 4K video.</div><div class="vq-fb vq-fb-no vq-f1no">Not quite — the 5 GHz band actually offers faster speeds at the cost of range. The 2.4 GHz band travels farther and penetrates obstacles better, which is why smart home devices and older gadgets often prefer it.</div><div class="vq-nav"><label class="vq-btn" for="vq-s2">Continue</label></div></section>
+<section class="vq-panel vq-p2"><div class="vq-step"><span class="vq-step-num">02 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:25%"></div></div><span class="vq-step-cat">Protocols</span></div><div class="vq-qblock"><p class="vq-qtext">Which Wi-Fi standard, introduced in 2021, is also known as Wi-Fi 6E and extends into a new frequency band?</p></div><div class="vq-opts"><label class="vq-opt vq-o-2a" for="vq-2a"><span class="vq-let">A</span>802.11ac</label><label class="vq-opt vq-o-2b" for="vq-2b"><span class="vq-let">B</span>802.11ax</label><label class="vq-opt vq-o-2c" for="vq-2c"><span class="vq-let">C</span>802.11be</label><label class="vq-opt vq-o-2d" for="vq-2d"><span class="vq-let">D</span>802.11n</label></div><div class="vq-fb vq-fb-ok vq-f2ok">Correct! 802.11ax is the technical name for Wi-Fi 6 and Wi-Fi 6E. The 'E' variant extends the standard into the 6 GHz band, offering a massive swath of new, less-congested spectrum for faster and more reliable connections.</div><div class="vq-fb vq-fb-no vq-f2no">The answer is 802.11ax — that's Wi-Fi 6 and Wi-Fi 6E. Wi-Fi 6E adds support for the 6 GHz band, giving it far less congestion than the crowded 2.4 GHz and 5 GHz bands. 802.11be is actually the upcoming Wi-Fi 7 standard.</div><div class="vq-nav"><label class="vq-btn" for="vq-s3">Continue</label></div></section>
+<section class="vq-panel vq-p3"><div class="vq-step"><span class="vq-step-num">03 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:38%"></div></div><span class="vq-step-cat">Routers</span></div><div class="vq-qblock"><p class="vq-qtext">What is the default IP address most commonly used to access a home router's admin interface?</p></div><div class="vq-opts"><label class="vq-opt vq-o-3a" for="vq-3a"><span class="vq-let">A</span>192.168.0.1 or 192.168.1.1</label><label class="vq-opt vq-o-3b" for="vq-3b"><span class="vq-let">B</span>10.0.0.1 or 172.16.0.1</label><label class="vq-opt vq-o-3c" for="vq-3c"><span class="vq-let">C</span>255.255.255.0 or 255.0.0.0</label><label class="vq-opt vq-o-3d" for="vq-3d"><span class="vq-let">D</span>127.0.0.1 or localhost</label></div><div class="vq-fb vq-fb-ok vq-f3ok">Spot on! The vast majority of consumer routers use either 192.168.0.1 or 192.168.1.1 as the default gateway address. Typing either into your browser's address bar will bring up the router's login page — just make sure you've changed the default password!</div><div class="vq-fb vq-fb-no vq-f3no">The correct answer is 192.168.0.1 or 192.168.1.1. These are the most common default gateway addresses for home routers. The 255.x.x.x addresses are subnet masks, and 127.0.0.1 is your own machine's loopback address, not a router.</div><div class="vq-nav"><label class="vq-btn" for="vq-s4">Continue</label></div></section>
+<section class="vq-panel vq-p4"><div class="vq-step"><span class="vq-step-num">04 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:50%"></div></div><span class="vq-step-cat">Security</span></div><div class="vq-qblock"><p class="vq-qtext">Which Wi-Fi security protocol is considered most secure for home networks as of 2024?</p></div><div class="vq-opts"><label class="vq-opt vq-o-4a" for="vq-4a"><span class="vq-let">A</span>WEP (Wired Equivalent Privacy)</label><label class="vq-opt vq-o-4b" for="vq-4b"><span class="vq-let">B</span>WPA (Wi-Fi Protected Access)</label><label class="vq-opt vq-o-4c" for="vq-4c"><span class="vq-let">C</span>WPA2 with TKIP</label><label class="vq-opt vq-o-4d" for="vq-4d"><span class="vq-let">D</span>WPA3 (Wi-Fi Protected Access 3)</label></div><div class="vq-fb vq-fb-ok vq-f4ok">Excellent! WPA3 is the latest and most robust Wi-Fi security protocol, introduced in 2018. It uses Simultaneous Authentication of Equals (SAE) to replace the older Pre-Shared Key handshake, making it far more resistant to brute-force attacks.</div><div class="vq-fb vq-fb-no vq-f4no">The answer is WPA3. WEP is completely broken and should never be used, WPA is outdated, and WPA2 with TKIP has known vulnerabilities. WPA3 offers the strongest protection, and if your router supports it, you should enable it right away.</div><div class="vq-nav"><label class="vq-btn" for="vq-s5">Continue</label></div></section>
+<section class="vq-panel vq-p5"><div class="vq-step"><span class="vq-step-num">05 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:63%"></div></div><span class="vq-step-cat">Hardware</span></div><div class="vq-qblock"><p class="vq-qtext">What is the primary difference between a mesh Wi-Fi system and a traditional Wi-Fi range extender?</p></div><div class="vq-opts"><label class="vq-opt vq-o-5a" for="vq-5a"><span class="vq-let">A</span>Mesh systems only work with fiber internet connections</label><label class="vq-opt vq-o-5b" for="vq-5b"><span class="vq-let">B</span>Range extenders create a seamless single network while mesh systems create separate SSIDs</label><label class="vq-opt vq-o-5c" for="vq-5c"><span class="vq-let">C</span>Mesh nodes communicate with each other to form one seamless network, while extenders create a separate network</label><label class="vq-opt vq-o-5d" for="vq-5d"><span class="vq-let">D</span>Mesh systems are always wired, while extenders are always wireless</label></div><div class="vq-fb vq-fb-ok vq-f5ok">Exactly right! Mesh systems use multiple nodes that talk to each other intelligently, handing off your device seamlessly as you move around your home under one SSID. Traditional range extenders typically broadcast a separate network and can cut bandwidth in half as they relay the signal.</div><div class="vq-fb vq-fb-no vq-f5no">The correct answer is that mesh nodes form one intelligent, seamless network. Range extenders are actually the ones that often create separate SSIDs (like 'MyNetwork_EXT') and can significantly reduce speeds. Mesh systems are far superior for large homes with many devices.</div><div class="vq-nav"><label class="vq-btn" for="vq-s6">Continue</label></div></section>
+<section class="vq-panel vq-p6"><div class="vq-step"><span class="vq-step-num">06 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:75%"></div></div><span class="vq-step-cat">Protocols</span></div><div class="vq-qblock"><p class="vq-qtext">What does DHCP stand for, and what is its main function on a home network?</p></div><div class="vq-opts"><label class="vq-opt vq-o-6a" for="vq-6a"><span class="vq-let">A</span>Dynamic Host Configuration Protocol — it automatically assigns IP addresses to devices</label><label class="vq-opt vq-o-6b" for="vq-6b"><span class="vq-let">B</span>Direct Hardware Control Protocol — it manages router firmware updates</label><label class="vq-opt vq-o-6c" for="vq-6c"><span class="vq-let">C</span>Distributed Hosting and Caching Protocol — it speeds up web browsing</label><label class="vq-opt vq-o-6d" for="vq-6d"><span class="vq-let">D</span>Dynamic Hypertext Communication Protocol — it secures data transmissions</label></div><div class="vq-fb vq-fb-ok vq-f6ok">Perfect! DHCP (Dynamic Host Configuration Protocol) is the unsung hero of home networking. Every time a device joins your network, your router's DHCP server automatically hands it a unique IP address, subnet mask, and gateway info so it can communicate without manual configuration.</div><div class="vq-fb vq-fb-no vq-f6no">DHCP stands for Dynamic Host Configuration Protocol, and its job is to automatically assign IP addresses to devices on your network. Without it, you'd have to manually configure a unique IP address on every single phone, laptop, and smart device — a tedious nightmare!</div><div class="vq-nav"><label class="vq-btn" for="vq-s7">Continue</label></div></section>
+<section class="vq-panel vq-p7"><div class="vq-step"><span class="vq-step-num">07 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:88%"></div></div><span class="vq-step-cat">Routers</span></div><div class="vq-qblock"><p class="vq-qtext">What is 'QoS' (Quality of Service) used for in a home router?</p></div><div class="vq-opts"><label class="vq-opt vq-o-7a" for="vq-7a"><span class="vq-let">A</span>Encrypting all traffic leaving the router</label><label class="vq-opt vq-o-7b" for="vq-7b"><span class="vq-let">B</span>Prioritizing certain types of network traffic over others</label><label class="vq-opt vq-o-7c" for="vq-7c"><span class="vq-let">C</span>Automatically switching between 2.4 GHz and 5 GHz bands</label><label class="vq-opt vq-o-7d" for="vq-7d"><span class="vq-let">D</span>Blocking malicious websites using a DNS filter</label></div><div class="vq-fb vq-fb-ok vq-f7ok">That's correct! QoS lets you tell your router which traffic gets priority. For example, you can prioritize video calls or gaming over a family member's file download, ensuring your Zoom meeting doesn't freeze just because someone is downloading a large update.</div><div class="vq-fb vq-fb-no vq-f7no">QoS — Quality of Service — is actually about traffic prioritization. By tagging certain data types (like VoIP calls or gaming packets) as high priority, your router ensures latency-sensitive applications get bandwidth first, even when the network is congested.</div><div class="vq-nav"><label class="vq-btn" for="vq-s8">Continue</label></div></section>
+<section class="vq-panel vq-p8"><div class="vq-step"><span class="vq-step-num">08 / 8</span><div class="vq-step-track"><div class="vq-step-fill" style="width:100%"></div></div><span class="vq-step-cat">Hardware</span></div><div class="vq-qblock"><p class="vq-qtext">What does the 'WAN' port on a home router connect to?</p></div><div class="vq-opts"><label class="vq-opt vq-o-8a" for="vq-8a"><span class="vq-let">A</span>Other computers in your home network via Ethernet</label><label class="vq-opt vq-o-8b" for="vq-8b"><span class="vq-let">B</span>A wireless access point for extending Wi-Fi coverage</label><label class="vq-opt vq-o-8c" for="vq-8c"><span class="vq-let">C</span>Your modem or ISP-provided gateway to the internet</label><label class="vq-opt vq-o-8d" for="vq-8d"><span class="vq-let">D</span>A network-attached storage (NAS) device</label></div><div class="vq-fb vq-fb-ok vq-f8ok">Correct! WAN stands for Wide Area Network, and the WAN port is where your router connects to the outside world — typically to your cable modem, DSL modem, or ISP gateway. The LAN ports on the other side connect to devices inside your home network.</div><div class="vq-fb vq-fb-no vq-f8no">The WAN (Wide Area Network) port connects your router to your ISP's modem or gateway — essentially your entry point to the internet. The LAN (Local Area Network) ports are for connecting devices inside your home. Mixing them up can cause your network to not function at all!</div><div class="vq-nav"><label class="vq-btn" for="vq-sR">See My Score</label></div></section>
+<section class="vq-panel vq-pR"><div class="vq-result"><span class="vq-result-label">Challenge Complete</span><h2 class="vq-result-heading">Your Score</h2><div class="vq-result-rule"></div><div class="vq-score"><span class="vq-score-val"></span><span class="vq-score-max">/ 8</span></div><p class="vq-result-msg">Thanks for playing!</p><div class="vq-cta-row"><label class="vq-btn vq-btn-ghost vq-restart" for="vq-s0">Try Again</label></div></div></section>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! --><h2 id="update-your-firmware">
+                        Update your firmware
+               </h2>
+<h3 id="yes-it-really-could-help">
+            Yes, it really could help
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='"Adam Davidson \/ How-To Geek"' data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:56.25%">
+<figure><picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="A Vodafone Ultra Hub 7 router on a desk in front of a computer." class="img-brightness-opt-out" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="928" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/06/a-vodafone-ultra-hub-7-router-on-a-desk-in-front-of-a-computer.png?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650">
+</img></picture><small class="body-img-caption">Credit: Adam Davidson / How-To Geek</small></figure>
+</div>
+</div>
+<p>For one last quick and easy fix, try to update your router's firmware. If your router is suffering from any sort of bug or firmware-related problem, this might fix it and give your Wi-Fi the stability it so badly needs. You can do this in your router's admin page, although some ISP routers may not have the option to do so.</p> <hr/><h3 id="if-all-else-fails-badger-your-isp">
+            If all else fails, badger your ISP
+    </h3>
+<p>Going through all the steps above means you've gone to great lengths to fix your Wi-Fi. If nothing else helps, call your ISP and see if they can offer any solutions. I hope you're <a href="https://www.howtogeek.com/everything-i-learned-fighting-terrible-internet-providers-for-a-decade-and-how-i-won/" target="_blank">luckier than I was with my ISPs</a>.</p> </div><div id="article-waypoint"></div></section>
+<aside class="article-options" data-nosnippet="">
+<aside class="w-promotion-offer promo-article-footer w-promotion-widget" data-nosnippet="" data-popup="false" data-promotion-zone="R29vZ2xlIFJhbmtpbmcgUHJvbW8=" data-sentinel-tracking="true" style="min-height: 250px;">
+<link href="https://static0.howtogeekimages.com/assets/promotions.284cabdc.css" rel="stylesheet"/>
+<div class="promotion-offer-box" data-style-path-url="https://static0.howtogeekimages.com/assets/promotions.284cabdc.css">
+<div class="card"> <a class="btn" data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=howtogeek.com" target="_blank"></a> <h1 class="msg"><b>Google is updating how articles are shown.</b> Don't miss our industry-leading content, written by humans, by setting <a data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=howtogeek.com" target="_blank">How-To Geek as a preferred source</a>.</h1> </div>
+
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<div class="article-tags">
+<ul class="article-tags-list">
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/networking/" title="Networking">
+<div class="article-tags-name">Networking</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/tag/wi-fi-routers/" title="Wi-Fi Routers">
+<div class="article-tags-name">Wi-Fi Routers</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/tag/internet/" title="Internet">
+<div class="article-tags-name">Internet</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="w-sharing-bottom" id="threads">
+<div class="w-like-btn inactive" data-action="like-article">
+<button class="btn-fab tertiary xsmall" data-id="2027409" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="fab-label" data-is-text="true">
+                                                                                        Like
+                                                                                            </div>
+</button>
+</div>
+<div class="w-follow-btn" data-action="follow-article">
+<div class="btn-fab tertiary xsmall follow-container btn-follow" data-id="2027409" data-id-tag="" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" data-preference="Notifications" data-title="6 router tricks that solve Wi-Fi problems in under 5 minutes" data-type="article" data-value="1" title="Follow">
+<div class="main-icon icon-xlarge icon i-follow"></div>
+<div class="fab-label">
+                                                                        Follow
+                                                            </div>
+</div>
+<div class="btn-fab tertiary xsmall follow-container btn-follow is-hidden" data-id="2027409" data-id-tag="" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" data-preference="" data-title="6 router tricks that solve Wi-Fi problems in under 5 minutes" data-type="article" data-value="0" title="Unfollow">
+<div class="main-icon icon-xlarge icon i-follow followed"></div>
+<span class="fab-label">
+                                                            Followed
+                                                    </span>
+</div>
+</div>
+<!-- Share module with popup list -->
+<div class="option-btn btn-share" id="sharingButtonPopup">
+<span class="icon i-share"></span>
+<span class="text">Share</span>
+<div class="w-sharing-option w-sharing-popup" id="sharePopup" style="color: black">
+<a class="sharing-btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F%2F&amp;src=sdkpreparse" target="_blank">
+<span class="icon i-facebook"></span>
+<span class="text">Facebook</span>
+</a>
+<a class="sharing-btn btn-x" href="https://twitter.com/intent/tweet?text=6%20router%20tricks%20that%20solve%20Wi-Fi%20problems%20in%20under%205%20minutes&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F" target="_blank">
+<span class="icon i-x"></span>
+<span class="text">X</span>
+</a>
+<a class="sharing-btn btn-whatsapp" href="https://web.whatsapp.com/send?text=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F" target="_blank">
+<span class="icon i-whatsapp"></span>
+<span class="text">WhatsApp</span>
+</a>
+<a class="sharing-btn btn-threads" href="https://www.threads.net/intent/post?text=6%20router%20tricks%20that%20solve%20Wi-Fi%20problems%20in%20under%205%20minutes%20https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F" rel="noopener" target="_blank">
+<span class="icon i-threads"></span>
+<span class="text">Threads</span>
+</a>
+<a class="sharing-btn btn-bluesky" href="https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F" target="_blank">
+<span class="icon i-bluesky"></span>
+<span class="text">Bluesky</span>
+</a>
+<a class="sharing-btn btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F&amp;title=6%20router%20tricks%20that%20solve%20Wi-Fi%20problems%20in%20under%205%20minutes&amp;source=www.howtogeek.com&amp;summary=Is%20it%20the%20router%20or%20your%20ISP%3F%20It%20might%20be%20neither%2C%20and%20you%20can%20fix%20it%20for%20free" target="_blank">
+<span class="icon i-linkedin"></span>
+<span class="text">LinkedIn</span>
+</a>
+<a class="sharing-btn btn-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F" target="_blank">
+<span class="icon i-reddit"></span>
+<span class="text">Reddit</span>
+</a>
+<a class="sharing-btn btn-flipboard" href="http://share.flipboard.com/bookmarklet/popout?v=2&amp;title=6%20router%20tricks%20that%20solve%20Wi-Fi%20problems%20in%20under%205%20minutes&amp;url=https%3A%2F%2Fwww.howtogeek.com%2Fdont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first%2F&amp;utm_campaign=tools&amp;utm_medium=article-share&amp;utm_source=www.howtogeek.com" target="_blank">
+<span class="icon i-flipboard"></span>
+<span class="text">Flipboard</span>
+</a>
+<a class="sharing-btn copy-link-button btn-copy-url" data-url="https://www.howtogeek.com/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/" href="javascript:;">
+<span class="icon i-copy-url" data-url="https://www.howtogeek.com/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/"></span>
+<span class="text">Copy link</span>
+</a>
+<a class="sharing-btn btn-mail" href="mailto:?Subject=6 router tricks that solve Wi-Fi problems in under 5 minutes&amp;Body=Check%20this%20out%21%0Ahttps://www.howtogeek.com/dont-replace-your-slow-wi-fi-yettry-these-5-minute-tricks-first/">
+<span class="icon i-mail-1"></span>
+<span class="text">Email</span>
+</a>
+</div>
+</div>
+<div class="w-google-addus-btn w-google-addus-btn--sharing-bottom w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn-fab google small" data-google-addus-toggle="" title="Add Us" type="button">
+<span class="icon i-google"></span>
+<span class="fab-label"><span class="text">Add Us</span></span>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEV2h2ZDNSdloyVmxheTVqYjIwb0FBUAE" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<div class="article-credit-container">
+<div class="affiliate-sponsored">
+<span data-nosnippet="">Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. <a href="https://www.valnetinc.com/en/terms-of-use">Read More</a>.</span>
+</div>
+</div>
+</aside>
+<div class="gallery-lightbox" id="single-image-modal" style="display: none">
+<button class="lightbox__exit-btn icon i-close"><span class="txt">Close</span></button>
+<div class="lightbox">
+<div class="lightbox__swipper" id="swipper-main">
+<div class="swiper-wrapper" id="single-image-modal-container">
+</div>
+</div>
+</div>
+</div>
+<aside class="sidebar adsninja-rail-container" data-tab="sidebar" id="secondary" role="complementary">
+<div class="article-add-google article-add-google--sidebar" data-nosnippet="" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D">
+<a class="article-add-google__link" href="https://www.google.com/preferences/source?q=howtogeek.com" rel="noopener noreferrer" target="_blank">
+<span class="article-add-google__content">
+<span class="article-add-google__title">
+<span aria-hidden="true" class="article-add-google__icon"></span>
+<span aria-hidden="true" class="article-add-google__divider"></span>
+<picture class="article-add-google__brand-logo">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-dark.svg?v=3.8"/>
+<img alt="How-To Geek logo" decoding="async" height="42" loading="lazy" src="https://static0.howtogeekimages.com/assets/images/htg-logo-full-colored-light.svg?v=3.8" title="How-To Geek" width="249"/>
+</picture>
+</span>
+<span class="article-add-google__description">See more How-To Geek stories on Google.</span>
+</span>
+<span class="article-add-google__cta">Add us on Google</span>
+</a>
+</div>
+<div class="sidebar-first" id="sidebar-first" style="min-height:310px;"></div>
+<article class="sidebar-tabs">
+<ul class="js-tabs-ul tabs-ul tabs-header">
+<li class="selected" id="js-tab-1">
+<h3 class="section-title">
+                                                    Desktop
+                                            </h3>
+</li>
+<li class="" id="js-tab-2">
+<h3 class="section-title">
+                                                    Mobile
+                                            </h3>
+</li>
+</ul>
+<div class="js-tab-pane tab-content sidebar-el-content" id="js-content-tab-1">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/clones-of-windows-linux-distros-that-tried-to-copy-microsofts-style/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2">
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Linux mascot waving inside the Windows 10 logo with the logos of some Linux distributions in front." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2025/01/linux-mascot-wa-ving-inside-the-windows-10-logo-with-the-logos-of-some-linux-distributions-in-front.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240">
+</img></source></source></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/clones-of-windows-linux-distros-that-tried-to-copy-microsofts-style/" title="The clones of Windows: 6 Linux distros that tried to copy Microsoft’s style">
+			The clones of Windows: 6 Linux distros that tried to copy Microsoft’s style
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTggaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/ive-spent-10-years-fixing-windows-pcs-these-are-the-most-common-problems-i-run-into/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="The Windows Update screen warning you that your PC is not up to date. " data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2023/12/52779614208_8944197f61_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240">
+</img></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/ive-spent-10-years-fixing-windows-pcs-these-are-the-most-common-problems-i-run-into/" title="I've spent 10 years fixing Windows PCs: These are the most common problems I run into">
+			I've spent 10 years fixing Windows PCs: These are the most common problems I run into
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MjEgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/windows-is-lying-to-you-why-your-2tb-drive-only-shows-18tb/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="Hard drive connected to a USB adapter on a wooden surface." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/windows-is-lying-to-you-why-your-2tb-drive-only-shows-18tb/" title="Windows is lying to you: Why your '2TB' drive only shows 1.8TB">
+			Windows is lying to you: Why your '2TB' drive only shows 1.8TB
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MjIgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/desktop/">See More</a>
+</div>
+<div class="js-tab-pane tab-content sidebar-el-content is-hidden" id="js-content-tab-2">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/my-phone-doesnt-have-a-microsd-slot-so-i-3d-printed-a-case-with-microsd-built-in/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="MicroSD card case for Pixel 10 9" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/08/microsd-card-case-for-pixel-10-9.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/my-phone-doesnt-have-a-microsd-slot-so-i-3d-printed-a-case-with-microsd-built-in/" title="My phone doesn't have a microSD slot, so I 3D printed a case with microSD built in">
+			My phone doesn't have a microSD slot, so I 3D printed a case with microSD built in
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTYgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/i-vibe-coded-my-own-android-keyboard-to-escape-gboards-telemetry/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="A vibe-coded keyboard app." data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/a-vibe-coded-keyboard.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/i-vibe-coded-my-own-android-keyboard-to-escape-gboards-telemetry/" title="I vibe-coded my own Android keyboard to escape Gboard's telemetry">
+			I vibe-coded my own Android keyboard to escape Gboard's telemetry
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTcgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/the-android-games-that-look-as-good-as-console-games/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<source data-srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/>
+<img alt="GameSir G8 Galileo mobile controller being played by someone" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" decoding="async" height="160" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2024/02/53377539428_9bf62b7e4a_o-1.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" width="240"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/the-android-games-that-look-as-good-as-console-games/" title="15 Android games that look as good as console games">
+			15 Android games that look as good as console games
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTggaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/mobile/">See More</a>
+</div>
+</article>
+<div class="sidebar-sticky">
+<div class="sidebar-default" id="sidebar-default" style="min-height:310px;"></div>
+<div class="sidebar-tab" data-active-tab="trendingNow" data-is-tab-container="true">
+<div class="section-header tabs-header-alt">
+<button class="section-title is-active" data-target="trendingNow">Trending Now</button>
+</div>
+<div class="sidebar-tabs">
+<div class="trending-now" data-tab="trendingNow">
+<div class="sentinel-article-sidebarSticky">
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/why-fire-tv-stick-keeps-buffering-and-how-to-fix/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="Amazon Alexa Voice Remote Pro sitting next to an Amazon Fire Stick" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/10/amazon-alexa-voice-remote-pro-sitting-next-to-an-amazon-fire-stick.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2025/10/amazon-alexa-voice-remote-pro-sitting-next-to-an-amazon-fire-stick.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/why-fire-tv-stick-keeps-buffering-and-how-to-fix/" title="Why your Amazon Fire TV Stick keeps buffering—and 5 fixes that actually work">
+			Why your Amazon Fire TV Stick keeps buffering—and 5 fixes that actually work
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/19249/how-to-assign-a-static-ip-address-in-windows/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="sia_top" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2017/10/sia_top.png?q=50&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=1.5" decoding="async" height="67" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2017/10/sia_top.png?q=50&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=1.5" width="100"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/19249/how-to-assign-a-static-ip-address-in-windows/" title="How to Assign a Static IP Address in Windows 10 or Windows 11">
+			How to Assign a Static IP Address in Windows 10 or Windows 11
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/fire-tvs-remote-has-secret-shortcuts-amazon-never-explains/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="A close up of the shortcut buttons on the Amazon Alexa Voice Remote Pro" data-img-url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/05/a-close-up-of-the-shortcut-buttons-on-the-amazon-alexa-voice-remote-pro.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/05/a-close-up-of-the-shortcut-buttons-on-the-amazon-alexa-voice-remote-pro.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/fire-tvs-remote-has-secret-shortcuts-amazon-never-explains/" title="Fire TV's remote has secret shortcuts Amazon never explains—here are 8 of them">
+			Fire TV's remote has secret shortcuts Amazon never explains—here are 8 of them
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+</aside>
+</article>
+</main>
+<div class="w-article-footer layout-rich">
+<div class="article-footer-bg"></div>
+
+</div>
+<!-- No AdsNinja v10 Client! -->
+
+
+
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<!-- LISTING PAGES WITH SUB CONTENT AND HAS VIGNETTES -->
+<!-- Vignette Javascripts Start  -->
+<!-- Vignette JS ID:783 Start -->
+
+<!-- Vignette JS ID:783 End -->
+<!-- Vignette Javascripts End  -->
+</body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- FAVICON -->
+<link href="/public/build/images/favicon-48x48.png" rel="icon" sizes="48x48"/>
+<link href="/public/build/images/favicon-96x96.png" rel="icon" sizes="96x96"/>
+<link href="/public/build/images/favicon-144x144.png" rel="icon" sizes="144x144"/>
+<link href="/public/build/images/favicon-192x192.png" rel="icon" sizes="192x192"/>
+<link href="/public/build/images/favicon-240x240.png" rel="icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-240x240.png" rel="apple-touch-icon" sizes="240x240"/>
+<link href="/public/build/images/favicon-192x192.png" rel="shortcut icon"/>
+<link href="https://www.makeuseof.com/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" rel="canonical">
+<!-- RSS Feed Discovery -->
+<link href="https://www.makeuseof.com/feed/" rel="alternate" title="MakeUseOf Feed" type="application/rss+xml">
+<title>I stopped trusting CPU model names after seeing how much power limits actually matter</title>
+<meta content="Two laptops with the same CPU can perform completely differently — here's why." name="description">
+<meta content="max-image-preview:large" name="robots">
+<meta content="I stopped trusting CPU model names after seeing how much power limits actually matter" property="og:title">
+<meta content="article" property="og:type"/>
+<meta content="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?w=1600&amp;h=900&amp;fit=crop" property="og:image"/>
+<meta content="1600" property="og:image:width"/>
+<meta content="900" property="og:image:height"/>
+<meta content="https://www.makeuseof.com/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Two laptops with the same CPU can perform completely differently — here's why." property="og:description"/>
+<meta content="MakeUseOf" property="og:site_name"/>
+<meta content="2026-08-21T18:30:13Z" property="article:published_time"/>
+<meta content="2026-08-21T18:30:13Z" property="article:modified_time"/>
+<meta content="Technology Explained" property="article:section"/>
+<meta content="Shaheer Khan" property="article:author"/>
+<meta content="https://www.facebook.com/muo.official" property="article:publisher"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@MUO_official" name="twitter:site"/>
+<meta content="I stopped trusting CPU model names after seeing how much power limits actually matter" name="twitter:title"/>
+<meta content="Two laptops with the same CPU can perform completely differently — here's why." name="twitter:description"/>
+<meta content="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=70&amp;fit=crop&amp;w=1200&amp;h=628&amp;dpr=1" name="twitter:image"/>
+<meta content="172826243054377" property="fb:app_id"/>
+<link as="image" fetchpriority="low" href="https://images.valnetcdn.com/sharedimages/img-lcp.svg" rel="preload"/>
+
+<link href="https://www.google-analytics.com" rel="preconnect"/>
+<!-- DNS Prefetch + Preconnect for image CDN -->
+<link href="https://static0.makeuseofimages.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://static0.makeuseofimages.com" rel="preconnect"/>
+
+
+<link as="image" fetchpriority="high" href="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=600&amp;h=338&amp;dpr=2" media="(max-width: 480px)" rel="preload">
+<link as="image" fetchpriority="high" href="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=70&amp;fit=crop&amp;w=1600&amp;h=900&amp;dpr=1" media="(min-width: 481px)" rel="preload">
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.makeuseofimages.com/assets/fonts/roboto/roboto-regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="high" href="https://static0.makeuseofimages.com/assets/fonts/roboto/roboto-bold.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.makeuseofimages.com/assets/fonts/icons/icomoon.woff2?v=7.26.11" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" fetchpriority="low" href="https://static0.makeuseofimages.com/assets/fonts/icons/icomoon.woff?v=7.26.11" rel="preload" type="font/woff"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---<script type="text/javascript" src="https://tru.am/scripts/custom/valnet.js" defer></script>-->
+<!-- Google Analytics v4 -->
+
+
+<!-- End Google Analytics v4 -->
+<!-- sentinel header -->
+
+
+
+<!-- end of sentinel header -->
+
+
+
+
+
+<link href="https://static0.makeuseofimages.com/assets/article-regular.9bb21c2b.css" rel="stylesheet"/>
+<!-- Google Analytics -->
+
+<!-- End Google Analytics -->
+
+
+<!-- GLOABL JS VARIABLES -->
+
+
+
+
+
+
+
+
+
+
+</link></link></meta></meta></meta></link></link></head>
+<body class="w-website js-tldr theme-tech">
+<div id="amazon-root"></div>
+
+
+<!-- No AdsNinja v10 Client! -->
+<div id="body-anchor"></div>
+
+<input class="css-menu--checkbox" id="side_menu" name="side_menu" type="checkbox"/>
+<div class="side-navigation side_menu" id="side-navigation">
+<div class="side-navigation-topbar">
+<label class="js-search-focus css-menu--checkbox-wrapper css-menu--toggle" data-stnl='{"category": "Click Interactions","name": "Website Header", "action": "Site Search Click"}' for="search-menu">
+<span class="menu-icon topbar-icon icon i-search-menu"></span>
+</label>
+<label class="menu-icon topbar-icon icon i-close-menu css-menu--toggle" for="side_menu">
+<span>Close</span>
+</label>
+</div>
+
+<!--
+	    <footer class="side-navigation-footer">
+	        	            Array
+	        	        <div id="ccpa-link"></div>
+	        <div class="footer-copy">
+	            Copyright &copy; 2026 www.makeuseof.com
+	        </div>
+	    </footer>
+	    -->
+</div>
+
+
+<!-- Subnav Image header menu Bar end -->
+<!-- Subnav Search Bar start -->
+<div class="w-ticker" data-type="header">
+</div>
+<div class="w-header-search">
+<input class="css-menu--checkbox" id="search-menu" name="search-menu" type="checkbox"/>
+<div class="header-search-content css-menu--target">
+<label class="header-search-exit icon i-close css-menu--toggle" for="search-menu">
+<span>Close</span>
+</label>
+<div class="header-search">
+<form action="/search/?q=" class="search-form js-searchBox icon i-search" id="searchform2" method="get">
+<input autocomplete="off" class="input-text search-input" id="js-search-input" name="q" placeholder="Search MakeUseOf" type="text"/>
+</form>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<main class="w-content">
+<article class="w-article widget article layout-rich">
+
+<div class="article-header-bg"></div>
+<div class="w-article-header-comp">
+<div class="article-header-data">
+<div class="w-article-header-author-img" data-nosnippet="">
+<div class="article-header-author-img">
+<a href="/author/shaheer-khan/">
+<picture>
+<source height="36" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress%2Fwp-content%2Fauthors%2F69c6c1cfab5eb-PFP.jpeg?fit=crop&amp;w=36&amp;h=36" width="36"/>
+<img alt="4" decoding="async" height="90" loading="lazy" src="https://static0.makeuseofimages.com/wordpress%2Fwp-content%2Fauthors%2F69c6c1cfab5eb-PFP.jpeg?fit=crop&amp;w=90&amp;h=90" style="display:block;height:auto;max-width:100%;" width="90"/>
+</picture>
+</a>
+</div>
+</div>
+<div class="article-meta">
+<div class="w-author" data-nosnippet="">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/shaheer-khan/">Shaheer Khan</a>
+</div>
+</div>
+<div class="meta_txt article-date">
+<time datetime="2026-08-21T18:30:13Z"><span class="is-mobile-hidden">Published</span> Aug 21, 2026, 2:30 PM EDT</time>
+</div>
+</div>
+<div class="with-excerpt" data-nosnippet="">Ever since a kid, Shaheer has always been intrigued by tech and how its components work, and has always geeked out over new PC component releases. His enthusiasm for tech, gaming, and composing eventually led him to become a writer, a career path he hadn’t quite planned or thought of, but it proved to be a natural fit. Nevertheless, Shaheer has been writing for more than 4 years, having penned more than 2000 articles now across multiple accredited publications.<br/>
+<br/>
+Shaheer mostly covers PC components, including in-depth coverage of each component, but his speciality subsumes within hardware of all sorts. </div>
+</div>
+</div>
+<a class="w-header-user-box on-load-show" id="login-button-article-sidebar">
+<div class="user-box-title">Sign in to your <span class="brand-color">MakeUseOf</span> account</div>
+<div class="icon i-user-full"></div>
+</a>
+<aside class="w-quick-action-sidebar">
+<div class="quick-action-sidebar" data-nosnippet="">
+<div class="icon i-sensa"></div>
+<div class="qa-action-list google-addus google-addus--dropdown w-google-addus-btn w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="qa-action-item sensa-feature action-btn google circle small no-label" data-google-addus-toggle="" title="Add Us" type="button">
+<div class="qa-icon main-icon icon icon-xlarge i-google" data-is-icon="true"></div>
+<div class="qa-label title" data-is-text="true">Add Us</div>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.makeuseofimages.com/assets/images/muo-logo-full-colored-light.svg?v=3.8"/>
+<img alt="MakeUseOf logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.makeuseofimages.com/assets/images/muo-logo-full-colored-dark.svg?v=3.8" title="MakeUseOf"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=makeuseof.com" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEVzFoYTJWMWMyVnZaaTVqYjIwb0FBUAE?hl=en-US&amp;gl=US&amp;ceid=US%3Aen" rel="noopener" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+<div class="qa-action-list sensa-features">
+<!-- AI Article Summary -->
+</div>
+<div class="qa-action-list base-action">
+<button class="qa-action-item ai-feature action-btn circle small no-label" data-id="2044648" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Like%20Article%22%2C%22once%22%3A%22true%22%7D" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="qa-label title" data-is-text="true">
+                                    Like
+                                            </div>
+<div class="qa-icon main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="qa-label text qa-like-label" data-is-text="true">
+                            Like
+                                </div>
+</button>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container" data-id="2044648" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" data-preference="Notifications" data-title="I stopped trusting CPU model names after seeing how much power limits actually matter" data-type="article" data-value="1" onclick="openActionBar()" title="Follow">
+<div class="qa-label title">follow</div>
+<div class="qa-icon icon-xlarge icon i-follow unfollowed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Follow
+                            </div>
+</div>
+<div class="qa-action-item ai-feature action-btn circle small no-label follow-container is-hidden" data-id="2044648" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" data-preference="" data-title="I stopped trusting CPU model names after seeing how much power limits actually matter" data-type="article" data-value="0" title="Unfollow">
+<div class="qa-label title">followed</div>
+<div class="qa-icon icon-xlarge icon i-follow followed followed" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Quick%20Action%20Sidebar%22%2C%22action%22%3A%22Follow%20Article%22%2C%22once%22%3A%22true%22%7D"></div>
+<div class="qa-label text qa-follow-label">
+                                    Followed
+                            </div>
+</div>
+<a class="qa-action-item sensa-feature" data-stnl='{"category":"Click Interactions", "name":"Quick Action Sidebar", "action":"Jump to Thread Click", "once":"true"}' href="#threads" onclick="event.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'})" title="Threads">
+<div class="qa-icon icon i-thread"></div>
+<div class="qa-label title">
+							Thread
+															<span class="qa-thread-count">1</span>
+</div>
+</a>
+</div>
+<div class="qa-action-list login-action">
+<button class="qa-action-item user" data-is-quick-action-login-button="true" itemprop="url">
+<div class="qa-label title">Log in</div>
+<div class="qa-icon icon i-user-full" onclick="document.getElementById('side-navigation') &amp;&amp; document.getElementById('side-navigation').classList.remove('is-open');"></div>
+</button>
+</div>
+<div class="sensa-widget-container w-sensa-widget">
+<button class="close-btn icon i-close" onclick="const c=this.closest('.sensa-widget-container'); c.style.height='0'; c.dataset.loaded='false';" type="button"></button>
+<div class="sensa-widget-wrapper">
+<div class="sensa-widget-content" id="top-of-sensa-content">
+<div class="sensa-widget-response-container">
+<span class="sensa-summary-prompt icon i-sensa-2" id="sensa-factual-summary-prompt" style="display: flex;">
+							Here is a fact-based summary of the story contents:
+						</span>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-factual-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-simple-summary"></div>
+<div class="collapse sensa-summary show-hide-btn" id="sensa-satirical-commentary"></div>
+</div>
+<div class="sensa-summary-footer">
+<div class="sensa-summary-footer-content">
+<span class="sensa-summary-prompt">Try something different:
+							</span>
+<div class="sensa-option-buttons">
+<button aria-controls="sensa-factual-summary" aria-expanded="false" class="sensa-button prompt icon i-sensa-2" data-target="#sensa-factual-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Show me the facts
+								</button>
+<button aria-controls="sensa-simple-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-simple-summary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Explain it like I’m 5
+								</button>
+<button aria-controls="sensa-satirical-summary" aria-expanded="false" class="sensa-button icon prompt i-sensa-2" data-target="#sensa-satirical-commentary" data-toggle="collapse" onclick="document.getElementById('top-of-sensa-content').scrollIntoView({ behavior: 'smooth' });" style="display: none" type="button">
+									Give me a lighthearted recap
+								</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! -->
+<section class="article-body valnet-segment-Technical" id="article-body" itemprop="articleBody">
+<div class="content-block-regular"><p>Often, the first thing most people look at when gauging a laptop's power is the CPU, but the reality is much more complex: you can have two laptops with the same CPU, yet they'll perform very differently.</p> <!-- No AdsNinja v10 Client! --><!-- No AdsNinja v10 Client! --><p>It's not that the spec sheet is lying to you — the CPU doesn't determine performance alone. Various manufacturers set custom power limits for the same CPU. Since learning that, I no longer buy a laptop solely based on its CPU; the power limit and other specs are now equally important to me.</p>
+<aside class="display-card article article-card small no-badge active-content" data-include-community-rating="false" data-nosnippet="" id="d74d-45ae-a6e44caee9b7">
+<a href="/hidden-bios-toggle-why-new-cpu-doesnt-feel-fast-as-should/">
+<img alt="An Intel CPU installed on a desktop motherboard" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/an-intel-cpu-installed-on-a-desktop-motherboard.png?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" decoding="async" height="248" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/an-intel-cpu-installed-on-a-desktop-motherboard.png?q=49&amp;fit=crop&amp;w=220&amp;h=124&amp;dpr=2" width="440">
+</img></a>
+<span class="article-card-label" data-field="label"><label>Related</label></span>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/hidden-bios-toggle-why-new-cpu-doesnt-feel-fast-as-should/" target="_blank" title="Your CPU is throttling itself, and one BIOS toggle will fix it">
+			Your CPU is throttling itself, and one BIOS toggle will fix it
+		</a>
+</h5>
+<p class="display-card-excerpt">Your chip is faster than your board allows.</p>
+<div class="w-display-card-extra">
+<div class="total-info extra-comments">
+<label class="total-info-label">Posts</label>
+<a class="total-info-number icon i-thread" href="/hidden-bios-toggle-why-new-cpu-doesnt-feel-fast-as-should/#threads" title="Total Posts">
+<span class="num">3</span>
+</a>
+</div>
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="w-author">
+<div class="w-author-name">
+<span class="meta_txt">By </span>
+<a class="meta_txt article-author" href="/author/digvijay-kumar/" rel="author" title="Posts by Digvijay Kumar">Digvijay Kumar</a>
+</div>
+</div>
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="TWF5IDgsIDIwMjY=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! --><h2 id="pl1-and-pl2-decide-how-much-power-your-cpu-actually-gets">
+                        PL1 and PL2 decide how much power your CPU actually gets
+               </h2>
+<h3 id="tdp-is-measured-for-cooling-not-real-world-power-draw">
+            TDP is measured for cooling, not real-world power draw
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:66.666666666667%">
+<figure><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2">
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=800&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2"/>
+<img alt="HWiNFO Windows toolS" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" decoding="async" height="1100" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/hwinfo-windows-tools.jpg?q=49&amp;fit=crop&amp;w=825&amp;dpr=2" width="1650"/>
+</source></picture><figcaption style="display: none;">Afam Onyimadu / MUO</figcaption></figure>
+</div>
+</div>
+<p>The concept is pretty similar: give your CPU more power to get more output, and less power results in lower performance, but with some important considerations. Many think that TDP is a machine's power draw, and I don't blame them, since it is measured in watts.</p> <p>Even though TDP isn't measured by power draw, it's tied to it, but its purpose is to indicate how much heat a component's cooling needs to dissipate under a workload. TDP is primarily a concern for manufacturers, as it provides a target for designing an adequate cooling solution.</p> <p>Instead, you should <a href="https://www.makeuseof.com/stop-windows-processes-draining-cpu/" target="_blank">measure a CPU's power capabilities</a> using its PL1 and PL2, which are the chip's long-term power draw and its higher-power draw for short bursts, respectively. In a nutshell, your CPU typically uses PL1 to <span style="box-sizing:border-box; margin:0px; padding:0px">signify <a href="https://www.makeuseof.com/quit-overclocking-undervolted-instead-pc-got-faster-quieter/" target="_blank">power draw during sustained workloads</a>, and PL2 provides a higher power limit for</span> when the CPU needs to boost clocks under heavy workloads.</p> <!-- No AdsNinja v10 Client! --><h2 id="how-one-cpu-performs-unevenly-across-different-laptops">
+                        How one CPU performs unevenly across different laptops
+               </h2>
+<h3 id="a-wider-pl1-and-pl2-gap-can-substantially-increase-cpu-performance">
+            A wider PL1 and PL2 gap can substantially increase CPU performance
+    </h3>
+<div class="valnet-gallery images-count-5">
+<div class="article__gallery type-gallery" data-article-gallery="article-gallery-modal-1-429347325" data-gallery-id="main-carousel-1-429347325" data-gallery-lightbox="gallery-modal-1-429347325" data-gallery-thumbnail-id="gallery-thumbnails-1-429347325" data-gallery-thumbnail-img-class="gallery-thumbnails-1-429347325-img" data-gallery-type="" id="article-gallery-1-429347325" style="--gallery-thumb-h: 93px; --gallery-aspect-sm: 1.4989293361884 / 1; --gallery-aspect-md: 1.4989293361884 / 1;">
+<div class="w-gallery-carousel"><section class="splide splide-gallery" data-gallery-expanded-id="main-expanable-carousel-1-429347325" data-gallery-expanded-thumbnail-id="expanded-gallery-thumbnails-1-429347325" id="main-carousel-1-429347325"><button class="expand icon i-expand" type="button"></button><div class="splide__track"><ul class="splide__list" style="--gallery-aspect-sm: 1.4989293361884 / 1; --gallery-aspect-md: 1.4989293361884 / 1; --gallery-aspect-lg: 1.7 / 1;"><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Using the egpu with a laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li><li class="splide__slide gallery-main-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Using a thin-and-light laptop with an eGPU" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="Claude and Darktable running on Windows 11 laptop." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><figcaption style="display: none;">Yadullah Abidi / MakeUseOf</figcaption></figure></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="USB-C cable connected to a gaming laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><figcaption style="display: none;">Dave Meikleham / MakeUseOf</figcaption></figure></li><li class="splide__slide gallery-main-img"><figure><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=contain&amp;w=705&amp;h=397&amp;dpr=2"/><img alt="LM studio running on windows 11 laptop with chat open." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" decoding="async" height="844" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=contain&amp;w=750&amp;h=422&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="1500"/></picture><figcaption style="display: none;">Yadullah Abidi / MakeUseOf</figcaption></figure></li></ul></div></section><section class="splide gallery-thumbnails" id="gallery-thumbnails-1-429347325" style="display: inline-flex; width: 100%; height: 93px;"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Using the egpu with a laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Using a thin-and-light laptop with an eGPU" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="Claude and Darktable running on Windows 11 laptop." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="USB-C cable connected to a gaming laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li><li class="splide__slide gallery-thumbnail-img"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=120&amp;h=80&amp;dpr=2"/><img alt="LM studio running on windows 11 laptop with chat open." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" decoding="async" height="186" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=167&amp;h=93&amp;dpr=2" width="334"/></picture></li></ul></div></section></div><div class="w-gallery-carousel-fullscreen"><section class="splide splide-gallery" id="main-expanable-carousel-1-429347325"><button class="lightbox__exit-btn close-btn icon i-close" type="button"><span class="txt">Close</span></button><div class="splide__track lightbox__swipper"><ul class="splide__list swiper-wrapper"><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="Using the egpu with a laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1401&amp;dpr=2" decoding="async" height="1401" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1401&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><img alt="Using a thin-and-light laptop with an eGPU" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1401&amp;dpr=2" decoding="async" height="1401" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1401&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="Claude and Darktable running on Windows 11 laptop." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=contain&amp;w=6000&amp;h=4000&amp;dpr=2" decoding="async" height="4000" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=contain&amp;w=6000&amp;h=4000&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="6000"/><figcaption style="display: none;">Yadullah Abidi / MakeUseOf</figcaption></figure></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="USB-C cable connected to a gaming laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" decoding="async" height="1400" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=contain&amp;w=2100&amp;h=1400&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="2100"/><figcaption style="display: none;">Dave Meikleham / MakeUseOf</figcaption></figure></div></li><li class="splide__slide gallery-main-img image-landscape"><div class="body-img responsive-img"><figure><img alt="LM studio running on windows 11 laptop with chat open." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=contain&amp;w=6000&amp;h=4000&amp;dpr=2" decoding="async" height="4000" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=contain&amp;w=6000&amp;h=4000&amp;dpr=2" style="width: 100%; height: 100%; object-fit: contain;" width="6000"/><figcaption style="display: none;">Yadullah Abidi / MakeUseOf</figcaption></figure></div></li></ul></div></section><section aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel." class="splide gallery-thumbnails-expanded" id="expanded-gallery-thumbnails-1-429347325"><div class="splide__track"><ul class="splide__list"><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Using the egpu with a laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/acasis-egpu-with-laptop.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Using a thin-and-light laptop with an eGPU" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/egpu-laptop-thin.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="Claude and Darktable running on Windows 11 laptop." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/claude-and-darktable-running-on-windows-11-laptop.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="USB-C cable connected to a gaming laptop" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-2.jpg?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li><li class="splide__slide gallery-thumbnail-img-expanded"><picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2"/><img alt="LM studio running on windows 11 laptop with chat open." class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" decoding="async" height="170" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/03/lm-studio-running-on-windows-11-laptop-with-chat-open.JPG?q=49&amp;fit=crop&amp;w=145&amp;h=85&amp;dpr=2" width="290"/></picture></li></ul></div></section></div>
+
+</div>
+</div>
+<p>Depending on your manufacturer, laptop type, and whether the laptop is intended for creators or office use, your CPU can have distinct power configurations.</p> <p>Take the i7-13700H as an example. Its power configurations vary widely across laptops, and here's how it performs differently among them.</p> <div class="table-container">
+<table align="" border="1" cellpadding="1" cellspacing="1" style="" summary="">
+<tbody>
+<tr>
+<td>
+<p>Laptop</p>
+</td>
+<td>
+<p>PL2</p>
+</td>
+<td>
+<p>PL1</p>
+</td>
+<td>
+<p>Cinebench R20 Multi</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Medion Erazer Scout E20</p>
+</td>
+<td>
+<p>115W</p>
+</td>
+<td>
+<p>50W</p>
+</td>
+<td>
+<p>6,051 (via <a href="https://www.notebookcheck.net/Medion-Erazer-Scout-E20-review-Affordable-FHD-gaming-laptop-with-RTX-4050.718575.0.html" rel="noopener noreferrer nofollow" target="_blank">NotebookCheck</a>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ASUS ExpertBook P1</p>
+</td>
+<td>
+<p>45W</p>
+</td>
+<td>
+<p>28W</p>
+</td>
+<td>
+<p>4,057 (via <a href="https://www.notebookcheck.net/Asus-ExpertBook-P1-review-The-affordable-laptop-for-office-use-and-working-from-home-comes-with-numerous-security-features.961204.0.html" rel="noopener noreferrer nofollow" target="_blank">NotebookCheck</a>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Acer Swift Go 16</p>
+</td>
+<td>
+<p>80W</p>
+</td>
+<td>
+<p>65W</p>
+</td>
+<td>
+<p>5.310 (via <a href="https://www.notebookcheck.net/Acer-Swift-Go-16-review-Multimedia-laptop-with-dazzling-OLED-display.727398.0.html" rel="noopener noreferrer nofollow" target="_blank">NotebookCheck</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Intel itself states a 45W PL1 and 115W PL2 power range for the i7-13700H, allowing manufacturers to tune the power themselves. The Acer Swift Go 16 has a significantly higher PL1 than Intel's documentation indicates, and is a prime example of why the CPU alone doesn't determine a laptop's performance.</p>
+<section class="emaki-custom-block emaki-custom-note" data-nosnippet="">
+<div class="emaki-custom note" id="custom_block_16">
+<div class="custom_block-content note"><p>Even though Cinebench R20 Multi is primarily a CPU test, RAM and other components also help determine the score, so they can slightly impact benchmark results.</p> </div>
+</div>
+</section><!-- No AdsNinja v10 Client! --><h2 id="cooling-and-battery-limit-how-much-power-a-cpu-can-draw">
+                        Cooling and battery limit how much power a CPU can draw
+               </h2>
+<h3 id="cheaper-laptops-throttle-sooner-than-expensive-ones-with-better-cooling">
+            Cheaper laptops throttle sooner than expensive ones with better cooling
+    </h3>
+<div class="body-img landscape">
+<div class="responsive-img image-expandable img-article-item" data-img-caption='""' data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg" data-modal-container-id="single-image-modal-container" data-modal-id="single-image-modal" style="padding-bottom:66.666666666667%">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=49&amp;fit=crop&amp;w=500&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=70&amp;fit=crop&amp;w=800&amp;dpr=1" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=70&amp;fit=crop&amp;w=800&amp;dpr=1"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=70&amp;fit=crop&amp;w=825&amp;dpr=1" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=70&amp;fit=crop&amp;w=825&amp;dpr=1"/>
+<img alt="Laptop Internal Cooling Fan" class="img-brightness-opt-out" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=70&amp;fit=crop&amp;w=825&amp;dpr=1" decoding="async" height="550" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/laptop-internal-cooling-fan.jpg?q=70&amp;fit=crop&amp;w=825&amp;dpr=1" width="825"/>
+</picture>
+</div>
+</div>
+<p>While more power means higher performance, the situation depends more on just this. For starters, thermal management plays a big role in a CPU's performance, and higher power can make your machine run hotter. As your CPU approaches a certain temperature threshold, it automatically slows down to prevent damage, and this phenomenon is called thermal throttling.</p> <p><a href="https://www.makeuseof.com/my-laptop-now-runs-much-cooler-and-the-fix-was-only-5/" target="_blank">Thermal throttling can hurt performance</a> because your CPU can't reach boost clock speeds, which would increase power draw and, in turn, raise temperatures. Laptops generally run hotter than desktop PCs, and thermal throttling happens frequently. To avoid it, you'll need great cooling, and cooling is hard to engineer in laptops because multiple hot components sit on the same board with little space for heat to move around. Copper heat pipes used to redirect heat away from the laptop board are very expensive, and there's very limited space for multiple fans.</p> <p>Lastly, for a higher power draw, you'll also need a larger battery, and even though it's not the most expensive part of a laptop, a small difference can go a long way toward determining a machine's price when manufactured in bulk.</p> <h3 id="check-reviews-not-spec-sheets">
+            Check reviews, not spec sheets
+    </h3>
+<p>PL1 and PL2 numbers are rarely published in official specifications, which is why I always look for comprehensive laptop reviews before buying. For performance, check reviews that thoroughly test the CPU across benchmarks like Cinebench and compare it with competing machines or rival CPUs.</p>
+<p>If performance drops significantly after a few minutes, the laptop's cooling isn't that great, and depending on your climate, overheating can become an issue.</p> <p>HWiNFO64 shows the actual PL1 and PL2 figures, but since you don't have hands-on experience with the machine, consult sites like NotebookCheck for a comprehensive overview. If you don't have access to benchmarks or results, check the cooling configuration. Fewer fans and a congested cooling setup indicate a lower-power configuration.</p> </div><div id="article-waypoint"></div></section>
+<aside class="article-options" data-nosnippet="">
+<aside class="w-promotion-offer promo-article-footer w-promotion-widget" data-nosnippet="" data-popup="false" data-promotion-zone="R29vZ2xlIFJhbmtpbmcgUHJvbW8=" data-sentinel-tracking="true" style="min-height: 250px;">
+<link href="https://static0.makeuseofimages.com/assets/promotions.3f35661a.css" rel="stylesheet"/>
+<div class="promotion-offer-box" data-style-path-url="https://static0.makeuseofimages.com/assets/promotions.3f35661a.css">
+<div class="card"> <a class="btn" data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=makeuseof.com" target="_blank"></a> <h1 class="msg"><b>Google is updating how content is shown.</b> Don't miss our industry-leading content, written by humans, by setting <a data-stnl='{"category":"Promotion","name":"Google Ranking Promo","action":"Clicked Landing Page"}' href="https://www.google.com/preferences/source?q=makeuseof.com" target="_blank">MakeUseOf as a preferred source</a>.</h1> </div>
+
+</div>
+</aside>
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<div class="article-tags">
+<ul class="article-tags-list">
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/category/technology-explained/" title="Technology Explained">
+<div class="article-tags-img">
+<img alt="Technology Explained" decoding="async" height="32" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2025/07/technology_threads.jpg?q=50&amp;fit=crop&amp;w=32&amp;h=32&amp;dpr=1.5" width="32"/>
+</div>
+<div class="article-tags-name">Technology Explained</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/tag/laptop/" title="Laptop Tips">
+<div class="article-tags-name">Laptop Tips</div>
+</a>
+</li>
+<li class="article-tags-element listing">
+<a class="tags-link image" href="/tag/cpu/" title="CPU">
+<div class="article-tags-name">CPU</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="w-sharing-bottom" id="threads">
+<div class="w-like-btn inactive" data-action="like-article">
+<button class="btn-fab tertiary xsmall" data-id="2044648" data-is-like-article-button="true" data-like-count="0" data-like-icon="liked" data-like-title="Like" data-unlike-icon="not-liked" data-unlike-title="Liked" data-value="0" title="Like">
+<div class="main-icon icon icon-xlarge i-thumb-on not-liked" data-is-icon="true"></div>
+<div class="fab-label" data-is-text="true">
+                                                                                        Like
+                                                                                            </div>
+</button>
+</div>
+<div class="w-follow-btn" data-action="follow-article">
+<div class="btn-fab tertiary xsmall follow-container btn-follow" data-id="2044648" data-id-tag="" data-is-follow-choice-button="true" data-is-follow-container="true" data-is-followed-choice-button="false" data-permalink="/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" data-preference="Notifications" data-title="I stopped trusting CPU model names after seeing how much power limits actually matter" data-type="article" data-value="1" title="Follow">
+<div class="main-icon icon-xlarge icon i-follow"></div>
+<div class="fab-label">
+                                                                        Follow
+                                                            </div>
+</div>
+<div class="btn-fab tertiary xsmall follow-container btn-follow is-hidden" data-id="2044648" data-id-tag="" data-is-follow-choice-button="true" data-is-followed-choice-button="true" data-is-followed-container="true" data-permalink="/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" data-preference="" data-title="I stopped trusting CPU model names after seeing how much power limits actually matter" data-type="article" data-value="0" title="Unfollow">
+<div class="main-icon icon-xlarge icon i-follow followed"></div>
+<span class="fab-label">
+                                                            Followed
+                                                    </span>
+</div>
+</div>
+<!-- Share module with popup list -->
+<div class="option-btn btn-share" id="sharingButtonPopup">
+<span class="icon i-share"></span>
+<span class="text">Share</span>
+<div class="w-sharing-option w-sharing-popup" id="sharePopup" style="color: black">
+<a class="sharing-btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F%2F&amp;src=sdkpreparse" target="_blank">
+<span class="icon i-facebook"></span>
+<span class="text">Facebook</span>
+</a>
+<a class="sharing-btn btn-x" href="https://twitter.com/intent/tweet?text=I%20stopped%20trusting%20CPU%20model%20names%20after%20seeing%20how%20much%20power%20limits%20actually%20matter&amp;url=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F" target="_blank">
+<span class="icon i-x"></span>
+<span class="text">X</span>
+</a>
+<a class="sharing-btn btn-whatsapp" href="https://web.whatsapp.com/send?text=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F" target="_blank">
+<span class="icon i-whatsapp"></span>
+<span class="text">WhatsApp</span>
+</a>
+<a class="sharing-btn btn-threads" href="https://www.threads.net/intent/post?text=I%20stopped%20trusting%20CPU%20model%20names%20after%20seeing%20how%20much%20power%20limits%20actually%20matter%20https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F" rel="noopener" target="_blank">
+<span class="icon i-threads"></span>
+<span class="text">Threads</span>
+</a>
+<a class="sharing-btn btn-bluesky" href="https://bsky.app/intent/compose?text=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F" target="_blank">
+<span class="icon i-bluesky"></span>
+<span class="text">Bluesky</span>
+</a>
+<a class="sharing-btn btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F&amp;title=I%20stopped%20trusting%20CPU%20model%20names%20after%20seeing%20how%20much%20power%20limits%20actually%20matter&amp;source=www.makeuseof.com&amp;summary=Two%20laptops%20with%20the%20same%20CPU%20can%20perform%20completely%20differently%20%E2%80%94%20here%27s%20why." target="_blank">
+<span class="icon i-linkedin"></span>
+<span class="text">LinkedIn</span>
+</a>
+<a class="sharing-btn btn-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F" target="_blank">
+<span class="icon i-reddit"></span>
+<span class="text">Reddit</span>
+</a>
+<a class="sharing-btn btn-flipboard" href="http://share.flipboard.com/bookmarklet/popout?v=2&amp;title=I%20stopped%20trusting%20CPU%20model%20names%20after%20seeing%20how%20much%20power%20limits%20actually%20matter&amp;url=https%3A%2F%2Fwww.makeuseof.com%2Fstopped-comparing-laptop-cpus-learning-power-limits-change-performance%2F&amp;utm_campaign=tools&amp;utm_medium=article-share&amp;utm_source=www.makeuseof.com" target="_blank">
+<span class="icon i-flipboard"></span>
+<span class="text">Flipboard</span>
+</a>
+<a class="sharing-btn copy-link-button btn-copy-url" data-url="https://www.makeuseof.com/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" href="javascript:;">
+<span class="icon i-copy-url" data-url="https://www.makeuseof.com/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/"></span>
+<span class="text">Copy link</span>
+</a>
+<a class="sharing-btn btn-mail" href="mailto:?Subject=I stopped trusting CPU model names after seeing how much power limits actually matter&amp;Body=Check%20this%20out%21%0Ahttps://www.makeuseof.com/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/">
+<span class="icon i-mail-1"></span>
+<span class="text">Email</span>
+</a>
+</div>
+</div>
+<div class="w-google-addus-btn w-google-addus-btn--sharing-bottom w-google-addus-btn--dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn-fab google small" data-google-addus-toggle="" title="Add Us" type="button">
+<span class="icon i-google"></span>
+<span class="fab-label"><span class="text">Add Us</span></span>
+</button>
+<div aria-label="Google options" class="w-google-addus-btn__menu" role="menu">
+<div aria-hidden="true" class="w-google-addus-btn__title">
+<span>Add</span>
+<picture class="w-google-addus-btn__brand">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.makeuseofimages.com/assets/images/muo-logo-full-colored-light.svg?v=3.8"/>
+<img alt="MakeUseOf logo" class="w-google-addus-btn__brand-img" decoding="async" loading="lazy" src="https://static0.makeuseofimages.com/assets/images/muo-logo-full-colored-dark.svg?v=3.8" title="MakeUseOf"/>
+</picture>
+<span>on Google</span>
+</div>
+<div class="w-google-addus-btn__items">
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%22%7D" href="https://www.google.com/preferences/source?q=makeuseof.com" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google"></span>
+<span class="w-google-addus-btn__label">Preferred Source</span>
+</a>
+<a class="w-google-addus-btn__item" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Article%20Footer%22%2C%22action%22%3A%22Add%20to%20Google%20News%22%7D" href="https://news.google.com/publications/CAAqKAgKIiJDQklTRXdnTWFnOEtEVzFoYTJWMWMyVnZaaTVqYjIwb0FBUAE?hl=en-US&amp;gl=US&amp;ceid=US%3Aen" rel="noopener noreferrer" role="menuitem" target="_blank">
+<span class="w-google-addus-btn__icon icon i-google-news"></span>
+<span class="w-google-addus-btn__label">Google News</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+<div class="article-credit-container">
+</div>
+</aside>
+<div class="gallery-lightbox" id="single-image-modal" style="display: none">
+<button class="lightbox__exit-btn icon i-close"><span class="txt">Close</span></button>
+<div class="lightbox">
+<div class="lightbox__swipper" id="swipper-main">
+<div class="swiper-wrapper" id="single-image-modal-container">
+</div>
+</div>
+</div>
+</div>
+<aside class="sidebar adsninja-rail-container" data-tab="sidebar" id="secondary" role="complementary">
+<div class="article-add-google article-add-google--sidebar" data-nosnippet="" data-stnl="%7B%22category%22%3A%22Click%20Interactions%22%2C%22name%22%3A%22Sidebar%22%2C%22action%22%3A%22Add%20to%20Google%22%7D">
+<a class="article-add-google__link" href="https://www.google.com/preferences/source?q=makeuseof.com" rel="noopener noreferrer" target="_blank">
+<span class="article-add-google__content">
+<span class="article-add-google__title">
+<span aria-hidden="true" class="article-add-google__icon"></span>
+<span aria-hidden="true" class="article-add-google__divider"></span>
+<picture class="article-add-google__brand-logo">
+<source media="(prefers-color-scheme: dark)" srcset="https://static0.makeuseofimages.com/assets/images/muo-logo-full-colored-light.svg?v=3.8"/>
+<img alt="MakeUseOf logo" decoding="async" height="82" loading="lazy" src="https://static0.makeuseofimages.com/assets/images/muo-logo-full-colored-dark.svg?v=3.8" title="MakeUseOf" width="277"/>
+</picture>
+</span>
+<span class="article-add-google__description">See more MakeUseOf stories on Google.</span>
+</span>
+<span class="article-add-google__cta">Add us on Google</span>
+</a>
+</div>
+<div class="sidebar-first" id="sidebar-first"></div>
+<article class="sidebar-tabs">
+<ul class="js-tabs-ul tabs-ul tabs-header">
+<li class="selected" id="js-tab-1">
+<h3 class="section-title">
+                                                    Technology Explained
+                                            </h3>
+</li>
+<li class="" id="js-tab-2">
+<h3 class="section-title">
+                                                    PC &amp; Mobile
+                                            </h3>
+</li>
+</ul>
+<div class="js-tab-pane tab-content sidebar-el-content" id="js-content-tab-1">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2">
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2">
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<img alt="USB-C power cable with a gaming laptop" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" decoding="async" height="280" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/04/laptop-power-cable-4.jpg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" width="400">
+</img></source></source></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/stopped-comparing-laptop-cpus-learning-power-limits-change-performance/" title="I stopped trusting CPU model names after seeing how much power limits actually matter">
+			I stopped trusting CPU model names after seeing how much power limits actually matter
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTYgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/your-android-phone-is-mangling-lossless-audio-before-it-even-reaches-your-headphones/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<img alt="samsung galaxy z fold 8 showing hi res audio files" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" decoding="async" height="280" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-z-fold-8-showing-hi-res-audio-files-z.jpg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" width="400">
+</img></picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/your-android-phone-is-mangling-lossless-audio-before-it-even-reaches-your-headphones/" title="Your Android phone is mangling lossless audio before it even reaches your headphones">
+			Your Android phone is mangling lossless audio before it even reaches your headphones
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTcgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/why-i-still-use-flash-drive-over-ssd/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<img alt="USB drives scattered around a smartphone." data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" decoding="async" height="280" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/01/usb-drive-4-1.jpg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" width="400"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/why-i-still-use-flash-drive-over-ssd/" title="I have an SSD, an HDD, and an SD card — I still reach for my $5 flash drive first">
+			I have an SSD, an HDD, and an SD card — I still reach for my $5 flash drive first
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTggaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/technology-explained/">See More</a>
+</div>
+<div class="js-tab-pane tab-content sidebar-el-content is-hidden" id="js-content-tab-2">
+<div class="sidebar-pinned-listing-page-article">
+<div class="display-card rank-1 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/google-lens-hidden-features/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<img alt="feat-9" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" decoding="async" height="280" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/feat-9.jpeg?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" width="400"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/google-lens-hidden-features/" title="Google Lens is hiding features you'll wish you'd found sooner">
+			Google Lens is hiding features you'll wish you'd found sooner
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="NTggbWludXRlcyBhZ28=" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-2 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/this-android-launcher-turns-your-home-screen-into-a-physics-playground/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<img alt="Mango Launcher hero" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" decoding="async" height="280" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/08/mango-launcher-hero.JPG?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" width="400"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/this-android-launcher-turns-your-home-screen-into-a-physics-playground/" title="This Android launcher turns your home screen into a physics playground">
+			This Android launcher turns your home screen into a physics playground
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTMgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-card rank-3 article small active-content" data-include-community-rating="false">
+<a class="dc-img-link" href="/i-turned-off-one-hidden-scanning-process-and-gained-an-hour-of-battery/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<picture><source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 480px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 767px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<source data-srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2" media="(max-width: 1023px)" srcset="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=160&amp;h=120&amp;dpr=2"/>
+<img alt="Battery usage on Google Pixel 10 Pro" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" decoding="async" height="280" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2026/08/battery-usage-on-google-pixel-10-pro.png?q=49&amp;fit=crop&amp;w=200&amp;h=140&amp;dpr=2" width="400"/>
+</picture>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/i-turned-off-one-hidden-scanning-process-and-gained-an-hour-of-battery/" title="I found two toggles buried in Android settings that were draining my phone overnight">
+			I found two toggles buried in Android settings that were draining my phone overnight
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+<div class="meta_txt article-date"><span class="display-card-date" data-b64-ts="MTUgaG91cnMgYWdv" data-nosnippet=""></span></div>
+</div>
+</div>
+</div>
+</div>
+</div> <a class="btn-full" href="/category/pc-mobile/">See More</a>
+</div>
+</article>
+<div class="sidebar-sticky">
+<div class="sidebar-default" id="sidebar-default"></div>
+<div class="sidebar-tab" data-active-tab="trendingNow" data-is-tab-container="true">
+<div class="section-header tabs-header-alt">
+<button class="section-title is-active" data-target="trendingNow">Trending Now</button>
+</div>
+<div class="sidebar-tabs">
+<div class="trending-now" data-tab="trendingNow">
+<div class="sentinel-article-sidebarSticky">
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/dell-xps-16-review/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="The Dell XPS 16 on a table." data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/dell-xps-16-11.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/dell-xps-16-11.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/dell-xps-16-review/" title="Dell's redesigned XPS 16 is almost the perfect Windows laptop — one thing holds me back">
+			Dell's redesigned XPS 16 is almost the perfect Windows laptop — one thing holds me back
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/the-easiest-pc-performance-upgrade-isnt-new-hardware-its-a-bios-update/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="BIOS menu" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/bios-menu.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/07/bios-menu.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/the-easiest-pc-performance-upgrade-isnt-new-hardware-its-a-bios-update/" title="I updated my BIOS and suddenly my PC felt like a new machine — no hardware required">
+			I updated my BIOS and suddenly my PC felt like a new machine — no hardware required
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+<div class="display-card article small active-content" data-include-community-rating="false" data-nosnippet="">
+<a class="dc-img-link" href="/ethernet-cables-have-two-types-only-one-worth-running-through-your-walls/">
+<div class="w-img">
+<div class="bc-img responsive-img img-displayCard">
+<img alt="A whole Ethernet cable on a red and white rug thing" data-img-url="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/a-whole-ethernet-cable-on-a-red-and-white-rug-thing-2.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" decoding="async" height="134" loading="lazy" src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/05/a-whole-ethernet-cable-on-a-red-and-white-rug-thing-2.jpg?q=49&amp;fit=crop&amp;w=100&amp;h=67&amp;dpr=2" width="200"/>
+</div>
+</div>
+</a>
+<div class="w-display-card-content regular article-block">
+<h5 class="display-card-title">
+<a href="/ethernet-cables-have-two-types-only-one-worth-running-through-your-walls/" title="Ethernet cables have two types and only one is worth running through your walls">
+			Ethernet cables have two types and only one is worth running through your walls
+		</a>
+</h5>
+<div class="w-display-card-extra">
+</div>
+<div class="w-display-card-details">
+<div class="w-display-card-meta">
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<!-- No AdsNinja v10 Client! -->
+</aside>
+</article>
+</main>
+<div class="w-article-footer layout-rich">
+<div class="article-footer-bg"></div>
+
+</div>
+<!-- No AdsNinja v10 Client! -->
+
+
+
+<!-- No AdsNinja v10 Client! -->
+<!-- No AdsNinja v10 Client! -->
+<!-- LISTING PAGES WITH SUB CONTENT AND HAS VIGNETTES -->
+</body>
+</html>
